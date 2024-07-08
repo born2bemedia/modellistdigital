@@ -67,6 +67,9 @@ a {
   @media (max-width: 1375px) {
     max-width: $md1 + px;
   }
+  @media (min-width: 1600px) {
+    max-width: $maxWidth;
+  }
 }
 
 .site {
