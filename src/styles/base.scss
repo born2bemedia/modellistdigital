@@ -198,6 +198,36 @@ a {
   }
 }
 
+.black-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  background: #161616;
+  color: #fff;
+}
+
+.white-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  background: #fff;
+  color: #161616;
+}
+
 .main-button {
   color: #0f0f0f;
   font-size: 16px;
