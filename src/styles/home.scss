@@ -67,7 +67,7 @@
         width: 350px;
         height: 350px;
         left: 50%;
-        transform: translateX(-50%)!important;
+        transform: translateX(-50%) !important;
       }
     }
     h2 {
@@ -366,7 +366,9 @@
   }
 
   &__body {
-    overflow-x: auto;
+    @media (max-width: 992px) {
+      overflow-x: auto;
+    }
     > div {
       display: flex;
       gap: 25px;

@@ -19,7 +19,12 @@ const LatestProjects = () => {
     <section className="latest-projects">
       <div className="_container">
         <div className="latest-projects__body">
-          <motion.h2 initial="hidden" animate="visible" variants={fadeInUp}>
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
             CHECK OUT OUR LATEST PROJECTS
           </motion.h2>
 

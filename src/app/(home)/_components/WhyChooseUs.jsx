@@ -10,7 +10,12 @@ const WhyChooseUs = () => {
       <div className="_container">
         <div className="why-choose__body">
           <div className="col-01">
-            <motion.h2 initial="hidden" animate="visible" variants={fadeInUp}>
+            <motion.h2
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+            >
               WHY <br />
               CHOOSE <br />
               US
@@ -19,7 +24,8 @@ const WhyChooseUs = () => {
             <div>
               <motion.div
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               >
                 <h3>
@@ -34,7 +40,8 @@ const WhyChooseUs = () => {
               </motion.div>
               <motion.div
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               >
                 <h3>
@@ -49,7 +56,8 @@ const WhyChooseUs = () => {
               </motion.div>
               <motion.div
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               >
                 <h3>
@@ -64,7 +72,8 @@ const WhyChooseUs = () => {
               </motion.div>
               <motion.div
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               >
                 <h3>
@@ -79,7 +88,8 @@ const WhyChooseUs = () => {
               </motion.div>
               <motion.div
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               >
                 <h3>
@@ -94,7 +104,8 @@ const WhyChooseUs = () => {
               </motion.div>
               <motion.div
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               >
                 <h3>
@@ -110,7 +121,8 @@ const WhyChooseUs = () => {
               </motion.div>
               <motion.div
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               >
                 <Link href="#" className="white-button">
@@ -124,49 +136,57 @@ const WhyChooseUs = () => {
               <motion.img
                 src="/images/home/gallery.svg"
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
                 src="/images/home/gallery.svg"
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
                 src="/images/home/gallery.svg"
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
                 src="/images/home/gallery.svg"
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
                 src="/images/home/gallery.svg"
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
                 src="/images/home/gallery.svg"
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
                 src="/images/home/gallery.svg"
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
                 src="/images/home/gallery.svg"
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
             </div>

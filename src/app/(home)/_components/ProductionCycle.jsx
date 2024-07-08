@@ -8,14 +8,20 @@ const ProductionCycle = () => {
   return (
     <section className="production-cycle">
       <div className="_container">
-        <motion.h2 initial="hidden" animate="visible" variants={fadeInUp}>
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
           OUR PRODUCTION CYCLE
         </motion.h2>
         <div className="production-cycle__body">
           <div>
             <motion.div
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
+              viewport={{ once: true }}
               variants={fadeInUp}
               className="item"
             >
@@ -36,7 +42,8 @@ const ProductionCycle = () => {
             </motion.div>
             <motion.div
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
+              viewport={{ once: true }}
               variants={fadeInUp}
               className="item"
             >
@@ -55,7 +62,8 @@ const ProductionCycle = () => {
             </motion.div>
             <motion.div
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
+              viewport={{ once: true }}
               variants={fadeInUp}
               className="item"
             >
@@ -73,7 +81,8 @@ const ProductionCycle = () => {
             </motion.div>
             <motion.div
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
+              viewport={{ once: true }}
               variants={fadeInUp}
               className="item"
             >
@@ -92,7 +101,8 @@ const ProductionCycle = () => {
             </motion.div>
             <motion.div
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
+              viewport={{ once: true }}
               variants={fadeInUp}
               className="item"
             >
@@ -113,7 +123,12 @@ const ProductionCycle = () => {
         </div>
 
         <div className="production-cycle__ready">
-          <motion.h2 initial="hidden" animate="visible" variants={fadeInUp}>
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
             READY
             <br />
             TO START?
