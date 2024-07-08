@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { fadeInUp } from "@/app/utils/animations";
+import { fadeInUp } from "@/utils/animations";
 import VideoProduction from "./Projects/VideoProduction";
 import Modelling from "./Projects/Modelling";
 import UxUiDesign from "./Projects/UxUiDesign";

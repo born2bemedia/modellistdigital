@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Marquee from "./Marquee";
 import { motion } from "framer-motion";
-import { fadeInUp } from "@/app/utils/animations";
+import { fadeInUp } from "@/utils/animations";
 
 const HomeHero = () => {
   const marqueeTexts = [
