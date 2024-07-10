@@ -18,7 +18,7 @@ const UxUiExamples = () => {
             className="title"
           >
             <img src="/images/work/UiUxIcon.svg" />
-            <Link href="#">
+            <Link href="/services/ux-ui-design">
               <span>
                 UX/UI
                 <br />

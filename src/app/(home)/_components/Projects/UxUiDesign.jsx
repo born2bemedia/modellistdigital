@@ -13,7 +13,7 @@ const UxUiDesign = () => {
 
   return (
     
-    <ProjectsSlider images={imagesArray} exploreLink="#"/>
+    <ProjectsSlider images={imagesArray} exploreLink="/services/ux-ui-design"/>
   )
 }
 

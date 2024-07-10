@@ -18,7 +18,7 @@ const UxUiDesign = () => {
               className="title"
             >
               <img src="/images/work/UiUxIcon.svg" />
-              <Link href="#">
+              <Link href="/services/ux-ui-design">
                 <span>
                   UX/UI
                   <br />
@@ -91,7 +91,7 @@ const UxUiDesign = () => {
           variants={fadeInUp}
           className="button-wrap"
         >
-          <Link className="black-button" href="#">
+          <Link className="black-button" href="/services/ux-ui-design">
             Learn more
           </Link>
         </motion.div>
