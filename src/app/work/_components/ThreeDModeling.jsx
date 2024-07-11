@@ -18,7 +18,7 @@ const ThreeDModeling = () => {
             className="title"
           >
             <img src="/images/work/3dModelingIcon.svg" />
-            <Link href="#">
+            <Link href="/services/3d-modeling">
               <span>
                 3D
                 <br />

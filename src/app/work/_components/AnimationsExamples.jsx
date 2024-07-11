@@ -18,7 +18,7 @@ const AnimationsExamples = () => {
             className="title"
           >
             <img src="/images/work/AnimationsIcon.svg" />
-            <Link href="#">
+            <Link href="/services/animations">
               <span>ANIMATIONS</span>
               <img src="/images/work/arrow.svg" />
             </Link>

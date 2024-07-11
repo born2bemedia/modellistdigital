@@ -91,7 +91,7 @@ const ThreeDModeling = () => {
           variants={fadeInUp}
           className="button-wrap"
         >
-          <Link className="black-button" href="#">
+          <Link className="black-button" href="/services/3d-modeling">
             Learn more
           </Link>
         </motion.div>

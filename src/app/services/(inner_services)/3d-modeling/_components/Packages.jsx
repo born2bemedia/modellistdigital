@@ -9,7 +9,7 @@ const Packages = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const category = "ux-ui-design-packages";
+  const category = "3d-modeling-packages";
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -43,7 +43,7 @@ const Packages = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            READY-MADE UI/UX DESIGN PACKAGES
+            READY-MADE 3D MODELLING PACKAGES
           </motion.h2>
           <div className="packages__body">
             {products.map((product) => (

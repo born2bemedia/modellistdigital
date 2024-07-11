@@ -14,7 +14,7 @@ const VideoProduction = () => {
 
   return (
     
-    <ProjectsSlider images={imagesArray} exploreLink="#"/>
+    <ProjectsSlider images={imagesArray} exploreLink="/services/video-production"/>
   )
 }
 

@@ -13,7 +13,7 @@ const Modelling = () => {
 
   return (
     
-    <ProjectsSlider images={imagesArray} exploreLink="#"/>
+    <ProjectsSlider images={imagesArray} exploreLink="/services/3d-modeling"/>
   )
 }
 

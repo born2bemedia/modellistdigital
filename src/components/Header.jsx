@@ -1,8 +1,12 @@
+'use client';
 import React from "react";
 import "@/styles/header.scss";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 const Header = () => {
+  const { cartQuantity } = useCart();
+
   return (
     <header>
       <div className="_container">
@@ -18,7 +22,7 @@ const Header = () => {
               <Link href="#">Log in</Link>
             </div>
             <div>
-              <Link href="#">
+              <Link href="#" className={`cart-icon ${cartQuantity > 0 && 'not-empty'}`}>
                 <img src="/images/header/cart-icon.svg" />
               </Link>
               <Link href="#">

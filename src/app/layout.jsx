@@ -3,6 +3,7 @@ import "@/styles/base.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { PopupsProvider } from "@/context/PopupsContext";
+import { CartProvider } from "@/context/CartContext";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -15,11 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <PopupsProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </PopupsProvider>
+        <CartProvider>
+          <PopupsProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </PopupsProvider>
+        </CartProvider>
       </body>
     </html>
   );

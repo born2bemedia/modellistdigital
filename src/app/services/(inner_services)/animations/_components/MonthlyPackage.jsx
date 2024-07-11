@@ -5,11 +5,11 @@ import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
 import AddToCartButton from "@/components/AddToCartButton";
 
-const Packages = () => {
+const MonthlyPackage = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const category = "ux-ui-design-packages";
+  const category = "animations-monthly";
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -35,7 +35,7 @@ const Packages = () => {
 
   return (
     <>
-      <section className="packages">
+      <section className="packages monthly-package">
         <div className="_container">
           <motion.h2
             initial="hidden"
@@ -43,9 +43,9 @@ const Packages = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            READY-MADE UI/UX DESIGN PACKAGES
+            NEED ANIMATIONS REGULARLY? <br/>WE'VE GOT YOU COVERED!
           </motion.h2>
-          <div className="packages__body">
+          <div className="packages__body monthly">
             {products.map((product) => (
               <motion.div
                 initial="hidden"
@@ -53,8 +53,12 @@ const Packages = () => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
                 key={product.id}
+                className=""
               >
                 <h3>{product.title}</h3>
+                {product.excerpt && (
+                  <div className="excerpt">{product.excerpt}</div>
+                )}
                 <div className="package-info">
                   <div dangerouslySetInnerHTML={{ __html: product.content }} />
                   <AddToCartButton product={product} />
@@ -62,20 +66,10 @@ const Packages = () => {
               </motion.div>
             ))}
           </div>
-
-          <motion.div className="get-quote">
-            <h2>
-              DID NOT FIND
-              <br />A PERFECT MATCH?
-            </h2>
-            <Link href="#" className="white-button">
-              Get a quote
-            </Link>
-          </motion.div>
         </div>
       </section>
     </>
   );
 };
 
-export default Packages;
+export default MonthlyPackage;

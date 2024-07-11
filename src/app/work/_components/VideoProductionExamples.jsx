@@ -18,7 +18,7 @@ const VideoProductionExamples = () => {
             className="title"
           >
             <img src="/images/work/videoProductionIcon.svg" />
-            <Link href="#">
+            <Link href="/services/video-production">
               <span>VIDEO
               <br />
               PRODUCTION</span>

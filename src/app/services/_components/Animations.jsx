@@ -89,7 +89,7 @@ const Animations = () => {
           variants={fadeInUp}
           className="button-wrap"
         >
-          <Link className="black-button" href="#">
+          <Link className="black-button" href="/services/animations">
             Learn more
           </Link>
         </motion.div>

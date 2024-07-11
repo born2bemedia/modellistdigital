@@ -13,7 +13,7 @@ const Animations = () => {
 
   return (
     
-    <ProjectsSlider images={imagesArray} exploreLink="#"/>
+    <ProjectsSlider images={imagesArray} exploreLink="/services/animations"/>
   )
 }
 
