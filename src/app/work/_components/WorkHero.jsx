@@ -34,7 +34,7 @@ const WorkHero = () => {
           variants={fadeInUp}
           className="work-hero__bottom"
         >
-          <Link href="#">
+          <Link href="/services">
             <span>Find a service</span>
             <span>
               <img src="/images/home/whiteArrow.svg" />
