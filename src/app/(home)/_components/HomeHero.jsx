@@ -29,6 +29,7 @@ const HomeHero = () => {
             src="/images/home/homeHero.webp"
             width={545}
             height={545}
+            alt="homeHero"
           ></motion.img>
           <motion.h2 initial="hidden" animate="visible" variants={fadeInUp}>
             Professional production company
@@ -48,13 +49,13 @@ const HomeHero = () => {
           <Link href="#">
             <span>Meet our team</span>
             <span>
-              <img src="/images/home/whiteArrow.svg" />
+              <img src="/images/home/whiteArrow.svg" alt="whiteArrow" />
             </span>
           </Link>
           <Link href="#">
             <span>Get a quote</span>
             <span>
-              <img src="/images/home/whiteArrow.svg" />
+              <img src="/images/home/whiteArrow.svg" alt="whiteArrow" />
             </span>
           </Link>
         </motion.div>

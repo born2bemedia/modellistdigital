@@ -12,7 +12,7 @@ const Header = () => {
       <div className="_container">
         <div className="header-row">
           <Link href="/">
-            <img src="/images/header/logo.svg" />
+            <img src="/images/header/logo.svg" alt="logo" />
           </Link>
 
           <div className="header-right">
@@ -23,10 +23,10 @@ const Header = () => {
             </div>
             <div>
               <Link href="#" className={`cart-icon ${cartQuantity > 0 && 'not-empty'}`}>
-                <img src="/images/header/cart-icon.svg" />
+                <img src="/images/header/cart-icon.svg" alt="cart-icon" />
               </Link>
               <Link href="#">
-                <img src="/images/header/menu-buger.svg" />
+                <img src="/images/header/menu-buger.svg" alt="menu-buger" />
               </Link>
             </div>
           </div>

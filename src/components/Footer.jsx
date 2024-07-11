@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="_container">
         <div className="footer-top">
           <Link href="/">
-            <img src="/images/footer/logo_white.svg" />
+            <img src="/images/footer/logo_white.svg" alt="logo_white" />
           </Link>
         </div>
 
