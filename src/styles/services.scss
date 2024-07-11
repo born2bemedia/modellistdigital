@@ -517,6 +517,8 @@
   &__body {
     display: flex;
     gap: 30px;
+    position: relative;
+    z-index: 1;
     @media (max-width: 992px) {
       flex-direction: column;
     }

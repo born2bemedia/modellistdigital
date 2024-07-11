@@ -22,7 +22,7 @@ const Header = () => {
               <Link href="#">Log in</Link>
             </div>
             <div>
-              <Link href="#" className={`cart-icon ${cartQuantity > 0 && 'not-empty'}`}>
+              <Link href="/cart" className={`cart-icon ${cartQuantity > 0 && 'not-empty'}`}>
                 <img src="/images/header/cart-icon.svg" alt="cart-icon" />
               </Link>
               <Link href="#">
