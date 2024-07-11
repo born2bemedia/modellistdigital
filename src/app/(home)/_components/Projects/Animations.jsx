@@ -4,11 +4,11 @@ import ProjectsSlider from './ProjectsSlider';
 
 const Animations = () => {
   const imagesArray = [
-    '/images/home/videoProduction/slide1.png',
-    '/images/home/videoProduction/slide1.png',
-    '/images/home/videoProduction/slide1.png',
-    '/images/home/videoProduction/slide1.png',
-    '/images/home/videoProduction/slide1.png',
+    '/images/home/videoProduction/slide1.webp',
+    '/images/home/videoProduction/slide1.webp',
+    '/images/home/videoProduction/slide1.webp',
+    '/images/home/videoProduction/slide1.webp',
+    '/images/home/videoProduction/slide1.webp',
   ];
 
   return (
