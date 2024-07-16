@@ -63,7 +63,7 @@ const Packages = () => {
               DID NOT FIND
               <br />A PERFECT MATCH?
             </h2>
-            <Link href="#" className="white-button">
+            <Link href="/get-a-quote" className="white-button">
               Get a quote
             </Link>
           </motion.div>

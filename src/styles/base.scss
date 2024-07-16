@@ -729,7 +729,8 @@ button {
             input,
             textarea {
               width: 100%;
-              color: #ffffff4d;
+
+              color: #ffffff;
               height: 50px;
               border-radius: 25px;
               background: #ffffff0d;
@@ -742,11 +743,42 @@ button {
               &.invalid {
                 border-color: #e74848;
               }
+              &::placeholder {
+                color: #ffffff4d;
+              }
             }
 
             textarea {
               height: 150px;
               padding: 15px 20px;
+            }
+
+            .form-field {
+              &.invalid {
+                [class$="-control"] {
+                  border-color: #e74848;
+                }
+              }
+              [class$="-ValueContainer"] {
+                height: 50px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                [class$="-Input"] {
+                  height: 50px;
+                  margin: 0;
+                  padding: 0;
+                  border: none;
+                }
+                [class$="-singleValue"] {
+                  color: #ffffff;
+                }
+              }
+              [class$="-IndicatorsContainer"] {
+                > span {
+                  display: none;
+                }
+              }
             }
           }
         }
@@ -792,7 +824,7 @@ button {
       text-align: center;
       margin: 15px 0 0 0;
       @media (max-width: 992px) {
-        br{
+        br {
           display: none;
         }
       }

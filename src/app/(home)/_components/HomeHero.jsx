@@ -46,13 +46,13 @@ const HomeHero = () => {
           variants={fadeInUp}
           className="home-hero__bottom"
         >
-          <Link href="#">
+          <Link href="/team">
             <span>Meet our team</span>
             <span>
               <img src="/images/home/whiteArrow.svg" alt="whiteArrow" />
             </span>
           </Link>
-          <Link href="#">
+          <Link href="/get-a-quote">
             <span>Get a quote</span>
             <span>
               <img src="/images/home/whiteArrow.svg" alt="whiteArrow" />

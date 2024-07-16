@@ -133,7 +133,7 @@ const ProductionCycle = () => {
             <br />
             TO START?
           </motion.h2>
-          <Link className="black-button" href="#">
+          <Link className="black-button" href="/get-a-quote">
             Get a quote
           </Link>
         </div>

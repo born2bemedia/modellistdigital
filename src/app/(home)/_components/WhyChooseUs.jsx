@@ -125,7 +125,7 @@ const WhyChooseUs = () => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <Link href="#" className="white-button">
+                <Link href="/team" className="white-button">
                   Meet our team
                 </Link>
               </motion.div>

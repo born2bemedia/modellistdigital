@@ -40,7 +40,7 @@ const WorkHero = () => {
               <img src="/images/home/whiteArrow.svg" />
             </span>
           </Link>
-          <Link href="#">
+          <Link href="/get-a-quote">
             <span>Submit your idea</span>
             <span>
               <img src="/images/home/whiteArrow.svg" />
