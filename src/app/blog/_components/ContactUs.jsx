@@ -1,10 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
 
-const NeedAssistance = () => {
+const ContactUs = () => {
   return (
     <section className="need-assistancs">
       <div className="_container">
@@ -16,7 +16,12 @@ const NeedAssistance = () => {
           className="need-assistancs__body"
         >
           <div>
-            <h2>NEED ASSISTANCE?</h2>
+            <h2>DID NOT FIND WHAT YOU WERE LOOKING FOR?</h2>
+            <p>
+              Suggest your topic, and our team will craft a perfect collection
+              of tips <br />
+              based on our hands-on experience.
+            </p>
           </div>
           <Link href="#" className="white-button">
             Contact us
@@ -27,4 +32,4 @@ const NeedAssistance = () => {
   );
 };
 
-export default NeedAssistance;
+export default ContactUs;

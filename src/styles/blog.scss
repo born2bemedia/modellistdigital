@@ -1,0 +1,184 @@
+.blog-hero{
+    margin: 100px 0;
+    @media (max-width: 992px) {
+        margin: 50px 0;
+    }
+    h1{
+        color: #161616;
+        font-size: 68px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: left;
+        margin: 0 0 15px 0;
+        text-transform: uppercase;
+        @media (max-width: 992px) {
+            font-size: 32px;
+        }
+    }
+    h2{
+        color: #161616;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: left;
+        margin: 0;
+        text-transform: uppercase;
+        @media (max-width: 992px) {
+            font-size: 24px;
+        }
+    }
+}
+
+.blog-loop{
+    margin: 100px 0;
+    @media (max-width: 992px) {
+        margin: 50px 0;
+    }
+    &__body{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 100px;
+        .post-card{
+            width: calc(33.33% - 20px);
+            display: flex;
+            flex-direction: column;
+            @media (max-width: 992px) {
+                width: 100%;
+            }
+            &:first-child{
+                width: 100%;
+                flex-direction: row;
+                gap:30px;
+                @media (max-width: 992px) {
+                    flex-direction: column;
+                }
+                .thumb{
+                    width: 540px;
+                    height: 305px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 15px;
+                    background-color: #161616;
+                    background-image: url(/images/featured.svg);
+                    background-size: cover;
+                    background-position: center;
+                    @media (max-width: 992px) {
+                        width: 100%;
+                        height: 225px;
+                        img{
+                            width: 125px;
+                            height: 125px;
+                        }
+                    }
+                }
+                .info{
+                    width: calc(100% - 570px);
+                    @media (max-width: 992px) {
+                        width: 100%;
+                    }
+                    &:before{
+                        content: 'Featured article';
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 19.5px;
+                        text-align: center;
+                        color: #161616;
+                        background: #B4FF05;
+                        padding: 5px 25px;
+                        border-radius: 39px;
+                    }
+                    h2{
+                        margin-top: -10px;
+                    }
+                }
+
+            }
+            .thumb{
+                display: flex;
+            }
+            h2{
+                color: #161616;
+                margin: 40px 0 20px 0;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 1.2;
+                text-align: left;
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+                gap:30px;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-grow: 1;
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.post-inner{
+    margin: 100px 0;
+    @media (max-width: 992px) {
+        margin: 50px 0 100px 0;
+    }
+
+    .header{
+        display: flex;
+        align-items: center;
+        gap:30px;
+        margin-bottom: 50px;
+        @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        img{
+            width: 90px;
+            height: 90px;
+        }
+        h1{
+            width: calc(100% - 120px);
+            color: #161616;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+            margin: 0;
+            @media (max-width: 992px) {
+                width: 100%;
+                font-size: 24px;
+            }
+        }
+    }
+
+    article{
+        margin-bottom: 50px;
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: left;
+            margin: 0 0 20px 0;
+        }
+        h2{
+            color: #161616;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29.26px;
+            text-align: left;
+            margin: 40px 0 20px 0;
+            strong, b{
+                font-weight: 700;
+            }
+        }
+        ul{
+            padding: 0 0 0 16px;
+        }
+    }
+
+}
