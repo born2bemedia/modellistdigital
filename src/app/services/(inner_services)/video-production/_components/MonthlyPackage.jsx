@@ -4,25 +4,21 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
 import AddToCartButton from "@/components/AddToCartButton";
+import { fetchProductsByCategory } from "@/app/api/products";
 
 const MonthlyPackage = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  
 
   const category = "video-production-monthly";
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("/api/get-packages", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ category }),
-        });
-        const data = await response.json();
+        const data = await fetchProductsByCategory(category);
         setProducts(data);
+        console.log(products);
       } catch (error) {
         console.error("Error fetching products:", error);
       } finally {

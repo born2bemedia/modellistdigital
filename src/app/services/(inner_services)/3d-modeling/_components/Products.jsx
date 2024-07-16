@@ -4,25 +4,19 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
 import AddToCartButton from "@/components/AddToCartButton";
+import { fetchProductsByCategory } from "@/app/api/products";
+import AddToCartButtonProduct from "@/components/AddToCartButtonProduct";
 
-const Packages = () => {
+const Products = ({ category, title }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-
-  const category = "3d-modeling-packages";
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("/api/get-packages", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ category }),
-        });
-        const data = await response.json();
+        const data = await fetchProductsByCategory(category, 3);
         setProducts(data);
+        console.log(products);
       } catch (error) {
         console.error("Error fetching products:", error);
       } finally {
@@ -35,7 +29,7 @@ const Packages = () => {
 
   return (
     <>
-      <section className="packages">
+      <section className="products">
         <div className="_container">
           <motion.h2
             initial="hidden"
@@ -43,9 +37,9 @@ const Packages = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            READY-MADE 3D MODELLING PACKAGES
+            {title}
           </motion.h2>
-          <div className="packages__body">
+          <div className="products__body">
             {products.map((product) => (
               <motion.div
                 initial="hidden"
@@ -54,28 +48,32 @@ const Packages = () => {
                 variants={fadeInUp}
                 key={product.id}
               >
-                <h3>{product.title}</h3>
-                <div className="package-info">
-                  <div dangerouslySetInnerHTML={{ __html: product.content }} />
-                  <AddToCartButton product={product} />
+                <Link href={`/product/${product.slug}`}>
+                  <img src={product.image} width={350} height={197} />
+                </Link>
+
+                <div className="product-info">
+                  <h3>
+                    <Link href={`/product/${product.slug}`}>
+                      {product.title}
+                    </Link>
+                  </h3>
+                  <div
+                    className="excerpt"
+                    dangerouslySetInnerHTML={{ __html: product.excerpt }}
+                  />
+                  <div className="add-to-cart">
+                    <span>Price: €{product.price}</span>
+                    <AddToCartButtonProduct product={product} />
+                  </div>
                 </div>
               </motion.div>
             ))}
           </div>
-
-          <motion.div className="get-quote">
-            <h2>
-              DID NOT FIND
-              <br />A PERFECT MATCH?
-            </h2>
-            <Link href="#" className="white-button">
-              Get a quote
-            </Link>
-          </motion.div>
         </div>
       </section>
     </>
   );
 };
 
-export default Packages;
+export default Products;

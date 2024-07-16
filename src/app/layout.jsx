@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { PopupsProvider } from "@/context/PopupsContext";
 import { CartProvider } from "@/context/CartContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { AuthProvider } from "@/context/AuthContext";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -17,13 +18,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <CartProvider>
-          <PopupsProvider>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-          </PopupsProvider>
-        </CartProvider>
+        <AuthProvider>
+          <CartProvider>
+            <PopupsProvider>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </PopupsProvider>
+          </CartProvider>
+        </AuthProvider>
         <SpeedInsights />
       </body>
     </html>

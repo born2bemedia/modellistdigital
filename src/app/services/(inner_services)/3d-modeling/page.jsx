@@ -3,19 +3,24 @@ import "@/styles/services.scss";
 import InnerServicesHome from "./_components/InnerServicesHome";
 import PricingBlock from "./_components/PricingBlock";
 import Customization from "./_components/Customization";
-import Packages from "./_components/Packages";
+import Packages from "./_components/Products";
 import MonthlyPackage from "./_components/MonthlyPackage";
 import Examples from "./_components/Examples";
+import Products from "./_components/Products";
+import RequestBlockServices from "@/components/RequestBlockServices";
 
 function UxUiDesign() {
   return (
     <>
       <InnerServicesHome />
-      <PricingBlock />
-      <Customization />
-      <Packages />
-      <MonthlyPackage />
-      <Examples />
+      <Products title="HOT OFFERS" category="hot-offers" />
+      <Products title="Home Decor" category="home-decor" />
+      <Products title="Kitchen Tools" category="kitchen-tools" />
+      <Products title="Office Supplies" category="office-supplies" />
+      <Products title="Gardening Tools" category="gardening-tools" />
+      <Products title="Toys and Game" category="toys-and-games" />
+      <Products title="Personal Accessories" category="personal-accessories" />
+      <RequestBlockServices />
     </>
   );
 }
