@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+import "@/styles/contacts.scss";
+import ContactsHero from './_components/ContactsHero';
+import RequestBlockContacts from '@/components/RequestBlockContacts';
+import VisitUs from './_components/VisitUs';
 
 export const metadata = {
     title: "Contact us",
@@ -14,7 +18,11 @@ export const metadata = {
 
 const ContactUs = () => {
   return (
-    <div>Contact Us</div>
+    <>
+        <ContactsHero />
+        <VisitUs />
+        <RequestBlockContacts />
+    </>
   )
 }
 
