@@ -195,7 +195,7 @@ const RequestQuoteForm = () => {
               className="white-button"
               disabled={isSubmitting}
             >
-              Submit
+              Submit your request
             </button>
           </Form>
         )}

@@ -778,6 +778,9 @@ button {
                 > span {
                   display: none;
                 }
+                [class$="-indicatorContainer"] {
+                  padding: 0;
+                }
               }
             }
           }
