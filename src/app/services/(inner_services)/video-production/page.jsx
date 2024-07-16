@@ -7,6 +7,18 @@ import Packages from "./_components/Packages";
 import MonthlyPackage from "./_components/MonthlyPackage";
 import Examples from "./_components/Examples";
 
+export const metadata = {
+  title: "Video production",
+  description:
+    "Explore our video production services and solutions. Modellist Digital offers flexible options and packages, including a retainer service. Get expert assistance in video production.",
+  openGraph: {
+    title: "Video production",
+    description:
+      "Explore our video production services and solutions. Modellist Digital offers flexible options and packages, including a retainer service. Get expert assistance in video production.",
+    //images: "https://vancantgroup.com/images/meta.png",
+  },
+};
+
 function UxUiDesign() {
   return (
     <>

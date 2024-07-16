@@ -7,6 +7,18 @@ import Packages from "./_components/Packages";
 import MonthlyPackage from "./_components/MonthlyPackage";
 import Examples from "./_components/Examples";
 
+export const metadata = {
+  title: "Animations",
+  description:
+    "Explore our animation development services. Modellist Digital offers tailored solutions and service packages to cover your design needs. Contact us today!",
+  openGraph: {
+    title: "Animations",
+    description:
+      "Explore our animation development services. Modellist Digital offers tailored solutions and service packages to cover your design needs. Contact us today!",
+    //images: "https://vancantgroup.com/images/meta.png",
+  },
+};
+
 function UxUiDesign() {
   return (
     <>

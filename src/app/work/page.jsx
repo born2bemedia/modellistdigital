@@ -9,6 +9,18 @@ import AnimationsExamples from "./_components/AnimationsExamples";
 import RequestBlock from "@/components/RequestBlock";
 import ThanksPopup from "@/components/ThanksPopup";
 
+export const metadata = {
+  title: "Our works",
+  description:
+    "Modellist Digital is a full-cycle digital production. Explore the examples of our works in video production, animations, UI/UX design and 3D modelling. Order similar works or get a quote for your idea!",
+  openGraph: {
+    title: "Our works",
+    description:
+      "Modellist Digital is a full-cycle digital production. Explore the examples of our works in video production, animations, UI/UX design and 3D modelling. Order similar works or get a quote for your idea!",
+    //images: "https://vancantgroup.com/images/meta.png",
+  },
+};
+
 function WorkPage() {
   return (
     <>
