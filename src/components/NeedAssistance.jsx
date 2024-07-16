@@ -18,7 +18,7 @@ const NeedAssistance = () => {
           <div>
             <h2>NEED ASSISTANCE?</h2>
           </div>
-          <Link href="#" className="white-button">
+          <Link href="/contact-us" className="white-button">
             Contact us
           </Link>
         </motion.div>

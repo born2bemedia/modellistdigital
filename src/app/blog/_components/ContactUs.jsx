@@ -23,7 +23,7 @@ const ContactUs = () => {
               based on our hands-on experience.
             </p>
           </div>
-          <Link href="#" className="white-button">
+          <Link href="/contact-us" className="white-button">
             Contact us
           </Link>
         </motion.div>
