@@ -24,7 +24,7 @@ export default function Account() {
   };
 
   if (!currentUser) {
-    return <p>Please log in.</p>;
+    return "";
   }
 
   return (

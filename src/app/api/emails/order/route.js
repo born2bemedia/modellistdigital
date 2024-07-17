@@ -11,8 +11,8 @@ export async function POST(request) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "noreply@modellistdigital.com", // Your Gmail email
-        pass: "npd8mpj.ygm7cfb2QFV", // Your Gmail password or app password
+        user: process.env.EMAIL_USER, // Your Gmail email
+        pass: process.env.EMAIL_PASS, // Your Gmail password or app password
       },
       tls: {
         rejectUnauthorized: false, // This bypasses the certificate validation

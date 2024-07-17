@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import Link from "next/link";
 
 export default function SignIn() {
   const router = useRouter();
@@ -34,12 +35,14 @@ export default function SignIn() {
         password: values.password,
       });
       if (response.status === 200) {
-        const { token, user_email, user_nicename, user_display_name } = response.data;
+        const { token, user_email, user_nicename, user_display_name, billing } = response.data;
         const user = {
           email: user_email,
           nicename: user_nicename,
           displayName: user_display_name,
+          billing, // Include billing data
         };
+        console.log(user);
         localStorage.setItem("jwt", token);
         localStorage.setItem("user", JSON.stringify(user));
         setCurrentUser(user);
@@ -57,11 +60,7 @@ export default function SignIn() {
     <section className="log-in">
       <div className="_container">
         <h1>Log in</h1>
-        <Formik
-          initialValues={initialValues}
-          validationSchema={validationSchema}
-          onSubmit={handleSubmit}
-        >
+        <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
           {({ isSubmitting, touched, errors }) => (
             <Form>
               <div>
@@ -83,8 +82,9 @@ export default function SignIn() {
                 <ErrorMessage name="password" component="div" className="error" />
               </div>
               <button className="black-button" type="submit" disabled={isSubmitting}>
-              Log in
+                Log in
               </button>
+              <Link className="reset" href="/reset-password">Forgot password?</Link>
             </Form>
           )}
         </Formik>
