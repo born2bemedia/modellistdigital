@@ -1,15 +1,21 @@
 import axios from "axios";
 
 export async function POST(request) {
-  const { email, password, name } = await request.json();
+  const { email, password, firstName, lastName, phone } = await request.json();
 
   try {
+    // Create a new customer
     const response = await axios.post(
       `${process.env.WC_STORE_URL}/wp-json/wc/v3/customers`,
       {
         email: email,
         password: password,
-        username: name,
+        first_name: firstName,
+        last_name: lastName,
+        username: email,
+        billing: {
+          phone: phone,
+        },
       },
       {
         auth: {

@@ -1,0 +1,18 @@
+import React from "react";
+
+const CheckboxIcon = () => {
+  return (
+    <svg
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="6" cy="6" r="5.5" fill="#E5E5E5" stroke="#C3C3C3" />
+      <circle cx="6" cy="6" r="3" fill="#161616" />
+    </svg>
+  );
+};
+
+export default CheckboxIcon;

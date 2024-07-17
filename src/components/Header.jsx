@@ -1,11 +1,13 @@
-'use client';
+"use client";
 import React from "react";
 import "@/styles/header.scss";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
+import { useAuth } from "@/context/AuthContext";
 
 const Header = () => {
-  const { cartQuantity } = useCart();
+  const { cart } = useCart();
+  const { currentUser } = useAuth();
 
   return (
     <header>
@@ -17,12 +19,21 @@ const Header = () => {
 
           <div className="header-right">
             <div className="head-account">
-              <Link href="#">Sign up</Link>
-              <span>|</span>
-              <Link href="#">Log in</Link>
+              {currentUser ? (
+                <Link href="/dashboard">Account</Link>
+              ) : (
+                <>
+                  <Link href="/sign-up">Sign up</Link>
+                  <span>|</span>
+                  <Link href="/log-in">Log in</Link>
+                </>
+              )}
             </div>
             <div>
-              <Link href="/cart" className={`cart-icon ${cartQuantity > 0 && 'not-empty'}`}>
+              <Link
+                href="/cart"
+                className={`cart-icon ${cart.length > 0 && "not-empty"}`}
+              >
                 <img src="/images/header/cart-icon.svg" alt="cart-icon" />
               </Link>
               <Link href="#">

@@ -13,16 +13,15 @@ function LogoutButton() {
     
     setCurrentUser(null);
     localStorage.removeItem('user');
-    router.push('/sign-in'); // Redirect to the sign-in page
+    router.push('/log-in'); // Redirect to the log-in page
   };
 
   return (
-    <button
-      className="black-button"
+    <li
       onClick={handleLogout}
     >
       Logout
-    </button>
+    </li>
   );
 }
 

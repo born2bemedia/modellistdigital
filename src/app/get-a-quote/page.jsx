@@ -2,6 +2,7 @@ import React from 'react';
 import "@/styles/quote.scss";
 import QuoteHero from './_components/QuoteHero';
 import RequestBlockQuote from '@/components/RequestBlockQuote';
+import ThanksPopup from '@/components/ThanksPopup';
 
 export const metadata = {
   title: "Get a quote",
@@ -20,6 +21,7 @@ const GetQuotePage = () => {
     <>
         <QuoteHero />
         <RequestBlockQuote />
+        <ThanksPopup />
     </>
   )
 }

@@ -3,6 +3,7 @@ import "@/styles/contacts.scss";
 import ContactsHero from './_components/ContactsHero';
 import RequestBlockContacts from '@/components/RequestBlockContacts';
 import VisitUs from './_components/VisitUs';
+import ThanksPopup from '@/components/ThanksPopup';
 
 export const metadata = {
     title: "Contact us",
@@ -22,6 +23,7 @@ const ContactUs = () => {
         <ContactsHero />
         <VisitUs />
         <RequestBlockContacts />
+        <ThanksPopup />
     </>
   )
 }

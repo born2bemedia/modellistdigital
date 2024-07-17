@@ -8,6 +8,7 @@ export function useCart() {
 }
 
 export const CartProvider = ({ children }) => {
+  const [cartQuantity, setCartQuantity] = useState('');
   const [cart, setCart] = useState(() => {
     const initialCart = typeof window !== "undefined" ? JSON.parse(localStorage.getItem('cart')) || [] : [];
     return initialCart;
@@ -57,7 +58,10 @@ export const CartProvider = ({ children }) => {
     localStorage.removeItem('totalAmount');
   };
 
-  const cartQuantity = cart.reduce((quantity, item) => quantity + item.quantity, 0);
+  useEffect(() => {
+    const cartQuantityValue = cart.reduce((quantity, item) => quantity + item.quantity, 0);
+    setCartQuantity(cartQuantityValue);
+  }, []);
 
   return (
     <CartContext.Provider value={{ cart, addToCart, deleteFromCart, clearCart, cartQuantity, totalAmount }}>

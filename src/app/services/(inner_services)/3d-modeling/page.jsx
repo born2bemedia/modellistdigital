@@ -8,6 +8,7 @@ import MonthlyPackage from "./_components/MonthlyPackage";
 import Examples from "./_components/Examples";
 import Products from "./_components/Products";
 import RequestBlockServices from "@/components/RequestBlockServices";
+import ThanksPopup from "@/components/ThanksPopup";
 
 export const metadata = {
   title: "3D modelling",
@@ -33,6 +34,7 @@ function UxUiDesign() {
       <Products title="Toys and Game" category="toys-and-games" />
       <Products title="Personal Accessories" category="personal-accessories" />
       <RequestBlockServices />
+      <ThanksPopup /> 
     </>
   );
 }
