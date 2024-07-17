@@ -1,7 +1,23 @@
 header{
     padding: 25px 0;
     position: relative;
-    z-index: 9999;
+    z-index: 999;
+
+    &.menu-opened{
+        .header-row {
+            .header-right {
+                > div{
+                    a{
+                        color: #fff;
+                    }
+                    >span{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
     .header-row{
         display: flex;
         align-items: center;
@@ -28,6 +44,13 @@ header{
                     text-align: left;
                     color: #161616;
                     display: flex;
+                }
+
+                .menu-btn{
+                    display: flex;
+                    img{
+                        width: 20px;
+                    }
                 }
 
                 .cart-icon{
@@ -65,3 +88,71 @@ header{
 
     }
 }
+
+.menu-wrap {
+    position: fixed;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000E5;
+    padding-top: 200px;
+    transition: all 0.5s;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(10px);
+    @media (max-width: 992px) {
+      padding-top: 200px;
+    }
+    &.opened {
+      left: 0;
+      opacity: 1;
+      pointer-events: all;
+    }
+    nav {
+      display: flex;
+      gap: 150px;
+      @media (max-width: 992px) {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+      }
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (max-width: 992px) {
+          flex-direction: column;
+          gap: 30px;
+          align-items: center;
+        }
+        a {
+          color: #fff;
+          font-size: 48px;
+          font-weight: 800;
+          line-height: 1;
+          text-align: left;
+          text-transform: uppercase;
+          &:hover {
+            color: #B4FF05;
+          }
+          @media (max-width: 992px) {
+              font-size: 24px;
+              text-align: center;
+          }
+        }
+      }
+    }
+    .main-button {
+      width: 90px;
+      height: 25px;
+      font-size: 12px;
+      display: none;
+      @media (max-width: 992px) {
+        display: flex;
+        margin: 0 auto 30px auto;
+      }
+    }
+  }

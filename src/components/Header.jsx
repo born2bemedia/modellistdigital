@@ -1,49 +1,98 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "@/styles/header.scss";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/context/AuthContext";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const { cart } = useCart();
   const { currentUser } = useAuth();
+  const [menuOpened, setMenuOpened] = useState(false);
+  const pathname = usePathname();
+
+  const menuOpen = () => {
+    setMenuOpened(!menuOpened);
+    document.body.classList.toggle("no-scroll", !menuOpened);
+  };
+
+  useEffect(() => {
+    setMenuOpened(false);
+    document.body.classList.remove("no-scroll");
+  }, [pathname]);
 
   return (
-    <header>
-      <div className="_container">
-        <div className="header-row">
-          <Link href="/">
-            <img src="/images/header/logo.svg" alt="logo" />
-          </Link>
-
-          <div className="header-right">
-            <div className="head-account">
-              {currentUser ? (
-                <Link href="/dashboard">Account</Link>
+    <>
+      <header className={`${menuOpened && "menu-opened"}`}>
+        <div className="_container">
+          <div className="header-row">
+            <Link href="/">
+              {!menuOpened ? (
+                <img src="/images/header/logo.svg" alt="logo" />
               ) : (
-                <>
-                  <Link href="/sign-up">Sign up</Link>
-                  <span>|</span>
-                  <Link href="/log-in">Log in</Link>
-                </>
+                <img src="/images/header/logo-white.svg" alt="logo" />
               )}
-            </div>
-            <div>
-              <Link
-                href="/cart"
-                className={`cart-icon ${cart.length > 0 && "not-empty"}`}
-              >
-                <img src="/images/header/cart-icon.svg" alt="cart-icon" />
-              </Link>
-              <Link href="#">
-                <img src="/images/header/menu-buger.svg" alt="menu-buger" />
-              </Link>
+            </Link>
+
+            <div className="header-right">
+              <div className="head-account">
+                {currentUser ? (
+                  <Link href="/dashboard">Account</Link>
+                ) : (
+                  <>
+                    <Link href="/sign-up">Sign up</Link>
+                    <span>|</span>
+                    <Link href="/log-in">Log in</Link>
+                  </>
+                )}
+              </div>
+              <div>
+                <Link
+                  href="/cart"
+                  className={`cart-icon ${cart.length > 0 && "not-empty"}`}
+                >
+                  {!menuOpened ? (
+                    <img src="/images/header/cart-icon.svg" alt="cart-icon" />
+                  ) : (
+                    <img
+                      src="/images/header/cart-icon-white.svg"
+                      alt="cart-icon"
+                    />
+                  )}
+                </Link>
+                <span onClick={() => menuOpen()} className="menu-btn">
+                  {!menuOpened ? (
+                    <img src="/images/header/menu-buger.svg" alt="menu-buger" />
+                  ) : (
+                    <img alt="logo" src="/images/header/burger-close.svg" />
+                  )}
+                </span>
+                <Link href="#"></Link>
+              </div>
             </div>
           </div>
         </div>
+      </header>
+      <div className={`menu-wrap ${menuOpened ? "opened" : ""}`}>
+        <div className="_container">
+          <nav>
+            <div className="left-col">
+              <Link href="/work">Work</Link>
+              <Link href="/team">Team</Link>
+              <Link href="/blog">Blog</Link>
+              <Link href="/contact-us">Contact us</Link>
+            </div>
+            <div className="right-col">
+              <Link href="/services/video-production">Video production</Link>
+              <Link href="/services/3d-modeling">3D modelling</Link>
+              <Link href="/services/ux-ui-design">UX/UI design</Link>
+              <Link href="/services/animations">Animations</Link>
+            </div>
+          </nav>
+        </div>
       </div>
-    </header>
+    </>
   );
 };
 
