@@ -27,25 +27,11 @@ const Examples = () => {
         </motion.div>
         <div className="examples__body">
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
+            videoUrl={"/videos/corrective-nutrition.webm"}
             videoDescription={"Video description"}
             price={"€450"}
           />
-          <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Video description"}
-            price={"€450"}
-          />
-          <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Video description"}
-            price={"€450"}
-          />
-          <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Video description"}
-            price={"€450"}
-          />
+          
         </div>
       </div>
     </section>
