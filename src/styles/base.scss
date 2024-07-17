@@ -16,6 +16,9 @@ body {
   &.no-scroll {
     overflow: hidden;
     padding-right: 12px;
+    @media (max-width: 992px) {
+      padding-right: 0;
+    }
   }
 
   &::-webkit-scrollbar {
