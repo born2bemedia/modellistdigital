@@ -21,7 +21,7 @@ function SetPasswordContent() {
     return <div>Invalid or expired link.</div>;
   }
 
-  return <ChangePasswordReset />;
+  return <ChangePasswordReset email={email} token={token} />;
 }
 
 export default function SetPassword() {

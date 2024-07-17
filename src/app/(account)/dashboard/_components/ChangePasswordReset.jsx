@@ -4,17 +4,17 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/navigation";
 
-const ChangePasswordReset = () => {
+const ChangePasswordReset = ({ email, token }) => {
   const [changePasswordError, setChangePasswordError] = useState("");
   const [passwordChanged, setPasswordChanged] = useState(false);
   const router = useRouter();
-  const [email, setEmail] = useState(null);
-  const [token, setToken] = useState(null);
+  const [userEmail, setUserEmail] = useState(null);
+  const [userToken, setUserToken] = useState(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setEmail(localStorage.getItem("resetEmail"));
-      setToken(localStorage.getItem("resetToken"));
+      setUserEmail(email);
+      setUserToken(token);
     }
   }, []);
 
@@ -89,7 +89,9 @@ const ChangePasswordReset = () => {
                       type="password"
                       name="newPassword"
                       className={
-                        touched.newPassword && errors.newPassword ? "invalid" : ""
+                        touched.newPassword && errors.newPassword
+                          ? "invalid"
+                          : ""
                       }
                     />
                   </label>
@@ -129,7 +131,9 @@ const ChangePasswordReset = () => {
               {passwordChanged && (
                 <div className="success">Password changed successfully!</div>
               )}
-              {changePasswordError && <div className="error">{changePasswordError}</div>}
+              {changePasswordError && (
+                <div className="error">{changePasswordError}</div>
+              )}
             </Form>
           )}
         </Formik>

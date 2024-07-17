@@ -1,13 +1,11 @@
-import axios from "axios";
-import mysql from 'mysql2/promise';
+import mysql from "mysql2/promise";
+import { hashPassword } from "@/utils/hashPassword";
 
 export async function POST(request) {
   const { email, token, newPassword } = await request.json();
 
   try {
-    console.log('Received reset password request', { email, token });
-
-    // Verify the token in the WordPress database
+    // Connect to MySQL database
     const connection = await mysql.createConnection({
       host: process.env.DB_HOST,
       user: process.env.DB_USER,
@@ -15,63 +13,38 @@ export async function POST(request) {
       database: process.env.DB_NAME,
     });
 
+    // Verify the token
     const [rows] = await connection.execute(
       `SELECT reset_token, reset_expiry FROM wp_users WHERE user_email = ?`,
       [email]
     );
 
-    if (rows.length === 0) {
-      console.log('No user found with email:', email);
+    if (rows.length === 0 || rows[0].reset_token !== token || rows[0].reset_expiry < Date.now()) {
       throw new Error("Invalid or expired token.");
     }
 
-    const tokenData = rows[0];
-    console.log('Token data from database:', tokenData);
+    // Hash the new password
+    const hashedPassword = await hashPassword(newPassword);
 
-    if (tokenData.reset_token !== token || tokenData.reset_expiry < Date.now()) {
-      console.log('Token mismatch or expired:', { token, expiry: tokenData.reset_expiry, currentTime: Date.now() });
-      throw new Error("Invalid or expired token.");
-    }
-
-    // Authenticate the user with the current password
-    const authResponse = await axios.post(`${process.env.WC_STORE_URL}/wp-json/jwt-auth/v1/token`, {
-      username: email,
-      password: "dummy", // Use a dummy password since the user is authenticated via token
-    });
-
-    const { data } = authResponse;
-
-    // Update the user's password using the authenticated token
-    const updateResponse = await axios.post(
-      `${process.env.WC_STORE_URL}/wp-json/wp/v2/users/me`,
-      { password: newPassword },
-      {
-        headers: {
-          Authorization: `Bearer ${data.token}`,
-          "Content-Type": "application/json",
-        },
-      }
-    );
-
-    // Remove the token after successful password change
+    // Update the user's password
     await connection.execute(
-      `UPDATE wp_users SET reset_token = NULL, reset_expiry = NULL WHERE user_email = ?`,
-      [email]
+      `UPDATE wp_users SET user_pass = ?, reset_token = NULL, reset_expiry = NULL WHERE user_email = ?`,
+      [hashedPassword, email]
     );
 
-    console.log('Password updated successfully for user:', email);
+    await connection.end();
 
-    return new Response(JSON.stringify(updateResponse.data), {
+    return new Response(JSON.stringify({ message: "Password updated successfully" }), {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
   } catch (error) {
-    console.error("Failed to change password:", error.response ? error.response.data : error.message);
+    console.error("Failed to change password:", error);
 
     return new Response(
       JSON.stringify({
         message: "Failed to change password",
-        error: error.response ? error.response.data.message : error.message,
+        error: error.message,
       }),
       {
         status: 500,
