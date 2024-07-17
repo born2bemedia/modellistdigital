@@ -16,55 +16,40 @@ const Customization = () => {
         >
           UI/UX DESIGN CUSTOMISATION AND ADD-ONS
         </motion.h2>
-        <div className="customization__body">
+        <motion.div
+          className="customization__body"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
           <div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>01</span>
-              <h3>
-              User flow optimization
-              </h3>
+              <h3>User flow optimization</h3>
               <p>
-              Enhances the user journey for better engagement and satisfaction.
+                Enhances the user journey for better engagement and
+                satisfaction.
               </p>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>02</span>
-              <h3>
-              Persona development
-              </h3>
+              <h3>Persona development</h3>
               <p>
-              Identifies key user personas to tailor the design for specific audience needs.
+                Identifies key user personas to tailor the design for specific
+                audience needs.
               </p>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>03</span>
-              <h3>
-              Accessibility optimization
-              </h3>
+              <h3>Accessibility optimization</h3>
               <p>
-              Ensures your design is accessible to all users, including those with disabilities.
+                Ensures your design is accessible to all users, including those
+                with disabilities.
               </p>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

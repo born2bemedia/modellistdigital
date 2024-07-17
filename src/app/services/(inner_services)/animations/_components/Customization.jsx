@@ -16,15 +16,15 @@ const Customization = () => {
         >
           ANIMATIONS CUSTOMISATION AND ADD-ONS
         </motion.h2>
-        <div className="customization__body ">
+        <motion.div
+          className="customization__body "
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
           <div className="animations-customization">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>01</span>
               <h3>Enhanced character details</h3>
               <p>
@@ -32,13 +32,7 @@ const Customization = () => {
                 higher realism.
               </p>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>02</span>
               <h3>Professionalvoiceover integration</h3>
               <p>
@@ -46,13 +40,7 @@ const Customization = () => {
                 story and engagement.
               </p>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>03</span>
               <h3>Sound effects and music</h3>
               <p>
@@ -60,13 +48,7 @@ const Customization = () => {
                 more immersive.
               </p>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>04</span>
               <h3>
                 Subtitles <br />
@@ -77,13 +59,7 @@ const Customization = () => {
                 multiple languages if needed.
               </p>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>05</span>
               <h3>
                 Advanced <br />
@@ -94,13 +70,7 @@ const Customization = () => {
                 elements.
               </p>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>06</span>
               <h3>Custom backgrounds and scenes</h3>
               <p>
@@ -109,7 +79,7 @@ const Customization = () => {
               </p>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

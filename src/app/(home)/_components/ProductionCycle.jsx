@@ -16,15 +16,15 @@ const ProductionCycle = () => {
         >
           OUR PRODUCTION CYCLE
         </motion.h2>
-        <div className="production-cycle__body">
+        <motion.div
+          className="production-cycle__body"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
           <div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>01</span>
               <h3>
                 Expert <br />
@@ -40,13 +40,7 @@ const ProductionCycle = () => {
                 start.
               </h4>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>02</span>
               <h3>
                 Creative <br />
@@ -54,19 +48,13 @@ const ProductionCycle = () => {
               </h3>
               <p>
                 We create a plan that outlines the concept, steps, and timeline.
-                This keeps you informed about what we’re doing and when.
+                This keeps you informed about what we're doing and when.
               </p>
               <h4>
                 You enjoy the clarity of the process and confidence in the plan.
               </h4>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>03</span>
               <h3>
                 Project
@@ -79,13 +67,7 @@ const ProductionCycle = () => {
               </p>
               <h4>You get a draft of your idea that you can try and review.</h4>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>04</span>
               <h3>
                 Review and <br />
@@ -99,13 +81,7 @@ const ProductionCycle = () => {
                 You enjoy a final product that meets your needs and looks great.
               </h4>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>05</span>
               <h3>
                 Launch and <br />
@@ -120,7 +96,7 @@ const ProductionCycle = () => {
               </h4>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
 
         <div className="production-cycle__ready">
           <motion.h2

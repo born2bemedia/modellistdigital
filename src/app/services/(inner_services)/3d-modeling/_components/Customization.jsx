@@ -16,15 +16,15 @@ const Customization = () => {
         >
           3D MODELLING CUSTOMISATION AND ADD-ONS
         </motion.h2>
-        <div className="customization__body ">
+        <motion.div
+          className="customization__body "
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
           <div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>01</span>
               <h3>Texturing and materials</h3>
               <p>
@@ -32,13 +32,7 @@ const Customization = () => {
                 and lifelike materials to your 3D models.
               </p>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>02</span>
               <h3>Rigging and animation</h3>
               <p>
@@ -46,13 +40,7 @@ const Customization = () => {
                 ready for animation and interactive applications.
               </p>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="item"
-            >
+            <motion.div className="item">
               <span>03</span>
               <h3>Complex geometry</h3>
               <p>
@@ -61,7 +49,7 @@ const Customization = () => {
               </p>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
