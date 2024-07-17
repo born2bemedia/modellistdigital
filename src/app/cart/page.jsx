@@ -83,9 +83,8 @@ const customStyles = {
 const CartPage = () => {
   const { cart, deleteFromCart, clearCart, totalAmount } = useCart();
   const [isMounted, setIsMounted] = useState(false);
-  const { currentUser, setCurrentUser } = useAuth();
+  const { currentUser, setCurrentUser, refreshToken } = useAuth();
   const router = useRouter();
-
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -142,7 +141,7 @@ const CartPage = () => {
         city: values.city,
         state: values.state,
         postcode: values.zip,
-        country: values.country,
+        country: values.country.value,
         email: values.email,
         phone: values.phone,
       },
@@ -152,7 +151,41 @@ const CartPage = () => {
       })),
     };
 
+    const updateData = {
+      billing: {
+        first_name: values.firstName,
+        last_name: values.lastName,
+        address_1: values.street,
+        address_2: values.address,
+        city: values.city,
+        state: values.state,
+        postcode: values.zip,
+        country: values.country.value,
+        email: values.email,
+        phone: values.phone,
+      },
+    };
+
     try {
+      if (currentUser) {
+        const updateResponse = await fetch("/api/auth/update-user", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(updateData),
+        });
+
+        if (!updateResponse.ok) {
+          throw new Error("Failed to update user data");
+        }
+
+        const updatedUser = await updateResponse.json();
+        setCurrentUser(updatedUser);
+        localStorage.setItem("user", JSON.stringify(updatedUser));
+        //await refreshToken();
+      }
+
       const response = await fetch("/api/orders", {
         method: "POST",
         headers: {
@@ -419,11 +452,11 @@ const CartPage = () => {
                                       .getData()
                                       .find(
                                         (option) =>
-                                          option.value === values.country
+                                          option.value === values.country.value
                                       )}
                                     onChange={(option) => (
                                       console.log(option.value),
-                                      setFieldValue("country", option.value)
+                                      setFieldValue("country", option)
                                     )}
                                   />
                                 )}
