@@ -198,36 +198,6 @@
           }
         }
 
-        .form-field {
-          &.invalid {
-            [class$="-control"] {
-              border-color: #e74848!important;
-            }
-          }
-          [class$="-ValueContainer"] {
-            height: 50px!important;
-            margin: 0!important;
-            padding: 0!important;
-            border: none!important;
-            [class$="-Input"] {
-              height: 50px!important;
-              margin: 0!important;
-              padding: 0!important;
-              border: none!important;
-            }
-            [class$="-singleValue"] {
-              color: #161616!important;
-            }
-          }
-          [class$="-IndicatorsContainer"] {
-            > span {
-              display: none!important;
-            }
-            [class$="-indicatorContainer"] {
-              padding: 0!important;
-            }
-          }
-        }
       }
     }
 

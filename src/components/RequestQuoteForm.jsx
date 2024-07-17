@@ -86,6 +86,34 @@ const RequestQuoteForm = () => {
         borderColor: "#ffffff26",
       },
     }),
+    valueContainer: (provided) => ({
+      ...provided,
+      height: "50px",
+      margin: "0",
+      padding: "0",
+      border: "none",
+    }),
+    input: (provided) => ({
+      ...provided,
+      height: "50px",
+      margin: "0",
+      padding: "0",
+      border: "none",
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      color: "#ffffff4d",
+    }),
+    indicatorsContainer: (provided) => ({
+      ...provided,
+      "> span": {
+        display: "none",
+      },
+    }),
+    indicatorContainer: (provided) => ({
+      ...provided,
+      padding: "0",
+    }),
     menu: (provided) => ({
       ...provided,
       background: "#ffffff0d",
@@ -97,10 +125,6 @@ const RequestQuoteForm = () => {
       "&:hover": {
         background: "#161616",
       },
-    }),
-    singleValue: (provided) => ({
-      ...provided,
-      color: "#ffffff4d",
     }),
   };
 

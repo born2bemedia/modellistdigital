@@ -18,7 +18,6 @@ const customStyles = {
   control: (provided, state) => ({
     ...provided,
     width: "100%",
-    color: "#ffffff4d",
     height: "50px",
     borderRadius: "25px",
     background: "#0000000d",
@@ -32,6 +31,37 @@ const customStyles = {
     "&:hover": {
       borderColor: "#00000026",
     },
+    ...(state.selectProps.menuIsOpen && {
+      borderColor: "#00000026",
+    }),
+  }),
+  valueContainer: (provided) => ({
+    ...provided,
+    height: "50px",
+    margin: "0",
+    padding: "0",
+    border: "none",
+  }),
+  input: (provided) => ({
+    ...provided,
+    height: "50px",
+    margin: "0",
+    padding: "0",
+    border: "none",
+  }),
+  singleValue: (provided) => ({
+    ...provided,
+    color: "#161616",
+  }),
+  indicatorsContainer: (provided) => ({
+    ...provided,
+    "> span": {
+      display: "none",
+    },
+  }),
+  indicatorContainer: (provided) => ({
+    ...provided,
+    padding: "0",
   }),
   menu: (provided) => ({
     ...provided,
@@ -44,10 +74,6 @@ const customStyles = {
     "&:hover": {
       background: "#B4FF05",
     },
-  }),
-  singleValue: (provided) => ({
-    ...provided,
-    color: "#ffffff4d",
   }),
 };
 
