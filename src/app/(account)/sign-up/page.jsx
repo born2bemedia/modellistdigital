@@ -189,8 +189,8 @@ export default function SignUp() {
                     <CheckboxIcon />
                     <span>
                       I agree with the{" "}
-                      <Link href="#">Terms and Conditions</Link> and{" "}
-                      <Link href="#">Privacy Policy</Link>.
+                      <Link href="/terms-and-conditions">Terms and Conditions</Link> and{" "}
+                      <Link href="/privacy-policy">Privacy Policy</Link>.
                     </span>
                   </label>
                   <ErrorMessage

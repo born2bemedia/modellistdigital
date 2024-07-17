@@ -494,9 +494,9 @@ const CartPage = () => {
                                 <CheckboxIcon />
                                 <span>
                                   By placing your order, you agree to our{" "}
-                                  <Link href="#">Terms and Conditions</Link> and
+                                  <Link href="/terms-and-conditions">Terms and Conditions</Link> and
                                   consent to our{" "}
-                                  <Link href="#">Data Processing Policy</Link>.
+                                  <Link href="/privacy-policy">Data Processing Policy</Link>.
                                 </span>
                               </label>
                               <ErrorMessage
