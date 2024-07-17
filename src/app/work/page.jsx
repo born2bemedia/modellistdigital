@@ -17,7 +17,7 @@ export const metadata = {
     title: "Our works",
     description:
       "Modellist Digital is a full-cycle digital production. Explore the examples of our works in video production, animations, UI/UX design and 3D modelling. Order similar works or get a quote for your idea!",
-    //images: "https://vancantgroup.com/images/meta.png",
+    images: "https://modellistdigital.com/images/meta.png",
   },
 };
 

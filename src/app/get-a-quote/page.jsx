@@ -12,7 +12,7 @@ export const metadata = {
     title: "Get a quote",
     description:
       "Request a personalised quote for our digital services, including video production, 3D modelling, animations, and UI/UX design. Let's bring your ideas to life!",
-    //images: "https://vancantgroup.com/images/meta.png",
+    images: "https://modellistdigital.com/images/meta.png",
   },
 };
 

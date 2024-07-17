@@ -12,7 +12,7 @@ export const metadata = {
     title: "Our blog",
     description:
       "Stay updated with the latest trends, tips, and insights in digital production. Explore our blog for expert advice on 3D modelling, animations, UI/UX design, and video production by Modellist Digital",
-    //images: "https://vancantgroup.com/images/meta.png",
+    images: "https://modellistdigital.com/images/meta.png",
   },
 };
 

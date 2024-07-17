@@ -15,7 +15,7 @@ export const metadata = {
     title: "Animations",
     description:
       "Explore our animation development services. Modellist Digital offers tailored solutions and service packages to cover your design needs. Contact us today!",
-    //images: "https://vancantgroup.com/images/meta.png",
+    images: "https://modellistdigital.com/images/meta.png",
   },
 };
 

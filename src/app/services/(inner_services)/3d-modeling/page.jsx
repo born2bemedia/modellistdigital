@@ -18,7 +18,7 @@ export const metadata = {
     title: "3D modelling",
     description:
       "Discover the ultimate opportunity to enhance your experience with our professional 3D models. We offer a variety of printing plans for everyday tools that make your life easier and more enjoyable.",
-    //images: "https://vancantgroup.com/images/meta.png",
+    images: "https://modellistdigital.com/images/meta.png",
   },
 };
 

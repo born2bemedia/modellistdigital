@@ -15,7 +15,7 @@ export const metadata = {
     title: "Video production",
     description:
       "Explore our video production services and solutions. Modellist Digital offers flexible options and packages, including a retainer service. Get expert assistance in video production.",
-    //images: "https://vancantgroup.com/images/meta.png",
+    images: "https://modellistdigital.com/images/meta.png",
   },
 };
 

@@ -23,7 +23,7 @@ export const metadata = {
     },
     description:
       "Meet Modellist Digital - a professional digital production company specialising in video production, animation, UI/UX design and 3D models development. Get a quote today.",
-    //images: "https://vancantgroup.com/images/meta.png",
+    images: "https://modellistdigital.com/images/meta.png",
   },
 };
 

@@ -13,7 +13,7 @@ export const metadata = {
     title: "UI/UX design",
     description:
       "Are you struggling to launch your project? Does your website look outdated and uncompetitive? We will create the best user experience in your project's intuitive and clear interface. Call us now!",
-    //images: "https://vancantgroup.com/images/meta.png",
+    images: "https://modellistdigital.com/images/meta.png",
   },
 };
 

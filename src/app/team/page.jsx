@@ -12,7 +12,7 @@ export const metadata = {
     title: "Our team",
     description:
       "Meet our digital production team. Learn who stands behind the brilliant digital artwork and creates stunning videos, engaging animations, and effective UI/UX designs for you!",
-    //images: "https://vancantgroup.com/images/meta.png",
+    images: "https://modellistdigital.com/images/meta.png",
   },
 };
 

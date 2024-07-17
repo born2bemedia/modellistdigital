@@ -16,7 +16,7 @@ export const metadata = {
     title: "Digital production services",
     description:
       "Explore our digital production services and choose the one best fits your ideas. Discover tailored video production solutions, animations, UI/UX design, and ready-made 3D models. Order now.",
-    //images: "https://vancantgroup.com/images/meta.png",
+    images: "https://modellistdigital.com/images/meta.png",
   },
 };
 
