@@ -58,61 +58,47 @@ const OrderHistory = () => {
       {error && <p className="error">{error}</p>}
       {orders && (
         <div className="orders-wrap">
-        <table className="orders">
-          <thead>
-            <tr>
-              <th >
-                ID
-              </th>
-              <th >
-                Status
-              </th>
-              <th >
-                Date
-              </th>
-              
-              <th >
-                Price
-              </th>
-              <th >
-                Products
-              </th>
-            </tr>
-          </thead>
-          <tbody >
-            {orders.map((order) => (
-              <tr key={order.id}>
-                <td >
-                  #{order.number}
-                </td>
-                <td >
-                  {order.status}
-                </td>
-                <td >
-                  {new Date(order.date_created.date).toLocaleDateString()}
-                </td>
-                
-                <td >
-                  ${order.total}
-                </td>
-                <td >
-                  {order.status == "completed" &&
-                    order.line_items.map((item) => (
-                      <Link
-                        href={item.downloads[0].download_url}
-                        target="_blank"
-                        key={item.id}
-                        
-                      >
-                        Download
-                      </Link>
-                    ))}
-                </td>
+          <table className="orders">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Status</th>
+                <th>Date</th>
+
+                <th>Price</th>
+                <th>Products</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+            </thead>
+            <tbody>
+              {orders.map((order) => (
+                <tr key={order.id}>
+                  <td>#{order.number}</td>
+                  <td>{order.status}</td>
+                  <td>
+                    {new Date(order.date_created.date).toLocaleDateString()}
+                  </td>
+
+                  <td>${order.total}</td>
+                  <td>
+                    {order.status == "completed" &&
+                      order.line_items.map(
+                        (item) =>
+                          item.downloads[0] && (
+                            <Link
+                              href={item.downloads[0].download_url}
+                              target="_blank"
+                              key={item.id}
+                            >
+                              Download
+                            </Link>
+                          )
+                      )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
     </div>
   );
