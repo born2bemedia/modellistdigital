@@ -921,3 +921,115 @@ button {
     }
   }
 }
+
+.account-wrap{
+  .products {
+    margin: 40px 0;
+    @media (max-width: 992px) {
+      margin: 40px 0;
+    }
+  }
+}
+
+.products {
+  margin: 150px 0;
+  @media (max-width: 992px) {
+    margin: 100px 0;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: #161616;
+    @media (max-width: 992px) {
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    gap: 30px;
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+    }
+    > div {
+      width: calc(33.33% - 20px);
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+      .product-thumb{
+        position: relative;
+        display: flex;
+        img{
+          position: relative;
+          z-index: 1;
+        }
+        .offer{
+          position: absolute;
+          z-index: 2;
+          right: 10px;
+          top:10px;
+          color: #FFFFFF;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 1.2;
+          text-align: center;
+          display: block;
+          padding: 6px 10px;
+          background: #FF5353;
+          border-radius: 100px;
+        }
+      }
+      .product-info {
+        padding-top: 20px;
+        h3 {
+          color: #000000;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 1.2;
+          text-align: left;
+          margin: 0 0 10px 0;
+          a{
+            color: #000000;
+          }
+        }
+        .excerpt {
+          color: #000000;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.2;
+          text-align: left;
+        }
+        .add-to-cart{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+          >span{
+            color: #000000;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+          }
+          button{
+            display: flex;
+            color: #000000;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: left;
+            align-items: center;
+            gap:10px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@ const Products = ({ category, title }) => {
       try {
         const data = await fetchProductsByCategory(category, 3);
         setProducts(data);
-        console.log(products);
+        console.log(data);
       } catch (error) {
         console.error("Error fetching products:", error);
       } finally {
@@ -48,8 +48,9 @@ const Products = ({ category, title }) => {
                 variants={fadeInUp}
                 key={product.id}
               >
-                <Link href={`/product/${product.slug}`}>
+                <Link className="product-thumb" href={`/product/${product.slug}`}>
                   <img src={product.image} width={350} height={197} />
+                  {product.offer && (<span className="offer">{product.offer} OFF!</span>)}
                 </Link>
 
                 <div className="product-info">
