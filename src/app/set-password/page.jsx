@@ -1,29 +1,33 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import React, { useEffect } from "react";
+import { Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import ChangePasswordReset from "../(account)/dashboard/_components/ChangePasswordReset";
 
-const SetPassword = () => {
+function SetPasswordContent() {
   const searchParams = useSearchParams();
   const email = searchParams.get("email");
   const token = searchParams.get("token");
-  const [isValid, setIsValid] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     if (email && token) {
       localStorage.setItem("resetToken", token);
       localStorage.setItem("resetEmail", email);
-      setIsValid(true);
-    } else {
-      setIsValid(false);
     }
   }, [email, token]);
 
-  if (!isValid) {
+  if (!email || !token) {
     return <div>Invalid or expired link.</div>;
   }
 
   return <ChangePasswordReset />;
-};
+}
 
-export default SetPassword;
+export default function SetPassword() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SetPasswordContent />
+    </Suspense>
+  );
+}
