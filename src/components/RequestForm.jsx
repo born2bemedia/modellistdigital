@@ -4,8 +4,7 @@ import * as Yup from "yup";
 import { usePopup } from "@/context/PopupsContext";
 
 const RequestForm = () => {
-
-    const { thanksPopupDisplay, setThanksPopupDisplay } = usePopup();
+  const { thanksPopupDisplay, setThanksPopupDisplay } = usePopup();
 
   const validationSchema = Yup.object({
     firstName: Yup.string().required("First name is required"),
@@ -27,14 +26,33 @@ const RequestForm = () => {
     comment: "",
   };
 
-  const handleSubmit = (values, { setSubmitting, resetForm, setStatus }) => {
-    setTimeout(() => {
-      console.log(JSON.stringify(values, null, 2));
-      setThanksPopupDisplay(true);
-      setSubmitting(false);
-      resetForm();
-      setStatus({ success: true });
-    }, 400);
+  const handleSubmit = async (
+    values,
+    { setSubmitting, resetForm, setStatus }
+  ) => {
+    try {
+      const response = await fetch("/api/emails/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+      console.log(JSON.stringify(values));
+      if (response.ok) {
+        setTimeout(() => {
+          console.log(JSON.stringify(values, null, 2));
+          setThanksPopupDisplay(true);
+          setSubmitting(false);
+          resetForm();
+          setStatus({ success: true });
+        }, 400);
+      } else {
+        setStatus({ success: false });
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (

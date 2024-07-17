@@ -10,6 +10,7 @@ import CheckboxIcon from "@/icons/CheckboxIcon";
 import Select from "react-select";
 import countryList from "react-select-country-list";
 import { useAuth } from "@/context/AuthContext";
+import { useRouter } from "next/navigation";
 
 const getCountryOptionByCode = (code) => {
   const countries = countryList().getData();
@@ -57,6 +58,7 @@ const CartPage = () => {
   const { cart, deleteFromCart, clearCart, totalAmount } = useCart();
   const [isMounted, setIsMounted] = useState(false);
   const { currentUser, setCurrentUser } = useAuth();
+  const router = useRouter();
 
   useEffect(() => {
     setIsMounted(true);
@@ -135,13 +137,13 @@ const CartPage = () => {
 
       if (response.ok) {
         clearCart();
-        alert("Order placed successfully!");
+        router.push("/thankyou");
       } else {
         const errorData = await response.json();
-        alert(`Error: ${errorData.message}`);
+        //alert(`Error: ${errorData.message}`);
       }
     } catch (error) {
-      alert("There was an error placing the order.");
+      //alert("There was an error placing the order.");
     } finally {
       setSubmitting(false);
     }

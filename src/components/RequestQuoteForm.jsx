@@ -31,14 +31,33 @@ const RequestQuoteForm = () => {
     comment: "",
   };
 
-  const handleSubmit = (values, { setSubmitting, resetForm, setStatus }) => {
-    setTimeout(() => {
-      console.log(JSON.stringify(values, null, 2));
-      setThanksPopupDisplay(true);
-      setSubmitting(false);
-      resetForm();
-      setStatus({ success: true });
-    }, 400);
+  const handleSubmit = async (
+    values,
+    { setSubmitting, resetForm, setStatus }
+  ) => {
+    try {
+      const response = await fetch("/api/emails/quote", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+      console.log(JSON.stringify(values));
+      if (response.ok) {
+        setTimeout(() => {
+          console.log(JSON.stringify(values, null, 2));
+          setThanksPopupDisplay(true);
+          setSubmitting(false);
+          resetForm();
+          setStatus({ success: true });
+        }, 400);
+      } else {
+        setStatus({ success: false });
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const serviceOptions = [
