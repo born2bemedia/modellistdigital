@@ -91,16 +91,16 @@ const CartPage = () => {
   }, []);
 
   const initialValues = {
-    firstName: currentUser?.billing.first_name || "",
-    lastName: currentUser?.billing.last_name || "",
+    firstName: currentUser?.billing?.first_name || "",
+    lastName: currentUser?.billing?.last_name || "",
     email: currentUser?.email || "",
-    phone: currentUser?.billing.phone || "",
-    street: currentUser?.billing.address_1 || "",
-    address: currentUser?.billing.address_2 || "",
-    city: currentUser?.billing.city || "",
-    state: currentUser?.billing.state || "",
-    zip: currentUser?.billing.postcode || "",
-    country: getCountryOptionByCode(currentUser?.billing.country) || {
+    phone: currentUser?.billing?.phone || "",
+    street: currentUser?.billing?.address_1 || "",
+    address: currentUser?.billing?.address_2 || "",
+    city: currentUser?.billing?.city || "",
+    state: currentUser?.billing?.state || "",
+    zip: currentUser?.billing?.postcode || "",
+    country: getCountryOptionByCode(currentUser?.billing?.country) || {
       value: "US",
       label: "United States",
     },
