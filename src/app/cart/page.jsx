@@ -456,7 +456,7 @@ const CartPage = () => {
                                       )}
                                     onChange={(option) => (
                                       console.log(option.value),
-                                      setFieldValue("country", option)
+                                      setFieldValue("country", option.value)
                                     )}
                                   />
                                 )}
