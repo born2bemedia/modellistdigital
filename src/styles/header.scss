@@ -37,6 +37,15 @@ header{
                 display: flex;
                 align-items: center;
                 gap:15px;
+                @media (max-width: 992px) {
+                    gap:10px;
+                }
+                .divider{
+                    width: 1px;
+                    @media (max-width: 992px) {
+
+                    }
+                }
                 a{
                     font-size: 16px;
                     font-weight: 400;
@@ -44,6 +53,9 @@ header{
                     text-align: left;
                     color: #161616;
                     display: flex;
+                    @media (max-width: 992px) {
+                        font-size: 14px;
+                    }
                 }
 
                 .menu-btn{

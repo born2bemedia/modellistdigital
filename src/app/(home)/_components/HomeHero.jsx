@@ -27,8 +27,8 @@ const HomeHero = () => {
             animate="visible"
             variants={fadeInUp}
             src="/images/home/homeHero.webp"
-            width={545}
-            height={545}
+            width={535}
+            height={535}
             alt="homeHero"
           ></motion.img>
           <motion.h2 initial="hidden" animate="visible" variants={fadeInUp}>

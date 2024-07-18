@@ -1037,3 +1037,12 @@ button {
     }
   }
 }
+
+.logo{
+  img{
+    max-width: 196px;
+    @media (max-width: 992px) {
+      max-width: 130px;
+    }
+  }
+}

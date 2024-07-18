@@ -27,7 +27,7 @@ const Header = () => {
       <header className={`${menuOpened && "menu-opened"}`}>
         <div className="_container">
           <div className="header-row">
-            <Link href="/">
+            <Link href="/" className="logo">
               {!menuOpened ? (
                 <img src="/images/header/logo.svg" alt="logo" />
               ) : (
@@ -42,7 +42,7 @@ const Header = () => {
                 ) : (
                   <>
                     <Link href="/sign-up">Sign up</Link>
-                    <span>|</span>
+                    <span className="divider">|</span>
                     <Link href="/log-in">Log in</Link>
                   </>
                 )}

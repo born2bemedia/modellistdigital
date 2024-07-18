@@ -49,7 +49,7 @@ export async function POST(request) {
           <thead>
             <tr>
               <td>
-                <img style="width: 100%" src="https://cms.modellistdigital.com/wp-content/uploads/2024/07/Frame-1.png" />
+                <img style="width: 100%" src="https://cms.modellistdigital.com/wp-content/uploads/2024/07/email-header.png" />
               </td>
             </tr>
           </thead>
