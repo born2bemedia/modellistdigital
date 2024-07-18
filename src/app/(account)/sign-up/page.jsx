@@ -45,16 +45,23 @@ export default function SignUp() {
       const response = await axios.post("/api/auth/sign-up", {
         email: values.email,
         password: values.password,
-        name: `${values.firstName} ${values.lastName}`,
+        firstName: values.firstName,
+        lastName: values.lastName,
         phone: values.phone,
       });
+
       if (response.status === 200) {
-        const { token, user_email, user_nicename, user_display_name } =
-          response.data;
+        const { token, user_email, user_nicename, user_display_name } = response.data;
+        
         const user = {
           email: user_email,
           nicename: user_nicename,
           displayName: user_display_name,
+          billing: {
+            first_name: values.firstName,
+            last_name: values.lastName,
+            phone: values.phone,
+          },
         };
 
         setThanksPopupShow(true);
