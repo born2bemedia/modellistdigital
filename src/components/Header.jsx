@@ -68,7 +68,6 @@ const Header = () => {
                     <img alt="logo" src="/images/header/burger-close.svg" />
                   )}
                 </span>
-                <Link href="#"></Link>
               </div>
             </div>
           </div>
