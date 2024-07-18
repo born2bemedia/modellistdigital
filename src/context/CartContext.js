@@ -21,6 +21,8 @@ export const CartProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
     localStorage.setItem('totalAmount', JSON.stringify(totalAmount));
+    const cartQuantityValue = cart.reduce((quantity, item) => quantity + item.quantity, 0);
+    setCartQuantity(cartQuantityValue);
   }, [cart, totalAmount]);
 
   const addToCart = (product) => {
@@ -58,10 +60,6 @@ export const CartProvider = ({ children }) => {
     localStorage.removeItem('totalAmount');
   };
 
-  useEffect(() => {
-    const cartQuantityValue = cart.reduce((quantity, item) => quantity + item.quantity, 0);
-    setCartQuantity(cartQuantityValue);
-  }, []);
 
   return (
     <CartContext.Provider value={{ cart, addToCart, deleteFromCart, clearCart, cartQuantity, totalAmount }}>

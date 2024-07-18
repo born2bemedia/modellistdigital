@@ -7,7 +7,7 @@ import { useAuth } from "@/context/AuthContext";
 import { usePathname } from "next/navigation";
 
 const Header = () => {
-  const { cart } = useCart();
+  const { cart, cartQuantity } = useCart();
   const { currentUser } = useAuth();
   const [menuOpened, setMenuOpened] = useState(false);
   const pathname = usePathname();
@@ -50,7 +50,7 @@ const Header = () => {
               <div>
                 <Link
                   href="/cart"
-                  className={`cart-icon ${cart.length > 0 && "not-empty"}`}
+                  className={`cart-icon ${cartQuantity > 0 && "not-empty"}`}
                 >
                   {!menuOpened ? (
                     <img src="/images/header/cart-icon.svg" alt="cart-icon" />
