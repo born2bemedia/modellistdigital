@@ -15,6 +15,8 @@ export async function POST(request) {
         username: email,
         billing: {
           phone: phone,
+          first_name: firstName,
+          last_name: lastName,
         },
       },
       {
