@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
+import Video from 'next-video';
 
 const VideoBlock = ({ videoUrl, videoDescription, videoCover, price }) => {
   return (
@@ -16,10 +17,7 @@ const VideoBlock = ({ videoUrl, videoDescription, videoCover, price }) => {
       <div className="video-top">
         {videoUrl ? (
           <Suspense fallback={<p>Loading video...</p>}>
-            <video controls autoPlay muted>
-              <source src={videoUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <Video src={videoUrl} accentColor="#B4FF05"/>
           </Suspense>
         ) : (
           videoCover && (
