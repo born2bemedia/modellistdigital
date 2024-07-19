@@ -79,6 +79,17 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="soc">
+            <Link href="https://www.facebook.com/modellistdigital" target="_blank">
+              <img src="/images/footer/fb.svg" />
+            </Link>
+            <Link href="https://www.instagram.com/modellistdigital/" target="_blank">
+              <img src="/images/footer/inst.svg" />
+            </Link>
+            <Link href="https://x.com/modellistdigit" target="_blank">
+              <img src="/images/footer/x.svg" />
+            </Link>
+          </div>
         </div>
 
         <div className="footer-bottom">

@@ -42,6 +42,28 @@ const ContactsHero = () => {
             +442070433795
           </Link>
         </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+          className="soc"
+        >
+          <Link
+            href="https://www.facebook.com/modellistdigital"
+            target="_blank"
+          >
+            <img src="/images/contacts/fb.svg" />
+          </Link>
+          <Link
+            href="https://www.instagram.com/modellistdigital/"
+            target="_blank"
+          >
+            <img src="/images/contacts/inst.svg" />
+          </Link>
+          <Link href="https://x.com/modellistdigit" target="_blank">
+            <img src="/images/contacts/x.svg" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
