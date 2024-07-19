@@ -1,20 +1,24 @@
 "use client";
+import "@/styles/services.scss";
+import { fetchProductsByCategory } from "@/app/api/products";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
-import AddToCartButton from "@/components/AddToCartButton";
-import { fetchProductsByCategory } from "@/app/api/products";
 import AddToCartButtonProduct from "@/components/AddToCartButtonProduct";
 
-const Products = ({ category, title }) => {
+const ModelingCategory = ({ params: { slug } }) => {
   const [products, setProducts] = useState([]);
+  const [title, setTitle] = useState();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const pageTitle = slug.replace("-", " ");
+    setTitle(pageTitle);
+
     const fetchProducts = async () => {
       try {
-        const data = await fetchProductsByCategory(category, 3);
+        const data = await fetchProductsByCategory(slug, 9999);
         setProducts(data);
         console.log(data);
       } catch (error) {
@@ -25,22 +29,30 @@ const Products = ({ category, title }) => {
     };
 
     fetchProducts();
-  }, [category]);
+  }, [slug]);
 
   return (
     <>
+      <section className="category-hero">
+        <div className="_container">
+          <div className="category-hero__body">
+            <motion.img
+              initial="hidden"
+              animate="visible"
+              variants={fadeInUp}
+              src="/images/services/3d/3dHeroIcon.svg"
+              width={48}
+              height={48}
+            ></motion.img>
+            <motion.h1 initial="hidden" animate="visible" variants={fadeInUp}>
+              {title}
+            </motion.h1>
+          </div>
+        </div>
+      </section>
+
       <section className="products">
         <div className="_container">
-          {title && (
-            <motion.h2
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-            >
-              {title}
-            </motion.h2>
-          )}
           <div className="products__body">
             {products.map((product) => (
               <motion.div
@@ -84,4 +96,4 @@ const Products = ({ category, title }) => {
   );
 };
 
-export default Products;
+export default ModelingCategory;

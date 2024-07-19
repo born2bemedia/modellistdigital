@@ -768,3 +768,24 @@
     }
   }
 }
+
+
+.category-hero{
+  margin-bottom: -50px;
+  &__body{
+    padding: 80px 95px;
+    background: #161616;
+    border-radius: 25px;
+    h1{
+      color: #FFFFFF;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: left;
+      text-transform: uppercase;
+      @media (max-width: 992px) {
+        font-size: 32px;
+      }
+    }
+  }
+}

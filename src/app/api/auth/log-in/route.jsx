@@ -4,6 +4,8 @@ export async function POST(request) {
   const { email, password } = await request.json();
 
   try {
+    console.log(`Authenticating user: ${email}`);
+
     // Authenticate the user
     const authResponse = await axios.post(`${process.env.WC_STORE_URL}/wp-json/jwt-auth/v1/token`, {
       username: email,
@@ -11,6 +13,8 @@ export async function POST(request) {
     });
 
     const { token, user_email, user_nicename, user_display_name } = authResponse.data;
+
+    console.log(`Authenticated user: ${email}`);
 
     // Fetch user data from WooCommerce
     const userResponse = await axios.get(`${process.env.WC_STORE_URL}/wp-json/wc/v3/customers`, {
@@ -34,11 +38,14 @@ export async function POST(request) {
       billing: user ? user.billing : {},
     };
 
+    console.log(`Fetched user data for: ${email}`);
+
     return new Response(JSON.stringify(userData), {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
   } catch (error) {
+    console.error(`Authentication failed for user: ${email}`, error.message);
     return new Response(
       JSON.stringify({
         message: "Authentication failed",
