@@ -36,6 +36,24 @@ const Header = () => {
             </Link>
 
             <div className="header-right">
+              <div className="soc">
+                <Link
+                  href="https://www.facebook.com/modellistdigital"
+                  target="_blank"
+                >
+                  <img src="/images/contacts/fb.svg" />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/modellistdigital/"
+                  target="_blank"
+                >
+                  <img src="/images/contacts/inst.svg" />
+                </Link>
+                <Link href="https://x.com/modellistdigit" target="_blank">
+                  <img src="/images/contacts/x.svg" />
+                </Link>
+              </div>
+
               <div className="head-account">
                 {currentUser ? (
                   <Link href="/dashboard">Account</Link>
