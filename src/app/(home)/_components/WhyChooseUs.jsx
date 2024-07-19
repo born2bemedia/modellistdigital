@@ -134,56 +134,56 @@ const WhyChooseUs = () => {
           <div className="col-02">
             <div>
               <motion.img
-                src="/images/home/gallery.svg"
+                src="/images/home/examples/example1.png"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
-                src="/images/home/gallery.svg"
+                src="/images/home/examples/example2.png"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
-                src="/images/home/gallery.svg"
+                src="/images/home/examples/example3.png"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
-                src="/images/home/gallery.svg"
+                src="/images/home/examples/example4.png"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
-                src="/images/home/gallery.svg"
+                src="/images/home/examples/example5.png"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
-                src="/images/home/gallery.svg"
+                src="/images/home/examples/example6.png"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
-                src="/images/home/gallery.svg"
+                src="/images/home/examples/example7.png"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
               ></motion.img>
               <motion.img
-                src="/images/home/gallery.svg"
+                src="/images/home/examples/example8.png"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

@@ -60,7 +60,7 @@
 
     img {
       position: absolute;
-      left: 0;
+      left: 90px;
       bottom: 0;
       z-index: 1;
       @media (max-width: 992px) {
@@ -538,6 +538,7 @@
         flex-wrap: wrap;
         padding-top: 100px;
         img {
+          max-width: 252px;
           &:nth-child(even) {
             //margin-top: 100px;
           }
