@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           <CartProvider>
             <PopupsProvider>
-              
+              <Preloader />
               <Header />
               <main>{children}</main>
               <Footer />
