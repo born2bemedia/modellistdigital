@@ -56,15 +56,32 @@ export async function POST(request) {
       </td>
     </tr>
   </tbody>
-  <tfoot>
-    <td style="padding: 24px 40px; background: #0C0C0C;background-image:url(https://cms.modellistdigital.com/wp-content/uploads/2024/07/Group-80513.png);text-decoration: none;
-					  color: #fff;
-					  font-size: 20px;
-					  text-align: left;
-					  display: block;
-					  font-weight: 600;"> Thanks for using <a href="https://modellistdigital.com" style="color:#fff;text-decoration: none;"> modellistdigital.com </a>
-    </td>
-  </tfoot>
+  <tfoot >
+				<td style="padding: 12px 40px;background: #0C0C0C;background-size:cover;background-image:url(https://cms.modellistdigital.com/wp-content/uploads/2024/07/Group-80513.png);">
+					
+					<table style="width:100%">
+						
+						<td style="width: 50%; padding-right: 30px">
+							 <img src="https://cms.modellistdigital.com/wp-content/uploads/2024/07/logo.png" style="width:254px;">
+						</td>
+						<td style="width: 50%;color: #fff;font-size: 12px;">
+							<ul style="margin:0;padding: 0;list-style-image: url(https://cms.modellistdigital.com/wp-content/uploads/2024/07/Ellipse-335.png);">
+								<li>
+									167 - 169 Great Portland Street, 5th Floor, London, England, W1W 5PF 
+								</li>
+								<li>
+									<a href="tel:+442070433795" style="color: #fff;font-size: 12px;text-decoration: none;">+442070433795</a>
+								</li>
+								<li>
+									<a href="mailto:info@modellistdigital.com" style="color: #fff;font-size: 12px;text-decoration: none;">info@modellistdigital.com</a>
+								</li>
+							</ul>
+						</td>
+
+					</table>
+
+				</td>
+			  </tfoot>
 </table>
       `,
     };
