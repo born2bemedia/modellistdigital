@@ -45,6 +45,7 @@ function SingleProductHero({ product }) {
                   light={product.image}
                   playing="true"
                   controls
+                  className="single-video"
                 />
               ) : (
                 <Image
