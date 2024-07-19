@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
 import VideoBlock from "./VideoBlock";
+import Products from "../../3d-modeling/_components/Products";
 
 const Examples = () => {
   return (
@@ -24,26 +25,7 @@ const Examples = () => {
           </Link>
         </motion.div>
         <div className="examples__body">
-          <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Animation description"}
-            price={"€399"}
-          />
-          <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Animation description"}
-            price={"€299"}
-          />
-          <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Animation description"}
-            price={"€599"}
-          />
-          <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Animation description"}
-            price={"€499"}
-          />
+        <Products category="ready-made-animations" />
         </div>
       </div>
     </section>

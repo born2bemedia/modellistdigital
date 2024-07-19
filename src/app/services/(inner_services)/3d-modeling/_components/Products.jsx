@@ -6,6 +6,7 @@ import Link from "next/link";
 import AddToCartButton from "@/components/AddToCartButton";
 import { fetchProductsByCategory } from "@/app/api/products";
 import AddToCartButtonProduct from "@/components/AddToCartButtonProduct";
+import AddToCartArrow from "@/icons/AddToCartArrow";
 
 const Products = ({ category, title }) => {
   const [products, setProducts] = useState([]);
@@ -72,11 +73,40 @@ const Products = ({ category, title }) => {
                   />
                   <div className="add-to-cart">
                     <span>Price: €{product.price}</span>
-                    <AddToCartButtonProduct product={product} />
+                    {category == "ready-made-animations" ? (
+                      <Link
+                        className="arrow-button"
+                        href={`/product/${product.slug}`}
+                      >
+                        View
+                        <AddToCartArrow />
+                      </Link>
+                    ) : (
+                      <AddToCartButtonProduct product={product} />
+                    )}
                   </div>
                 </div>
               </motion.div>
             ))}
+
+            {category != "hot-offers" && category != "ready-made-animations" ? (
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className="button-wrap"
+              >
+                <Link
+                  className="black-button"
+                  href={`/services/3d-modeling/${category}`}
+                >
+                  All {title}
+                </Link>
+              </motion.div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </section>
