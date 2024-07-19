@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
@@ -7,6 +7,8 @@ import AddToCartButton from "@/components/AddToCartButton";
 import { fetchProductsByCategory } from "@/app/api/products";
 import AddToCartButtonProduct from "@/components/AddToCartButtonProduct";
 import AddToCartArrow from "@/icons/AddToCartArrow";
+import Video from "next-video";
+import VideoBlock from "@/app/product/[slug]/_components/Video";
 
 const Products = ({ category, title }) => {
   const [products, setProducts] = useState([]);
@@ -51,15 +53,27 @@ const Products = ({ category, title }) => {
                 variants={fadeInUp}
                 key={product.id}
               >
-                <Link
-                  className="product-thumb"
-                  href={`/product/${product.slug}`}
-                >
-                  <img src={product.image} width={350} height={197} />
-                  {product.offer && (
-                    <span className="offer">{product.offer} OFF!</span>
-                  )}
-                </Link>
+                {product.preview_video ? (
+                  <Link
+                    className="product-thumb"
+                    href={`/product/${product.slug}`}
+                  >
+                    <img src={product.image} width={350} height={197} />
+                    {product.offer && (
+                      <span className="offer">{product.offer} OFF!</span>
+                    )}
+                  </Link>
+                ) : (
+                  <Link
+                    className="product-thumb"
+                    href={`/product/${product.slug}`}
+                  >
+                    <img src={product.image} width={350} height={197} />
+                    {product.offer && (
+                      <span className="offer">{product.offer} OFF!</span>
+                    )}
+                  </Link>
+                )}
 
                 <div className="product-info">
                   <h3>

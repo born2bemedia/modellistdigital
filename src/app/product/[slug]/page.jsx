@@ -21,11 +21,16 @@ export async function generateMetadata({ params: { slug } }) {
 
 const ProductSingle = async ({ params: { slug } }) => {
   const product = await fetchProductBySlug(slug);
+  const categorySlug = product.categories?.[0]?.slug;
 
   return (
     <>
       <SingleProductHero product={product} />
-      <Products title="YOU MAY ALSO LIKE" category={product.categories[0].slug} />
+      {categorySlug ? (
+        <Products title="YOU MAY ALSO LIKE" category={categorySlug} />
+      ) : (
+        ""
+      )}
       <NeedAssistance />
     </>
   );
