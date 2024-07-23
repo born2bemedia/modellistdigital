@@ -75,9 +75,6 @@ export async function POST(request) {
 						<td style="width: 50%;color: #fff;font-size: 12px;">
 							<ul style="margin:0;padding: 0;list-style-image: url(https://cms.modellistdigital.com/wp-content/uploads/2024/07/Ellipse-335.png);">
 								<li>
-									167 - 169 Great Portland Street, 5th Floor, London, England, W1W 5PF 
-								</li>
-								<li>
 									<a href="tel:+442070433795" style="color: #fff;font-size: 12px;text-decoration: none;">+442070433795</a>
 								</li>
 								<li>

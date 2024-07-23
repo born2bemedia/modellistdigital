@@ -70,7 +70,6 @@ const Footer = () => {
             <h3>Contact us</h3>
             <ul>
               <li>The Modellist Limited</li>
-              <li>167 - 169 Great Portland Street, <br/>5th Floor, London, England, W1W 5PF</li>
               <li>
                 <Link href="mailto:info@modellistdigital.com">info@modellistdigital.com</Link>
               </li>

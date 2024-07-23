@@ -22,10 +22,6 @@ const PolicyPage = () => {
             following details:
           </p>
           <ul>
-            <li>
-              Registered Address: 167 - 169 Great Portland Street, 5th Floor,
-              London, England, W1W 5PF
-            </li>
             <li>Registered Number: 15795497</li>
             <li>
               Email:{" "}
@@ -62,10 +58,8 @@ const PolicyPage = () => {
           <p>
             <strong>Company</strong>: Throughout these Terms and Conditions,
             references to "Company," "we," "us," or "our" mean The Modellist
-            Limited, a company registered in England, located at 167 - 169 Great
-            Portland Street, 5th Floor, London, England, W1W 5PF, with a
-            registration number of 15795497. The Modellist Limited is
-            responsible for managing your information by these T&amp;C.
+            Limited. The Modellist Limited is responsible for managing your
+            information by these T&C.
           </p>
           <p>
             <strong>Country</strong>: This refers to the United Kingdom, where
@@ -569,19 +563,7 @@ const PolicyPage = () => {
             In the event of any dispute, claim, or controversy arising out of or
             relating to these Terms and Conditions, you agree to first attempt
             to resolve the matter informally through negotiation with The
-            Modellist Limited.&nbsp;
-          </p>
-          <p>
-            If informal negotiations do not resolve the dispute within a
-            reasonable time, either party may initiate binding mediation or
-            arbitration, which shall be conducted in London, England. The
-            decision of the arbitrator(s) shall be final and binding upon both
-            parties.
-          </p>
-          <p>
-            If mediation or arbitration is not successful or applicable, you
-            agree to submit to the exclusive jurisdiction of the courts located
-            in London, England for the resolution of any disputes.
+            Modellist Limited.
           </p>
           <h3>
             <strong>Waiver of Class Actions</strong>
