@@ -1,6 +1,6 @@
-import Products from "@/app/services/(inner_services)/3d-modeling/_components/Products";
 import Link from "next/link";
 import React from "react";
+import DashboardProducts from "./DashboardProducts";
 
 const MainTab = () => {
   return (
@@ -13,7 +13,7 @@ const MainTab = () => {
         team is here to help.
       </p>
 
-      <Products title="" category="hot-offers" />
+      <DashboardProducts title="" category="hot-offers" />
 
       <h2>EXPLORE OUR SERVICES</h2>
 
