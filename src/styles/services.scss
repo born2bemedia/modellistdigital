@@ -673,6 +673,9 @@
       width: calc(50% - 15px);
       @media (max-width: 992px) {
         width: 100%;
+        .single-video{
+          width: 100%!important;
+        }
       }
       video{
         width: 100%;
