@@ -17,7 +17,7 @@ const Examples = () => {
           </Link>
         </div>
         <div className="examples__body">
-          <Products category="ready-made-animations" />
+          <Products category="ready-made-animations" quantity={999} />
         </div>
       </div>
     </section>

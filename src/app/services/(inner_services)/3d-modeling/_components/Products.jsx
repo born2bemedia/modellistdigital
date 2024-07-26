@@ -5,8 +5,8 @@ import AddToCartArrow from "@/icons/AddToCartArrow";
 import ReactPlayer from "react-player";
 import VideoBlock from "./VideoBlock";
 
-const Products = async ({ category, title }) => {
-  const products = await fetchProductsByCategory(category, 3);
+const Products = async ({ category, title, quantity = 3 }) => {
+  const products = await fetchProductsByCategory(category, quantity);
 
   return (
     <>
