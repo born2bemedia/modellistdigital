@@ -19,9 +19,11 @@ const VideoProductionExamples = () => {
           >
             <img src="/images/work/videoProductionIcon.svg" />
             <Link href="/services/video-production">
-              <span>VIDEO
-              <br />
-              PRODUCTION</span>
+              <span>
+                VIDEO
+                <br />
+                PRODUCTION
+              </span>
               <img src="/images/work/arrow.svg" />
             </Link>
           </motion.div>
@@ -39,16 +41,7 @@ const VideoProductionExamples = () => {
           </motion.div>
 
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Video description"}
-            category={"Video Production"}
-          />
-          <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Video description"}
-            category={"Video Production"}
-          />
-          <VideoBlock
+            videoUrl={"/videos/corrective-nutrition.webm"}
             videoCover={"/images/work/cover.png"}
             videoDescription={"Video description"}
             category={"Video Production"}

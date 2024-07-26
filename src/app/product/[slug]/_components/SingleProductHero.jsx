@@ -40,7 +40,7 @@ function SingleProductHero({ product }) {
               {video && !videoError ? (
                 <ReactPlayer
                   url={product.preview_video}
-                  width="540px"
+                  width={540}
                   height="305px"
                   light={product.image}
                   playing="true"

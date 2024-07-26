@@ -1,21 +1,19 @@
-'use client';
-import React from 'react'
-import ProjectsSlider from './ProjectsSlider';
+"use client";
+import React from "react";
+import ProjectsSlider from "./ProjectsSlider";
 
 const VideoProduction = () => {
-
-  const imagesArray = [
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
+  const videoArray = [
+    "/videos/corrective-nutrition.webm",
+    "/videos/corrective-nutrition.webm",
   ];
 
   return (
-    
-    <ProjectsSlider images={imagesArray} exploreLink="/services/video-production"/>
-  )
-}
+    <ProjectsSlider
+      videos={videoArray}
+      exploreLink="/services/video-production"
+    />
+  );
+};
 
-export default VideoProduction
+export default VideoProduction;

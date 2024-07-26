@@ -15,13 +15,15 @@
       }
       > div {
         @media (max-width: 992px) {
-          width: 100%!important;
-          height: 200px!important;
+          width: 100% !important;
+          height: 200px !important;
         }
       }
-      .single-video{
-        width: 100%!important;
-          height: 200px!important;
+      .single-video {
+        
+        @media (max-width: 992px) {
+          width: 100% !important;
+        }
       }
       img {
         @media (max-width: 992px) {

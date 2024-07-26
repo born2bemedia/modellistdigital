@@ -1,11 +1,18 @@
 "use client";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
-import Video from 'next-video';
+import Video from "next-video";
+import ReactPlayer from "react-player";
 
 const VideoBlock = ({ videoUrl, videoDescription, videoCover, price }) => {
+  const [video, setVideo] = useState("");
+
+  useEffect(() => {
+    setVideo(videoUrl);
+  }, []);
+
   return (
     <motion.div
       initial="hidden"
@@ -15,9 +22,17 @@ const VideoBlock = ({ videoUrl, videoDescription, videoCover, price }) => {
       className="video"
     >
       <div className="video-top">
-        {videoUrl ? (
+        {video ? (
           <Suspense fallback={<p>Loading video...</p>}>
-            <Video src={videoUrl} accentColor="#B4FF05"/>
+            <ReactPlayer
+              url={video}
+              width="540px"
+              height="305px"
+              light="/images/work/cover.png"
+              playing="true"
+              controls
+              className="single-video"
+            />
           </Suspense>
         ) : (
           videoCover && (
