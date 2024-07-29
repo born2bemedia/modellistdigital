@@ -19,7 +19,6 @@ const Animations = () => {
   ];
 
   return (
-    
     <ProjectsSlider videos={videoArray} animation={true} exploreLink="/services/animations"/>
   )
 }
