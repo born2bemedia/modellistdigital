@@ -19,8 +19,8 @@ export const metadata = {
     "Meet Modellist Digital - a professional digital production company specialising in video production, animation, UI/UX design and 3D models development. Get a quote today.",
   openGraph: {
     title: {
-      default: "Professional digital production | Vancant Group",
-      template: "%s | Vancant Group",
+      default: "Professional digital production | Modellist Digital",
+      template: "%s | Modellist Digital",
     },
     description:
       "Meet Modellist Digital - a professional digital production company specialising in video production, animation, UI/UX design and 3D models development. Get a quote today.",
