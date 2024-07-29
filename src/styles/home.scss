@@ -284,6 +284,13 @@
             bottom: 3px;
           }
           .slick-slider {
+            .single-video {
+              @media (max-width: 992px) {
+                width: 100% !important;
+                height: 180px !important;
+              }
+            }
+
             .slick-list {
               position: relative;
               z-index: 0;
