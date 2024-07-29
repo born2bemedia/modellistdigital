@@ -28,7 +28,8 @@ const VideoBlock = ({ videoUrl, videoDescription, videoCover, price }) => {
               url={video}
               width="540px"
               height="305px"
-              light="/images/work/cover.png"
+              light={videoCover}
+              playIcon={<img width={50} height={50} src="/images/playIcon.svg" />}
               playing="true"
               controls
               className="single-video"

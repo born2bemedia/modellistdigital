@@ -35,7 +35,7 @@ const Animations = () => {
               presence.
             </motion.p>
           </div>
-          <img src="/images/services/serviceThumbnail.svg" />
+          <img src="/images/services/animationsCover.webp" />
         </div>
 
         <div className="service-block__bottom">

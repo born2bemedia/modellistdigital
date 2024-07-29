@@ -44,21 +44,25 @@ const UxUiExamples = () => {
             videoCover={"/images/work/cover.png"}
             videoDescription={"Design description"}
             category={"UX/UI Design"}
+            buttonText={"Order a similar solution"}
           />
           <VideoBlock
             videoCover={"/images/work/cover.png"}
             videoDescription={"Design description"}
             category={"UX/UI Design"}
+            buttonText={"Order a similar solution"}
           />
           <VideoBlock
             videoCover={"/images/work/cover.png"}
             videoDescription={"Design description"}
             category={"UX/UI Design"}
+            buttonText={"Order a similar solution"}
           />
           <VideoBlock
             videoCover={"/images/work/cover.png"}
             videoDescription={"Design description"}
             category={"UX/UI Design"}
+            buttonText={"Order a similar solution"}
           />
         </div>
       </div>

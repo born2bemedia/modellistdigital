@@ -8,7 +8,7 @@ import { Suspense } from "react";
 import Video from "next-video";
 import ReactPlayer from "react-player";
 
-const VideoBlock = ({
+const AnimationBlock = ({
   videoUrl,
   videoDescription,
   videoCover,
@@ -50,10 +50,12 @@ const VideoBlock = ({
               url={video}
               width="540px"
               height="305px"
-              light={videoCover}
-              playIcon={<img width={50} height={50} src="/images/playIcon.svg" />}
-              playing="true"
-              controls
+              //light={videoCover}
+              //playIcon={<img width={50} height={50} src="/images/playIcon.svg" />}
+              muted={true}
+              loop={true}
+              controls={false}
+              playing={true}
               className="single-video"
             />
           </Suspense>
@@ -73,4 +75,4 @@ const VideoBlock = ({
   );
 };
 
-export default VideoBlock;
+export default AnimationBlock;

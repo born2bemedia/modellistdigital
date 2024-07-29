@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import VideoBlock from "./VideoBlock";
 import Link from "next/link";
+import AnimationBlock from "./AnimationBlock";
 
 const AnimationsExamples = () => {
   return (
@@ -36,45 +37,55 @@ const AnimationsExamples = () => {
             your audience.
           </motion.div>
 
-          <VideoBlock
+          <AnimationBlock
+            videoUrl={"/videos/circle_anim.mp4"}
             videoCover={"/images/work/cover.png"}
             videoDescription={"Animated circle preloader"}
             text={
               "Experience a dynamic Neon preloader featuring two rotating circles, each moving in opposite directions. Watch as the inner circle morphs shapes while the vibrant colours shift with every rotation."
             }
             category={"Animations"}
+            buttonText={"Order a similar animation"}
           />
-          <VideoBlock
+          <AnimationBlock
+            videoUrl={"/videos/text_anim.mp4"}
             videoCover={"/images/work/cover.png"}
             videoDescription={"Animated text"}
             text={
               "Enjoy the elegant animation of text gracefully appearing letter by letter on the screen, ensuring readability at a comfortable pace for adults to absorb each word with clarity."
             }
             category={"Animations"}
+            buttonText={"Order a similar animation"}
           />
-          <VideoBlock
+          <AnimationBlock
+            videoUrl={"/videos/button_anim.mp4"}
             videoCover={"/images/work/cover.png"}
             videoDescription={"Animated button"}
             text={
               "Discover an animated hover button adorned with a gradient from violet to pink. Upon hovering, witness its transformation to a serene lagoon blue, adding interactive charm and elegance to your interface."
             }
             category={"Animations"}
+            buttonText={"Order a similar animation"}
           />
-          <VideoBlock
+          <AnimationBlock
+            videoUrl={"/videos/ball_anim.mp4"}
             videoCover={"/images/work/cover.png"}
             videoDescription={"Animated ball preloader"}
             text={
               "Behold a captivating preloader featuring a lively red ball bouncing energetically against a subdued grey backdrop. Its rhythmic motion signals ongoing activity."
             }
             category={"Animations"}
+            buttonText={"Order a similar animation"}
           />
-          <VideoBlock
+          <AnimationBlock
+            videoUrl={"/videos/heart_anim.mp4"}
             videoCover={"/images/work/cover.png"}
             videoDescription={"Animated neon heart"}
             text={
               "Watch a neon pink heart sketch elegantly form on the screen. It begins to pulsate with a gentle rhythm and sends vibrant waves of neon colours, filling the screen with affection and energy."
             }
             category={"Animations"}
+            buttonText={"Order a similar animation"}
           />
         </div>
       </div>

@@ -8,7 +8,7 @@ import Link from "next/link";
 import ExploreArrow from "@/icons/ExploreArrow";
 import ReactPlayer from "react-player";
 
-const ProjectsSlider = ({ images = [], videos = [], exploreLink }) => {
+const ProjectsSlider = ({ images = [], videos = [], exploreLink, animation = false }) => {
   const [videoArray, setVideoArray] = useState([]);
 
   useEffect(() => {
@@ -45,10 +45,12 @@ const ProjectsSlider = ({ images = [], videos = [], exploreLink }) => {
           videoArray.map((video, index) => (
             <div key={index}>
               <ReactPlayer
-                url={video}
-                light="/images/work/cover.png"
+                url={video.video}
+                light={video.cover}
+                playIcon={<img width={50} height={50} src="/images/playIcon.svg" />}
                 playing
-                controls
+                controls={!animation}
+                loop={true}
                 className="single-video"
               />
             </div>

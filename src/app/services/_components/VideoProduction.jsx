@@ -39,7 +39,7 @@ const VideoProduction = () => {
               connects with your audience.
             </motion.p>
           </div>
-          <img src="/images/services/serviceThumbnail.svg" />
+          <img src="/images/services/videoProductionCover.webp" />
         </div>
 
         <div className="service-block__bottom">

@@ -38,7 +38,7 @@ const ThreeDModeling = () => {
               for personal projects and presentations.
             </motion.p>
           </div>
-          <img src="/images/services/serviceThumbnail.svg" />
+          <img src="/images/services/modellingCover.webp" />
         </div>
 
         <div className="service-block__bottom">

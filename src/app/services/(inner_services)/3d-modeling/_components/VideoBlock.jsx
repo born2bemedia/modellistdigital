@@ -17,9 +17,10 @@ const VideoBlock = ({ videoUrl, videoCover }) => {
           url={video}
           width={340}
           height={197}
-          light={videoCover}
+          muted={true}
+          loop={true}
+          controls={false}
           playing={true}
-          controls
           className="single-video"
         />
       )}

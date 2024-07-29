@@ -41,24 +41,28 @@ const ThreeDModeling = () => {
           </motion.div>
 
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Model description"}
+            videoCover={"/images/home/3d/3d_1.webp"}
+            videoDescription={"Golden Flower Elegance"}
             category={"3D Modeling"}
+            buttonText={"Order a similar solution"}
           />
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Model description"}
+            videoCover={"/images/home/3d/3d_2.webp"}
+            videoDescription={"Elegant Ring with a Stunning Gemstone"}
             category={"3D Modeling"}
+            buttonText={"Order a similar solution"}
           />
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Model description"}
+            videoCover={"/images/home/3d/3d_3.webp"}
+            videoDescription={"Elegant 4-Candle Holder for Ambient Lighting"}
             category={"3D Modeling"}
+            buttonText={"Order a similar solution"}
           />
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Model description"}
+            videoCover={"/images/home/3d/3d_4.webp"}
+            videoDescription={"Perfectly Hold Your Eggs with Style"}
             category={"3D Modeling"}
+            buttonText={"Order a similar solution"}
           />
         </div>
       </div>

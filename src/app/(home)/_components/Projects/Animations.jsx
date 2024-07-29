@@ -3,17 +3,24 @@ import React from 'react'
 import ProjectsSlider from './ProjectsSlider';
 
 const Animations = () => {
-  const imagesArray = [
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
+  const videoArray = [
+    {
+      video: "/videos/heart_anim.mp4",
+    },
+    {
+      video: "/videos/circle_anim.mp4",
+    },
+    {
+      video: "/videos/button_anim.mp4",
+    },
+    {
+      video: "/videos/text_anim.mp4",
+    },
   ];
 
   return (
     
-    <ProjectsSlider images={imagesArray} exploreLink="/services/animations"/>
+    <ProjectsSlider videos={videoArray} animation={true} exploreLink="/services/animations"/>
   )
 }
 

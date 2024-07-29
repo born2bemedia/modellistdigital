@@ -42,10 +42,13 @@ function SingleProductHero({ product }) {
                   url={product.preview_video}
                   width={540}
                   height="305px"
-                  light={product.image}
-                  playing="true"
-                  controls
+                  //light={product.image}
+                  playing={true}
+                  muted={true}
+                  controls={true}
                   className="single-video"
+                  autoplay={true}
+                  loop={true}
                 />
               ) : (
                 <Image

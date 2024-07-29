@@ -4,10 +4,15 @@ import ProjectsSlider from "./ProjectsSlider";
 
 const VideoProduction = () => {
   const videoArray = [
-    "/videos/corrective-nutrition.webm",
-    "/videos/corrective-nutrition.webm",
+    {
+      cover: "/images/work/video1_cover.png",
+      video: "/videos/corrective-nutrition.webm",
+    },
+    {
+      cover: "/images/work/video1_cover.png",
+      video: "/videos/corrective-nutrition.webm",
+    },
   ];
-
   return (
     <ProjectsSlider
       videos={videoArray}
