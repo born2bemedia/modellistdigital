@@ -59,7 +59,7 @@ const PricingBlock = () => {
                 <li>Medical modelling</li>
                 <li>Industrial design modelling</li>
               </ul>
-              <Link href="#" className="white-button">
+              <Link href="#" target="_blank" className="white-button pricelist">
                 See full price list
               </Link>
             </motion.div>

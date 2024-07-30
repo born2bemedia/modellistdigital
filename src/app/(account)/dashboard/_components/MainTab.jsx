@@ -49,7 +49,7 @@ const MainTab = () => {
           GET OUR <br />
           PRICING GUIDE
         </h2>
-        <Link href="#">
+        <Link href="#" target="_blank" className="pricelist">
           <span>
             Download <br />
             pricing guide

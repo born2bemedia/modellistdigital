@@ -66,7 +66,7 @@ const PricingBlock = () => {
                 <li>Responsive design</li>
                 <li>Accessibility design</li>
               </ul>
-              <Link href="#" className="white-button">
+              <Link href="#" target="_blank" className="white-button pricelist">
                 See full price list
               </Link>
             </motion.div>
