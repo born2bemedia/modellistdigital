@@ -219,6 +219,10 @@
         }
         .single-video {
           width: 100% !important;
+          @media (min-width: 1600px) {
+            width: 100% !important;
+            height: 350px !important;
+          }
         }
         button {
           width: 100%;

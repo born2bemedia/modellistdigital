@@ -974,12 +974,21 @@ button {
       @media (max-width: 992px) {
         width: 100%;
       }
+      .single-video {
+        width: 100% !important;
+        @media (min-width: 1600px) {
+          width: 100% !important;
+          height: 225px !important;
+        }
+      }
       .product-thumb {
         position: relative;
         display: flex;
         img {
           position: relative;
           z-index: 1;
+          width: 100%;
+          height: auto;
         }
         .offer {
           position: absolute;
