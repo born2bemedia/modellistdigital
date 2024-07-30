@@ -1,24 +1,26 @@
+@import "mixin";
+
 .policy {
   margin: 100px 0;
-  @media (max-width: 992px) {
+  @media (max-width: rem(992)) {
     margin: 50px 0 100px 0;
   }
   h1 {
     color: #161616;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: left;
     margin: 0 0 40px 0;
     text-transform: uppercase;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       width: 100%;
-      font-size: 24px;
+      font-size: rem(24);
     }
   }
   .content {
     p {
-      font-size: 16px;
+      font-size: rem(16);
       font-weight: 400;
       line-height: 1.2;
       text-align: left;
@@ -27,7 +29,7 @@
     }
     h2 {
       color: #161616;
-      font-size: 24px;
+      font-size: rem(24);
       font-weight: 700;
       line-height: 29.26px;
       text-align: left;
@@ -43,7 +45,7 @@
     ul {
       padding: 0 0 0 20px;
       li {
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;

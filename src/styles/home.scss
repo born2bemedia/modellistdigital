@@ -1,13 +1,15 @@
+@import "mixin";
+
 .home-hero {
   margin-bottom: 150px;
-  @media (max-width: 992px) {
+  @media (max-width: rem(992)) {
     margin-bottom: 100px;
   }
   &__body {
     border-radius: 25px;
     background-color: #d4d4d4;
     position: relative;
-    height: 500px;
+    height: rem(500);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -18,7 +20,7 @@
     background-image: url(/images/home/heroBack.svg);
     background-position: left center;
     background-size: cover;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       background-image: url(/images/home/heroBackMob.svg);
       padding-top: 40px;
       padding-right: 20px;
@@ -38,9 +40,9 @@
         display: flex;
         align-items: center;
         gap: 40px;
-        width: 1836px;
+        width: rem(1836);
         .text {
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 700;
           line-height: 1.2;
           text-align: center;
@@ -49,8 +51,8 @@
           max-width: unset;
         }
         .circle {
-          width: 10px;
-          height: 10px;
+          width: rem(10);
+          height: rem(10);
           border-radius: 50%;
           background: #161616;
           display: block;
@@ -63,35 +65,35 @@
       left: 90px;
       bottom: 0;
       z-index: 1;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: auto;
-        height: 350px;
+        height: rem(350);
         left: 50%;
         transform: translateX(-50%) !important;
       }
     }
     h2 {
       margin: 0;
-      font-size: 24px;
+      font-size: rem(24);
       font-weight: 700;
       line-height: 1.2;
       text-align: right;
       color: #161616;
       text-transform: uppercase;
-      @media (max-width: 992px) {
-        font-size: 14px;
+      @media (max-width: rem(992)) {
+        font-size: rem(14);
       }
     }
     h1 {
       margin: 0;
-      font-size: 48px;
+      font-size: rem(48);
       font-weight: 800;
       line-height: 1.2;
       text-align: right;
       color: #161616;
       text-transform: uppercase;
-      @media (max-width: 992px) {
-        font-size: 30px;
+      @media (max-width: rem(992)) {
+        font-size: rem(30);
       }
     }
   }
@@ -99,7 +101,7 @@
   &__bottom {
     display: flex;
     gap: 30px;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       flex-direction: column;
     }
     a {
@@ -109,7 +111,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 35px 40px;
-      font-size: 36px;
+      font-size: rem(36);
       font-weight: 700;
       line-height: 1.2;
       text-align: left;
@@ -125,27 +127,27 @@
           }
         }
       }
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
-        font-size: 24px;
+        font-size: rem(24);
         padding: 25px;
       }
       span {
         &:last-child {
-          width: 80px;
-          height: 80px;
+          width: rem(80);
+          height: rem(80);
           background: #0c0c0c;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           border: 1px solid #0c0c0c;
-          @media (max-width: 992px) {
-            width: 60px;
-            height: 60px;
+          @media (max-width: rem(992)) {
+            width: rem(60);
+            height: rem(60);
             img {
-              width: 23px;
-              height: 23px;
+              width: rem(23);
+              height: rem(23);
             }
           }
         }
@@ -157,7 +159,7 @@
 .latest-projects {
   margin: 150px 0;
   position: relative;
-  @media (max-width: 992px) {
+  @media (max-width: rem(992)) {
     margin: 100px 0;
   }
   &:before {
@@ -168,11 +170,11 @@
     top: -15px;
     position: absolute;
     z-index: 0;
-    height: 1000px;
+    height: rem(1000);
     background-image: url("/images/home/projectsBack.webp");
     background-size: cover;
     background-position: center;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       top: 100px;
     }
   }
@@ -183,19 +185,19 @@
     border-radius: 25px;
     position: relative;
     z-index: 1;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       padding: 30px 20px;
     }
 
     h2 {
       color: #ffffff;
-      font-size: 36px;
+      font-size: rem(36);
       font-weight: 700;
       line-height: 1.2;
       text-align: left;
       margin: 0 0 40px 0;
-      @media (max-width: 992px) {
-        font-size: 24px;
+      @media (max-width: rem(992)) {
+        font-size: rem(24);
         margin-bottom: 20px;
       }
     }
@@ -203,15 +205,15 @@
     .tabs {
       display: flex;
       gap: 30px;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         flex-direction: column;
       }
       .tabs-nav {
-        width: 285px;
+        width: rem(285);
         display: flex;
         flex-direction: column;
         gap: 20px;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
         button {
@@ -223,7 +225,7 @@
           justify-content: space-between;
           color: #fff;
           border: none;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 700;
           line-height: 1.2;
           text-align: left;
@@ -247,7 +249,7 @@
 
       .tabs-content {
         width: calc(100% - 315px);
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
         .sliderContainer {
@@ -255,24 +257,24 @@
           &:before {
             content: "";
             display: block;
-            width: 330px;
-            height: 36px;
+            width: rem(330);
+            height: rem(36);
             background: #161616;
             transform: skew(-15deg);
             position: absolute;
             z-index: 1;
             right: -10px;
             bottom: 0;
-            @media (max-width: 992px) {
-              width: 280px;
-              height: 31px;
+            @media (max-width: rem(992)) {
+              width: rem(280);
+              height: rem(31);
             }
           }
           .explore {
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 400;
             line-height: 1.2;
             text-align: left;
@@ -285,7 +287,7 @@
           }
           .slick-slider {
             .single-video {
-              @media (max-width: 992px) {
+              @media (max-width: rem(992)) {
                 width: 100% !important;
                 height: 180px !important;
               }
@@ -310,7 +312,7 @@
               width: auto;
               display: flex !important;
               gap: 10px;
-              @media (max-width: 992px) {
+              @media (max-width: rem(992)) {
                 right: 145px;
               }
               li {
@@ -325,8 +327,8 @@
                 }
                 button {
                   background: #ffffff26;
-                  width: 10px;
-                  height: 10px;
+                  width: rem(10);
+                  height: rem(10);
                   border-radius: 50%;
                   &:before {
                     display: none;
@@ -345,7 +347,7 @@
   padding: 0 0 150px 0;
   position: relative;
   overflow: hidden;
-  @media (max-width: 992px) {
+  @media (max-width: rem(992)) {
     padding: 0 0 100px 0;
   }
 
@@ -357,18 +359,18 @@
     bottom: -150px;
     position: absolute;
     z-index: 0;
-    height: 530px;
+    height: rem(530);
     background-image: url("/images/home/readyBack.webp");
     background-size: cover;
     background-position: center;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       bottom: -100px;
     }
   }
 
   h2 {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: left;
@@ -377,7 +379,7 @@
   }
 
   &__body {
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       overflow-x: auto;
     }
     > div {
@@ -385,8 +387,8 @@
       gap: 25px;
       position: relative;
       z-index: 1;
-      @media (max-width: 992px) {
-        width: 1110px;
+      @media (max-width: rem(992)) {
+        width: rem(1110);
       }
     }
     .item {
@@ -394,16 +396,16 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
       }
       span {
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 700;
         line-height: 1.2;
         text-align: center;
-        width: 65px;
-        height: 25px;
+        width: rem(65);
+        height: rem(25);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -412,7 +414,7 @@
       }
       h3 {
         margin: 30px 0 15px 0;
-        font-size: 20px;
+        font-size: rem(20);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
@@ -421,7 +423,7 @@
       }
       p {
         color: #161616;
-        font-size: 14px;
+        font-size: rem(14);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
@@ -429,7 +431,7 @@
       }
       h4 {
         color: #161616;
-        font-size: 14px;
+        font-size: rem(14);
         font-weight: 600;
         line-height: 1.2;
         text-align: left;
@@ -447,12 +449,12 @@
     position: relative;
     z-index: 1;
 
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       margin-top: 100px;
     }
     h2 {
       text-align: center;
-      font-size: 64px;
+      font-size: rem(64);
       font-weight: 600;
       margin: 0;
       position: relative;
@@ -472,7 +474,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   padding: 150px 0;
-  @media (max-width: 992px) {
+  @media (max-width: rem(992)) {
     padding: 100px 0;
   }
 
@@ -481,18 +483,18 @@
     gap: 95px;
     .col-01 {
       width: calc(100% - 630px);
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
       }
       h2 {
         margin: 0 0 70px 0;
-        font-size: 96px;
+        font-size: rem(96);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
         color: #fff;
-        @media (max-width: 992px) {
-          font-size: 64px;
+        @media (max-width: rem(992)) {
+          font-size: rem(64);
           margin-bottom: 40px;
         }
       }
@@ -506,7 +508,7 @@
             align-items: center;
             gap: 15px;
             margin: 0 0 25px 0;
-            font-size: 20px;
+            font-size: rem(20);
             font-weight: 700;
             line-height: 1.2;
             text-align: left;
@@ -514,12 +516,12 @@
             text-transform: uppercase;
             span {
               &:first-child {
-                width: 65px;
-                height: 25px;
+                width: rem(65);
+                height: rem(25);
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 16px;
+                font-size: rem(16);
                 font-weight: 700;
                 line-height: 1.2;
                 text-align: center;
@@ -531,7 +533,7 @@
           }
           p {
             margin: 0;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 400;
             line-height: 1.2;
             text-align: left;
@@ -541,7 +543,7 @@
       }
     }
     .col-02 {
-      width: 535px;
+      width: rem(535);
       > div {
         display: flex;
         align-items: flex-start;
@@ -549,7 +551,7 @@
         flex-wrap: wrap;
         padding-top: 100px;
         img {
-          max-width: 252px;
+          max-width: rem(252);
           &:nth-child(even) {
             //margin-top: 100px;
           }
@@ -558,7 +560,7 @@
           }
         }
       }
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         display: none;
       }
     }

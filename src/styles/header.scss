@@ -1,3 +1,5 @@
+@import "mixin";
+
 header {
   padding: 25px 0;
   position: relative;
@@ -30,7 +32,7 @@ header {
       display: flex;
       align-items: center;
       gap: 40px;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         gap: 20px;
       }
 
@@ -38,23 +40,23 @@ header {
         display: flex;
         align-items: center;
         gap: 15px;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           gap: 10px;
         }
         .divider {
-          width: 1px;
-          @media (max-width: 992px) {
+          width: rem(1);
+          @media (max-width: rem(992)) {
           }
         }
         a {
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
           color: #161616;
           display: flex;
-          @media (max-width: 992px) {
-            font-size: 14px;
+          @media (max-width: rem(992)) {
+            font-size: rem(14);
           }
         }
 
@@ -62,7 +64,7 @@ header {
           display: flex;
           cursor: pointer;
           img {
-            width: 20px;
+            width: rem(20);
           }
         }
 
@@ -77,8 +79,8 @@ header {
             &:before {
               content: "";
               display: block;
-              width: 7px;
-              height: 7px;
+              width: rem(7);
+              height: rem(7);
               background: #ff5353;
               border-radius: 50%;
               position: absolute;
@@ -90,7 +92,7 @@ header {
         }
 
         > span {
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 500;
           line-height: 1.2;
           text-align: left;
@@ -100,13 +102,13 @@ header {
 
       .soc {
         gap: 10px;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
             display: none;
         }
         a {
           display: flex;
           img {
-            width: 25px;
+            width: rem(25);
           }
         }
       }
@@ -128,7 +130,7 @@ header {
   opacity: 0;
   pointer-events: none;
   backdrop-filter: blur(10px);
-  @media (max-width: 992px) {
+  @media (max-width: rem(992)) {
     padding-top: 200px;
   }
   &.opened {
@@ -139,7 +141,7 @@ header {
   nav {
     display: flex;
     gap: 150px;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       flex-direction: column;
       gap: 30px;
       align-items: center;
@@ -148,14 +150,14 @@ header {
       display: flex;
       flex-direction: column;
       gap: 30px;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         flex-direction: column;
         gap: 30px;
         align-items: center;
       }
       a {
         color: #fff;
-        font-size: 48px;
+        font-size: rem(48);
         font-weight: 800;
         line-height: 1;
         text-align: left;
@@ -163,19 +165,19 @@ header {
         &:hover {
           color: #b4ff05;
         }
-        @media (max-width: 992px) {
-          font-size: 24px;
+        @media (max-width: rem(992)) {
+          font-size: rem(24);
           text-align: center;
         }
       }
     }
   }
   .main-button {
-    width: 90px;
-    height: 25px;
-    font-size: 12px;
+    width: rem(90);
+    height: rem(25);
+    font-size: rem(12);
     display: none;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       display: flex;
       margin: 0 auto 30px auto;
     }

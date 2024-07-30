@@ -1,4 +1,13 @@
-//Подключение шрифта
+@use "sass:math";
+
+@function rem($pixel) {
+	@if math.is-unitless($pixel) {
+	  @return math.div($pixel, 16) + rem;
+	} @else {
+	  @error 'Don\'t use units when using the rem() function; only numbers.';
+	}
+  }
+
 @mixin font($font_name, $file_name, $weight, $style) {
 	@font-face {
 		font-family: $font_name;

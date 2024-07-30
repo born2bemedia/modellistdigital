@@ -1,8 +1,10 @@
+@import "mixin";
+
 .account-wrap {
   margin: 70px 0 100px 0;
   h1 {
     color: #161616;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -22,7 +24,7 @@
       list-style-type: none;
       margin: 0 0 60px 0;
       padding: 0;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         flex-direction: column;
       }
       li {
@@ -33,14 +35,14 @@
         justify-content: center;
         align-items: center;
         color: #fff;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 700;
         line-height: 1.2;
         text-align: center;
-        height: 50px;
+        height: rem(50);
         text-transform: uppercase;
         border-bottom: 3px solid #161616;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
         &.active {
@@ -52,7 +54,7 @@
 
   h2 {
     color: #161616;
-    font-size: 24px;
+    font-size: rem(24);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -63,12 +65,12 @@
 
   p {
     color: #161616;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
     margin: 0 0 40px 0;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       br {
         display: none;
       }
@@ -80,29 +82,29 @@
     flex-wrap: wrap;
     gap: 30px;
     margin: 40px 0 60px 0;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       gap: 10px;
     }
     a {
       width: calc(25% - 23px);
       color: #ffffff;
-      font-size: 16px;
+      font-size: rem(16);
       font-weight: 700;
       line-height: 1.2;
       text-align: left;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 70px;
+      height: rem(70);
       background: #161616;
       border-radius: 12px;
       padding: 0 20px;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
       }
       span:last-child {
-        width: 38px;
-        height: 38px;
+        width: rem(38);
+        height: rem(38);
         background: #0c0c0c;
         border-radius: 50%;
         display: flex;
@@ -110,15 +112,15 @@
         justify-content: center;
         border: 1px solid #fff;
         img {
-          width: 14px;
-          height: 14px;
+          width: rem(14);
+          height: rem(14);
         }
       }
     }
   }
 
   .pricing {
-    min-height: 280px;
+    min-height: rem(280);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,7 +131,7 @@
     background-image: url(/images/services/assistance-back.svg);
     background-size: cover;
     background-position: center;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       flex-direction: column;
       padding: 40px 20px;
       gap: 20px;
@@ -137,35 +139,35 @@
     h2 {
       text-align: left;
       color: #fff;
-      font-size: 40px;
+      font-size: rem(40);
       width: calc(100% - 580px);
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
         text-align: center;
-        font-size: 24px;
+        font-size: rem(24);
       }
     }
     a {
-      width: 540px;
+      width: rem(540);
       border-radius: 25px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 35px 40px;
-      font-size: 32px;
+      font-size: rem(32);
       font-weight: 700;
       line-height: 1.2;
       text-align: left;
       color: #0c0c0c;
       text-transform: uppercase;
       background: #b4ff05;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
-        font-size: 20px;
+        font-size: rem(20);
         padding: 25px;
         span:last-child {
-          width: 60px;
-          height: 60px;
+          width: rem(60);
+          height: rem(60);
         }
       }
     }
@@ -175,7 +177,7 @@
     display: flex;
     gap: 30px;
     margin-bottom: 60px;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       flex-direction: column;
     }
     a {
@@ -185,7 +187,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 35px 40px;
-      font-size: 26px;
+      font-size: rem(26);
       font-weight: 700;
       line-height: 1.2;
       text-align: left;
@@ -205,27 +207,27 @@
           }
         }
       }
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
-        font-size: 16px;
+        font-size: rem(16);
         padding: 25px;
       }
       span {
         &:last-child {
-          width: 80px;
-          height: 80px;
+          width: rem(80);
+          height: rem(80);
           background: #0c0c0c;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           border: 1px solid #0c0c0c;
-          @media (max-width: 992px) {
-            width: 60px;
-            height: 60px;
+          @media (max-width: rem(992)) {
+            width: rem(60);
+            height: rem(60);
             img {
-              width: 23px;
-              height: 23px;
+              width: rem(23);
+              height: rem(23);
             }
           }
         }
@@ -234,7 +236,7 @@
   }
 
   .request-form {
-    max-width: 540px;
+    max-width: rem(540);
     margin: 0 auto;
     form {
       display: flex;
@@ -251,7 +253,7 @@
       > div {
         width: calc(50% - 15px);
         position: relative;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
         &.full {
@@ -261,18 +263,18 @@
           position: absolute;
           left: 0;
           color: #e74848;
-          font-size: 10px;
+          font-size: rem(10);
         }
         input,
         textarea {
           width: 100%;
 
           color: #161616;
-          height: 50px;
+          height: rem(50);
           border-radius: 25px;
           background: #0000000d;
           border: 1px solid #00000026;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
@@ -286,7 +288,7 @@
         }
 
         textarea {
-          height: 150px;
+          height: rem(150);
           padding: 15px 20px;
         }
       }
@@ -297,12 +299,12 @@
     overflow-x: auto;
     .orders {
       border-collapse: collapse;
-      width: 730px;
+      width: rem(730);
       margin: 0 auto;
       th {
         width: 20%;
         padding: 0 0 20px 0;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
@@ -313,7 +315,7 @@
       td {
         width: 20%;
         padding: 20px 0 20px 0;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 400;
         line-height: 1.2;
         color: #161616;
@@ -331,12 +333,12 @@
   .personal-data {
     .billing-success {
       text-align: center;
-      font-size: 14px;
+      font-size: rem(14);
       margin-top: 30px;
     }
     .billing-error {
       text-align: center;
-      font-size: 14px;
+      font-size: rem(14);
       margin-top: 30px;
       color: #ff5353;
     }
@@ -350,29 +352,29 @@
         flex-wrap: wrap;
         column-gap: 30px;
         row-gap: 20px;
-        max-width: 540px;
+        max-width: rem(540);
         margin: 0 auto;
         > div {
           width: calc(50% - 15px);
           position: relative;
-          @media (max-width: 992px) {
+          @media (max-width: rem(992)) {
             width: 100%;
           }
           .error {
             position: absolute;
             left: 0;
-            font-size: 12px;
+            font-size: rem(12);
             color: #ff5353;
           }
           input {
             width: 100%;
-            height: 50px;
+            height: rem(50);
             padding: 0 20px;
             background: #0000000d;
             border: 1px solid #00000026;
             border-radius: 25px;
             color: #161616;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 400;
             line-height: 1.2;
             text-align: left;
@@ -428,12 +430,12 @@
 
     .success {
       text-align: center;
-      font-size: 14px;
+      font-size: rem(14);
       margin-top: 30px;
     }
     .error {
       text-align: center;
-      font-size: 14px;
+      font-size: rem(14);
       margin-top: 30px;
       color: #ff5353;
     }
@@ -443,9 +445,9 @@
     }
 
     form {
-      max-width: 255px;
+      max-width: rem(255);
       margin: 0 auto;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         max-width: 100%;
       }
       .password-data {
@@ -456,24 +458,24 @@
         > div {
           width: 100%;
           position: relative;
-          @media (max-width: 992px) {
+          @media (max-width: rem(992)) {
             width: 100%;
           }
           .error {
             position: absolute;
             left: 0;
-            font-size: 12px;
+            font-size: rem(12);
             color: #ff5353;
           }
           input {
             width: 100%;
-            height: 50px;
+            height: rem(50);
             padding: 0 20px;
             background: #0000000d;
             border: 1px solid #00000026;
             border-radius: 25px;
             color: #161616;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 400;
             line-height: 1.2;
             text-align: left;
@@ -494,7 +496,7 @@
   margin: 100px 0;
   h1 {
     color: #161616;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -503,7 +505,7 @@
     text-transform: uppercase;
   }
   form {
-    max-width: 255px;
+    max-width: rem(255);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -514,24 +516,24 @@
     > div {
       width: 100%;
       position: relative;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
       }
       .error {
         position: absolute;
         left: 0;
-        font-size: 12px;
+        font-size: rem(12);
         color: #ff5353;
       }
       input {
         width: 100%;
-        height: 50px;
+        height: rem(50);
         padding: 0 20px;
         background: #0000000d;
         border: 1px solid #00000026;
         border-radius: 25px;
         color: #161616;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
@@ -548,13 +550,13 @@
   .success{
     p{
       text-align: center;
-      font-size: 12px;
+      font-size: rem(12);
     }
   }
 
   .reset{
     color: #161616;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
@@ -567,7 +569,7 @@
   margin: 100px 0;
   h1 {
     color: #161616;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -577,12 +579,12 @@
   }
   p {
     color: #161616;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
     margin: 0 0 40px 0;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       br {
         display: none;
       }
@@ -594,12 +596,12 @@
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 20px;
-    max-width: 540px;
+    max-width: rem(540);
     margin: 0 auto;
     > div {
       width: calc(50% - 15px);
       position: relative;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
       }
 
@@ -614,13 +616,13 @@
         width: 100%;
         position: relative;
         margin-top: 10px;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
         .error {
           position: absolute;
           left: 0;
-          font-size: 12px;
+          font-size: rem(12);
           color: #ff5353;
         }
         input {
@@ -640,13 +642,13 @@
           align-items: flex-start;
           gap: 5px;
           color: #161616;
-          font-size: 13px;
+          font-size: rem(13);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
           svg {
-            width: 12px;
-            height: 12px;
+            width: rem(12);
+            height: rem(12);
             margin-top: 3px;
             circle {
               &:last-child {
@@ -667,18 +669,18 @@
       .error {
         position: absolute;
         left: 0;
-        font-size: 12px;
+        font-size: rem(12);
         color: #ff5353;
       }
       input {
         width: 100%;
-        height: 50px;
+        height: rem(50);
         padding: 0 20px;
         background: #0000000d;
         border: 1px solid #00000026;
         border-radius: 25px;
         color: #161616;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;

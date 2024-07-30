@@ -1,3 +1,5 @@
+@import "mixin";
+
 .cart-wrap {
   margin: 50px 0 70px 0;
   &.empty{
@@ -9,7 +11,7 @@
   }
   h1 {
     color: #161616;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -19,12 +21,12 @@
   }
   p {
     color: #161616;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
     margin: 0 0 40px 0;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
         br{
             display: none;
         }
@@ -39,16 +41,16 @@
       display: flex;
       gap: 50px;
       justify-content: space-between;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         display: none;
       }
       div {
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: rem(20);
         font-weight: 700;
         line-height: 1.2;
         text-align: center;
-        width: 110px;
+        width: rem(110);
         &:first-child {
           width: 55%;
           text-align: left;
@@ -62,7 +64,7 @@
         justify-content: space-between;
         padding: 20px 30px;
         border-bottom: 1px solid #00000033;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           flex-direction: column;
           padding: 20px 0;
           gap: 20px;
@@ -100,11 +102,11 @@
           border: none;
         }
         div {
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: center;
-          width: 110px;
+          width: rem(110);
           &:first-child {
             width: 55%;
             text-align: left;
@@ -114,7 +116,7 @@
             align-items: center;
             gap: 5px;
             color: #ff5353;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 600;
             line-height: 1.2;
             text-align: left;
@@ -133,7 +135,7 @@
     border-radius: 99px;
     padding: 13px;
     color: #161616;
-    font-size: 20px;
+    font-size: rem(20);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -142,10 +144,10 @@
 
 .checkout-wrap {
   margin: 70px auto 100px auto;
-  max-width: 540px;
+  max-width: rem(540);
   h2 {
     color: #161616;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -169,24 +171,24 @@
       > div {
         width: calc(50% - 15px);
         position: relative;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
         .error {
           position: absolute;
           left: 0;
-          font-size: 12px;
+          font-size: rem(12);
           color: #ff5353;
         }
         input {
           width: 100%;
-          height: 50px;
+          height: rem(50);
           padding: 0 20px;
           background: #0000000d;
           border: 1px solid #00000026;
           border-radius: 25px;
           color: #161616;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
@@ -207,25 +209,25 @@
       border-bottom: 1px solid #00000033;
       display: flex;
       gap: 30px;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         flex-direction: column;
       }
       div {
         width: calc(50% - 15px);
         position: relative;
-        height: 50px;
+        height: rem(50);
         padding: 0 20px;
         background: #0000000d;
         border: 1px solid #00000026;
         border-radius: 25px;
         color: #161616;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         display: flex;
         align-items: center;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
       }
@@ -233,14 +235,14 @@
         width: calc(50% - 15px);
         position: relative;
         font-family: Montserrat;
-        font-size: 10px;
+        font-size: rem(10);
         font-style: italic;
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         color: #161616;
         margin: 0;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
       }
@@ -250,20 +252,20 @@
       display: flex;
       gap: 10px;
       align-items: center;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         flex-direction: column;
         gap:30px;
       }
       .checkbox {
         width: calc(100% - 140px);
         position: relative;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
             width: 100%;
         }
         .error {
             position: absolute;
             left: 0;
-            font-size: 12px;
+            font-size: rem(12);
             color: #ff5353;
           }
         input {
@@ -283,13 +285,13 @@
           align-items: flex-start;
           gap: 5px;
           color: #161616;
-          font-size: 13px;
+          font-size: rem(13);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
           svg {
-            width: 12px;
-            height: 12px;
+            width: rem(12);
+            height: rem(12);
             margin-top: 3px;
             circle {
               &:last-child {
@@ -307,9 +309,9 @@
         }
       }
       button {
-        width: 130px;
-        @media (max-width: 992px) {
-            width: 220px;
+        width: rem(130);
+        @media (max-width: rem(992)) {
+            width: rem(220);
         }
       }
     }
