@@ -37,7 +37,7 @@ const QuoteHero = () => {
             guide to understand the range of services we offer and their
             associated costs.
           </Link>
-          <Link href="#" target="_blank" className="pricelist">
+          <Link href="/pricelist/price_list.pdf" target="_blank" className="pricelist">
             <span>
               Download <br />
               pricing guide
