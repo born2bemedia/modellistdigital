@@ -38,7 +38,7 @@ const UxUiDesign = () => {
               keeps users engaged.
             </motion.p>
           </div>
-          <img src="/images/services/serviceThumbnail.svg" />
+          <img src="/images/work/ux1.png" />
         </div>
 
         <div className="service-block__bottom">
@@ -73,10 +73,13 @@ const UxUiDesign = () => {
             className="title"
           >
             <p>
-              <b>User flow optimization:</b> Optimised navigation structures that enhance usability and streamline the user journey.
+              <b>User flow optimization:</b> Optimised navigation structures
+              that enhance usability and streamline the user journey.
             </p>
             <p>
-              <b>Persona Development:</b> Detailed user profiles based on research, guiding design decisions to align with user expectations and behaviours.
+              <b>Persona Development:</b> Detailed user profiles based on
+              research, guiding design decisions to align with user expectations
+              and behaviours.
             </p>
             <p>
               <b>And many more…</b>

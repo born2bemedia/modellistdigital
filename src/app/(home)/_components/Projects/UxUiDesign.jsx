@@ -4,11 +4,10 @@ import ProjectsSlider from './ProjectsSlider';
 
 const UxUiDesign = () => {
   const imagesArray = [
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
-    '/images/home/videoProduction/slide1.webp',
+    '/images/work/ux1.png',
+    '/images/work/ux2.png',
+    '/images/work/ux3.png',
+    '/images/work/ux4.png',
   ];
 
   return (

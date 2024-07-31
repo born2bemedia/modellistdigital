@@ -41,26 +41,22 @@ const UxUiExamples = () => {
           </motion.div>
 
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Design description"}
+            videoCover={"/images/work/ux1.png"}
             category={"UX/UI Design"}
             buttonText={"Order a similar solution"}
           />
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Design description"}
+            videoCover={"/images/work/ux2.png"}
             category={"UX/UI Design"}
             buttonText={"Order a similar solution"}
           />
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Design description"}
+            videoCover={"/images/work/ux3.png"}
             category={"UX/UI Design"}
             buttonText={"Order a similar solution"}
           />
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Design description"}
+            videoCover={"/images/work/ux4.png"}
             category={"UX/UI Design"}
             buttonText={"Order a similar solution"}
           />
