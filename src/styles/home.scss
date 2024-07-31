@@ -36,6 +36,7 @@
       left: 0;
       overflow: hidden;
       box-sizing: border-box;
+      
       .track {
         display: flex;
         align-items: center;
@@ -287,6 +288,7 @@
           }
           .slick-slider {
             .single-video {
+              width: 100% !important;
               @media (max-width: rem(992)) {
                 width: 100% !important;
                 height: 180px !important;

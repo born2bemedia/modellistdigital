@@ -29,7 +29,9 @@ const VideoBlock = ({ videoUrl, videoDescription, videoCover, price }) => {
               width="540px"
               height="305px"
               light={videoCover}
-              playIcon={<img width={50} height={50} src="/images/playIcon.svg" />}
+              playIcon={
+                <img width={50} height={50} src="/images/playIcon.svg" />
+              }
               playing="true"
               controls
               className="single-video"
@@ -42,7 +44,7 @@ const VideoBlock = ({ videoUrl, videoDescription, videoCover, price }) => {
         )}
       </div>
       <h4>{videoDescription}</h4>
-      <span className="price">PRICE {price}</span>
+      {price && <span className="price">PRICE {price}</span>}
     </motion.div>
   );
 };

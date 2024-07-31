@@ -9,8 +9,8 @@ const VideoProduction = () => {
       video: "/videos/corrective-nutrition.webm",
     },
     {
-      cover: "/images/work/video1_cover.png",
-      video: "/videos/corrective-nutrition.webm",
+      cover: "/images/work/video2_cover.png",
+      video: "/videos/successful_career.webm",
     },
   ];
   return (

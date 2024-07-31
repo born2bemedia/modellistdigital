@@ -29,9 +29,11 @@ const Examples = () => {
           <VideoBlock
             videoUrl={"/videos/corrective-nutrition.webm"}
             videoCover={"/images/work/video1_cover.png"}
-            price={"€450"}
           />
-          
+          <VideoBlock
+            videoUrl={"/videos/successful_career.webm"}
+            videoCover={"/images/work/video2_cover.png"}
+          />
         </div>
       </div>
     </section>

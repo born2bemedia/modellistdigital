@@ -43,13 +43,12 @@ const VideoProductionExamples = () => {
           <VideoBlock
             videoUrl={"/videos/corrective-nutrition.webm"}
             videoCover={"/images/work/video1_cover.png"}
-            videoDescription={"Video description"}
             category={"Video Production"}
             buttonText={"Order a similar video"}
           />
           <VideoBlock
-            videoCover={"/images/work/cover.png"}
-            videoDescription={"Video description"}
+            videoUrl={"/videos/successful_career.webm"}
+            videoCover={"/images/work/video2_cover.png"}
             category={"Video Production"}
             buttonText={"Order a similar video"}
           />
