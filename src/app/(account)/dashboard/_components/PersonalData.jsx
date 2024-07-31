@@ -85,6 +85,7 @@ const PersonalData = () => {
   const [billingSuccess, setBillingSuccess] = useState("");
 
   useEffect(() => {
+    console.log("currentUser: ", currentUser);
     setIsMounted(true);
   }, []);
 
@@ -98,10 +99,7 @@ const PersonalData = () => {
     city: currentUser?.billing?.city || "",
     state: currentUser?.billing?.state || "",
     zip: currentUser?.billing?.postcode || "",
-    country: getCountryOptionByCode(currentUser?.billing?.country) || {
-      value: "US",
-      label: "United States",
-    },
+    country: getCountryOptionByCode(currentUser?.billing?.country) || "",
   };
 
   const validationSchema = Yup.object().shape({
