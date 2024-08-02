@@ -41,6 +41,9 @@ const OrderHistory = () => {
     };
 
     fetchOrders();
+
+    console.log(orders);
+
   }, [currentUser, retry]);
 
   return (
@@ -89,7 +92,7 @@ const OrderHistory = () => {
                               target="_blank"
                               key={item.id}
                             >
-                              Download
+                              {item.downloads[0].name}
                             </Link>
                           )
                       )}
