@@ -12,7 +12,7 @@ const ProjectsSlider = ({ images = [], videos = [], exploreLink, animation = fal
   const [videoArray, setVideoArray] = useState([]);
 
   useEffect(() => {
-    if (videos && Array.isArray(videos)) {
+    if (videos.length > 0 && Array.isArray(videos)) {
       setVideoArray(videos);
     }
   }, [videos]);
