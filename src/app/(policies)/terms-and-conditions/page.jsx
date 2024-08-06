@@ -22,6 +22,10 @@ const PolicyPage = () => {
             following details:
           </p>
           <ul>
+            <li>
+              Registered Address: 167 - 169 Great Portland Street, 5th Floor,
+              London, England, W1W 5PF
+            </li>
             <li>Registered Number: 15795497</li>
             <li>
               Email:{" "}
@@ -58,8 +62,10 @@ const PolicyPage = () => {
           <p>
             <strong>Company</strong>: Throughout these Terms and Conditions,
             references to "Company," "we," "us," or "our" mean The Modellist
-            Limited. The Modellist Limited is responsible for managing your
-            information by these T&C.
+            Limited, a company registered in England, located at 167 - 169 Great
+            Portland Street, 5th Floor, London, England, W1W 5PF, with a
+            registration number of 15795497. The Modellist Limited is
+            responsible for managing your information by these T&C.
           </p>
           <p>
             <strong>Country</strong>: This refers to the United Kingdom, where

@@ -1,30 +1,31 @@
-import React from 'react';
+import React from "react";
 import "@/styles/contacts.scss";
-import ContactsHero from './_components/ContactsHero';
-import RequestBlockContacts from '@/components/RequestBlockContacts';
-import VisitUs from './_components/VisitUs';
-import ThanksPopup from '@/components/ThanksPopup';
+import ContactsHero from "./_components/ContactsHero";
+import RequestBlockContacts from "@/components/RequestBlockContacts";
+import VisitUs from "./_components/VisitUs";
+import ThanksPopup from "@/components/ThanksPopup";
 
 export const metadata = {
+  title: "Contact us",
+  description:
+    "Contact Modellist Digital for inquiries about our services, support, or collaborations. We're here to assist you with your digital production needs.",
+  openGraph: {
     title: "Contact us",
     description:
       "Contact Modellist Digital for inquiries about our services, support, or collaborations. We're here to assist you with your digital production needs.",
-    openGraph: {
-      title: "Contact us",
-      description:
-        "Contact Modellist Digital for inquiries about our services, support, or collaborations. We're here to assist you with your digital production needs.",
-      images: "https://modellistdigital.com/images/meta.png",
-    },
-  };
+    images: "https://modellistdigital.com/images/meta.png",
+  },
+};
 
 const ContactUs = () => {
   return (
     <>
-        <ContactsHero />
-        <RequestBlockContacts />
-        <ThanksPopup />
+      <ContactsHero />
+      <VisitUs />
+      <RequestBlockContacts />
+      <ThanksPopup />
     </>
-  )
-}
+  );
+};
 
-export default ContactUs
+export default ContactUs;

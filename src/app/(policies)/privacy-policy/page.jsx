@@ -24,6 +24,10 @@ const PolicyPage = () => {
               <strong>Company Name:</strong> The Modellist Limited
             </li>
             <li>
+              <strong>Registered Address:</strong> 167 - 169 Great Portland
+              Street, 5th Floor, London, England, W1W 5PF
+            </li>
+            <li>
               <strong>Registered Number:</strong> 15795497
             </li>
             <li>

@@ -16,21 +16,35 @@ footer {
     border-top: 1px solid #ffffff26;
     border-bottom: 1px solid #ffffff26;
     display: flex;
-    gap: 80px;
+    gap: 50px;
+    position: relative;
     @media (max-width: rem(992)) {
       flex-wrap: wrap;
       column-gap: 0;
       row-gap: 40px;
     }
 
-    .soc{
+    .soc {
       display: flex;
-      gap:10px;
+      gap: 10px;
+      position: absolute;
+      right: 0;
+      @media (max-width: rem(992)) {
+        position: relative;
+        right: unset;
+      }
     }
 
     > div {
+      &:nth-child(4){
+        width: 40%;
+      }
       @media (max-width: rem(992)) {
         width: 50%;
+        &:nth-child(3),
+        &:nth-child(4) {
+          width: 100%;
+        }
       }
       h3 {
         color: #ffffff;
@@ -51,7 +65,7 @@ footer {
         margin: 0;
         padding: 0;
         li {
-          font-size: rem(16);
+          font-size: rem(15);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;

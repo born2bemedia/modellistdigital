@@ -33,7 +33,9 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3><Link href="/services">Services</Link></h3>
+            <h3>
+              <Link href="/services">Services</Link>
+            </h3>
             <ul>
               <li>
                 <Link href="/services/video-production">Video production</Link>
@@ -71,18 +73,34 @@ const Footer = () => {
             <ul>
               <li>The Modellist Limited</li>
               <li>
-                <Link href="mailto:info@modellistdigital.com">info@modellistdigital.com</Link>
+                <Link href="mailto:info@modellistdigital.com">
+                  info@modellistdigital.com
+                </Link>
               </li>
               <li>
                 <Link href="tel:+442070433795">+442070433795</Link>
               </li>
+              <li>
+                Office address: 2 Eastbourne Terrace, London W2 6LG, United
+                Kingdom
+              </li>
+              <li>
+                Registered address: 167 - 169 Great Portland Street, 5th Floor,
+                London, W1W 5PF, United Kingdom
+              </li>
             </ul>
           </div>
           <div className="soc">
-            <Link href="https://www.facebook.com/modellistdigital" target="_blank">
+            <Link
+              href="https://www.facebook.com/modellistdigital"
+              target="_blank"
+            >
               <img src="/images/footer/fb.svg" />
             </Link>
-            <Link href="https://www.instagram.com/modellistdigital/" target="_blank">
+            <Link
+              href="https://www.instagram.com/modellistdigital/"
+              target="_blank"
+            >
               <img src="/images/footer/inst.svg" />
             </Link>
             <Link href="https://x.com/modellistdigit" target="_blank">
