@@ -25,7 +25,8 @@ const RequestBlockQuote = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Please fill out the form below to help us <br/>understand your requirements better.
+              Please fill out the form to help us <br />
+              understand your requirements better.
             </motion.p>
           </div>
           <div className="col-02">

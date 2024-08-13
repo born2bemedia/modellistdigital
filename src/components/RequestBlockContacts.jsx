@@ -25,7 +25,8 @@ const RequestBlockContacts = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Please fill out the form below for any inquiries, requests, <br/>or feedback. We'll get back to you as soon as possible.
+              Please fill out the form for any inquiries, requests, or <br />
+              feedback. We'll get back to you as soon as possible.
             </motion.p>
           </div>
           <div className="col-02">

@@ -27,16 +27,22 @@ const PricingBlock = () => {
               variants={fadeInUp}
             >
               <div>
-                <span>Short Video Package (up to 2 minutes)</span>
-                <h3>€500 - €1,000</h3>
+                <div>
+                  <span>Short Video Package (up to 2 minutes)</span>
+                  <h3>€500 - €1,000</h3>
+                </div>
               </div>
               <div>
-                <span>Medium Video Package (2-5 minutes)</span>
-                <h3>€1,000 - €2,500</h3>
+                <div>
+                  <span>Medium Video Package (2-5 minutes)</span>
+                  <h3>€1,000 - €2,500</h3>
+                </div>
               </div>
               <div>
-                <span>Long Video Package (5-10 minutes)</span>
-                <h3>€2,500 - €5,000</h3>
+                <div>
+                  <span>Long Video Package (5-10 minutes)</span>
+                  <h3>€2,500 - €5,000</h3>
+                </div>
               </div>
             </motion.div>
             <motion.div
@@ -57,7 +63,11 @@ const PricingBlock = () => {
                 <li>Vlogs and personal documentaries</li>
                 <li>Product demonstrations</li>
               </ul>
-              <Link href="/pricelist/price_list.pdf" target="_blank" className="white-button pricelist">
+              <Link
+                href="/pricelist/price_list.pdf"
+                target="_blank"
+                className="white-button pricelist"
+              >
                 See full price list
               </Link>
             </motion.div>

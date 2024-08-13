@@ -17,11 +17,15 @@ const RequestBlockInnerService = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-             If you can't find the exact 3D model you're looking for, <br/>
-             don't worry! Reach out to our team of experts, and we'll assist you <br/>
-             in finding or crafting the perfect model to meet your needs. <br/>
-             Fill out the request form below, and let's connect to bring 
-             <br/>your ideas to life.
+              If you can't find the exact 3D model you're looking for, don't{" "}
+              <br />
+              worry! Reach out to our team of experts, and we'll assist you{" "}
+              <br />
+              in finding or crafting the perfect model to meet your needs.{" "}
+              <br />
+              Fill out the request form, and let's connect to bring your
+              <br />
+              ideas to life.
             </motion.p>
           </div>
           <div className="col-02">

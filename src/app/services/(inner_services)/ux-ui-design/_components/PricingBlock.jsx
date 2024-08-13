@@ -27,23 +27,29 @@ const PricingBlock = () => {
               variants={fadeInUp}
             >
               <div>
-                <span>Basic UI design:</span>
-                <h3>€900 - €1,500</h3>
+                <div>
+                  <span>Basic UI design:</span>
+                  <h3>€900 - €1,500</h3>
+                </div>
                 <span>
                   Simple interface designs for small projects or prototypes.
                 </span>
               </div>
               <div>
-                <span>Standard UI/UX design</span>
-                <h3>€1,500 - €3,000</h3>
+                <div>
+                  <span>Standard UI/UX design</span>
+                  <h3>€1,500 - €3,000</h3>
+                </div>
                 <span>
                   Comprehensive designs for medium-sized projects, including
                   wireframes and user flows.
                 </span>
               </div>
               <div>
-                <span>Advanced UI/UX design</span>
-                <h3>€3,000 - €10,000</h3>
+                <div>
+                  <span>Advanced UI/UX design</span>
+                  <h3>€3,000 - €10,000</h3>
+                </div>
                 <span>
                   High-detail designs for large-scale projects with advanced
                   interactivity and user experience considerations.
@@ -66,7 +72,11 @@ const PricingBlock = () => {
                 <li>Responsive design</li>
                 <li>Accessibility design</li>
               </ul>
-              <Link href="/pricelist/price_list.pdf" target="_blank" className="white-button pricelist">
+              <Link
+                href="/pricelist/price_list.pdf"
+                target="_blank"
+                className="white-button pricelist"
+              >
                 See full price list
               </Link>
             </motion.div>

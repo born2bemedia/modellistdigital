@@ -295,29 +295,45 @@
           width: 100%;
         }
         > div {
-          background: #b4ff05;
+          background: #ffffff1a;
           border-radius: 16px;
-          padding: 10px 30px;
-          @media (max-width: rem(992)) {
-            padding: 10px 20px;
-          }
-          span {
-            color: #161616;
-            font-size: rem(12);
-            font-weight: 700;
+          > span {
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 500;
             line-height: 1.2;
             text-align: left;
-            text-transform: uppercase;
-          }
-          h3 {
-            color: #161616;
-            font-size: rem(32);
-            font-weight: 700;
-            line-height: 1.2;
-            text-align: left;
-            margin: 5px 0;
+            display: block;
+            padding: 10px 30px;
             @media (max-width: rem(992)) {
-              font-size: rem(24);
+              padding: 10px 20px;
+            }
+          }
+          > div {
+            background: #b4ff05;
+            border-radius: 16px;
+            padding: 10px 30px;
+            @media (max-width: rem(992)) {
+              padding: 10px 20px;
+            }
+            span {
+              color: #161616;
+              font-size: rem(12);
+              font-weight: 700;
+              line-height: 1.2;
+              text-align: left;
+              text-transform: uppercase;
+            }
+            h3 {
+              color: #161616;
+              font-size: rem(32);
+              font-weight: 700;
+              line-height: 1.2;
+              text-align: left;
+              margin: 5px 0;
+              @media (max-width: rem(992)) {
+                font-size: rem(24);
+              }
             }
           }
         }
@@ -544,6 +560,37 @@
 
       @media (max-width: rem(992)) {
         width: 100%;
+      }
+
+      &.monthly-pack {
+        width: 100%;
+        display: flex;
+        gap: rem(30);
+        @media (max-width: rem(992)) {
+          flex-direction: column;
+          gap:0;
+        }
+        > div {
+          width: calc(50% - rem(15));
+          @media (max-width: rem(992)) {
+            width: 100%;
+            img{
+              display: none;
+            }
+          }
+          &.package-info {
+            padding: rem(40) rem(65);
+            @media (max-width: rem(992)) {
+              padding: rem(40) rem(30);
+            }
+          }
+          .excerpt {
+            padding: rem(40) rem(65);
+            @media (max-width: rem(992)) {
+              padding: rem(40) rem(30);
+            }
+          }
+        }
       }
 
       h3 {

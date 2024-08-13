@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import RequestForm from "./RequestForm";
+import RequestFormContacts from "./RequestFormContacts";
 
 const RequestBlockServices = () => {
   return (
@@ -27,12 +28,12 @@ const RequestBlockServices = () => {
               If you can't find the exact 3D model you're looking for, <br />
               don't worry! Reach out to our team of experts, and we'll <br />
               assist you in finding or crafting the perfect model to meet <br />
-              your needs. Fill out the request form below, and let's <br />
+              your needs. Fill out the request form, and let's <br />
               connect to bring your ideas to life.
             </motion.p>
           </div>
           <div className="col-02">
-            <RequestForm />
+            <RequestFormContacts />
           </div>
         </div>
       </div>

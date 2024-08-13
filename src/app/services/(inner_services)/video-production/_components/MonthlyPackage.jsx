@@ -5,11 +5,11 @@ import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
 import AddToCartButton from "@/components/AddToCartButton";
 import { fetchProductsByCategory } from "@/app/api/products";
+import Image from "next/image";
 
 const MonthlyPackage = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  
 
   const category = "video-production-monthly";
 
@@ -39,7 +39,8 @@ const MonthlyPackage = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            NEED VIDEO CONTENT REGULARLY?<br/>
+            NEED VIDEO CONTENT REGULARLY?
+            <br />
             WE'VE GOT YOU COVERED!
           </motion.h2>
           <div className="packages__body monthly">
@@ -50,12 +51,19 @@ const MonthlyPackage = () => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
                 key={product.id}
-                className=""
+                className="monthly-pack"
               >
-                <h3>{product.title}</h3>
-                {product.excerpt && (
-                  <div className="excerpt">{product.excerpt}</div>
-                )}
+                <div>
+                  <h3>{product.title}</h3>
+                  {product.excerpt && (
+                    <div className="excerpt">{product.excerpt}</div>
+                  )}
+                  <Image
+                    src="/images/services/videoRetainer.png"
+                    width={540}
+                    height={390}
+                  />
+                </div>
                 <div className="package-info">
                   <div dangerouslySetInnerHTML={{ __html: product.content }} />
                   <AddToCartButton product={product} />
