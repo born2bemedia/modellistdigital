@@ -7,6 +7,7 @@ import { CartProvider } from "@/context/CartContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AuthProvider } from "@/context/AuthContext";
 import Preloader from "@/components/Preloader";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
+      <GoogleAnalytics gaId="G-YXL796F4GX" />
         <AuthProvider>
           <CartProvider>
             <PopupsProvider>
