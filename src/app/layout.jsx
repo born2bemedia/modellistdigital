@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { PopupsProvider } from "@/context/PopupsContext";
 import { CartProvider } from "@/context/CartContext";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AuthProvider } from "@/context/AuthContext";
 import Preloader from "@/components/Preloader";
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -44,7 +43,6 @@ export default function RootLayout({ children }) {
             </PopupsProvider>
           </CartProvider>
         </AuthProvider>
-        <SpeedInsights />
       </body>
     </html>
   );
