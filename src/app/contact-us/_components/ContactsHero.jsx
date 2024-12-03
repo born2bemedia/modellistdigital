@@ -49,7 +49,7 @@ const ContactsHero = () => {
           className="soc"
         >
           <Link
-            href="https://www.facebook.com/modellistdigital"
+            href="https://www.facebook.com/modellistdigit/"
             target="_blank"
           >
             <img src="/images/contacts/fb.svg" />
