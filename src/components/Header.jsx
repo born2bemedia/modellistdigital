@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/context/AuthContext";
 import { usePathname } from "next/navigation";
+import LangSwitcher from "./LangSwitcher";
 
 const Header = () => {
   const { cart, cartQuantity } = useCart();
@@ -53,6 +54,8 @@ const Header = () => {
                   <img src="/images/contacts/x.svg" />
                 </Link>
               </div>
+
+              <LangSwitcher />
 
               <div className="head-account">
                 {currentUser ? (

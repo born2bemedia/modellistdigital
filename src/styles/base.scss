@@ -34,6 +34,9 @@ body {
     background-color: #b4ff05;
     border-radius: 100px;
   }
+  > .skiptranslate {
+    display: none !important;
+  }
 }
 * {
   outline: none !important;
@@ -966,7 +969,7 @@ button {
       width: calc(33.33% - 20px);
       display: flex;
       flex-direction: column;
-      &.button-wrap{
+      &.button-wrap {
         align-items: center;
         width: 100%;
         margin-top: 40px;
@@ -1010,7 +1013,7 @@ button {
         padding-top: 20px;
         display: flex;
         flex-direction: column;
-        gap:20px;
+        gap: 20px;
         flex-grow: 1;
         justify-content: space-between;
         h3 {
@@ -1043,7 +1046,8 @@ button {
             line-height: 1.2;
             text-align: left;
           }
-          button, .arrow-button {
+          button,
+          .arrow-button {
             display: flex;
             color: #000000;
             font-size: rem(16);
@@ -1060,8 +1064,8 @@ button {
   }
 }
 
-.logo{
-  img{
+.logo {
+  img {
     max-width: rem(196);
     @media (max-width: rem(992)) {
       max-width: rem(130);
