@@ -1,0 +1,64 @@
+.phoneField {
+  height: 50px !important;
+  width: 100% !important;
+  border-radius: 0 25px 25px 0 !important;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 300ms ease-in-out;
+  border: 0 !important;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #c1d5ff;
+  }
+}
+
+.fieldLight {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+.fieldDark {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.dropdown {
+  border-radius: 25px 0 0 25px !important;
+  height: 50px !important;
+  background-color: #fafafa !important;
+  border: 0 !important;
+  padding-right: 16px !important;
+  padding-left: 12px !important;
+}
+
+.dropdownLight {
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+.dropdownDark {
+  border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.container {
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 25px !important;
+  height: 50px !important;
+  width: 100% !important;
+}
+
+.containerDark {
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.containerLight {
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.dropdownList {
+  outline: none !important;
+}
