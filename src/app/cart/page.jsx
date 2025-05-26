@@ -11,6 +11,7 @@ import Select from "react-select";
 import countryList from "react-select-country-list";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import { PhoneField } from "@/components/PhoneField";
 
 const getCountryOptionByCode = (code) => {
   const countries = countryList().getData();
@@ -325,9 +326,9 @@ const CartPage = () => {
                             </div>
                             <div>
                               <label>
-                                <Field
+                                <PhoneField
+                                  variant="light"
                                   placeholder="Phone"
-                                  type="text"
                                   name="phone"
                                   className={
                                     touched.phone && errors.phone
@@ -491,9 +492,14 @@ const CartPage = () => {
                                 <CheckboxIcon />
                                 <span>
                                   By placing your order, you agree to our{" "}
-                                  <Link href="/terms-and-conditions">Terms and Conditions</Link> and
-                                  consent to our{" "}
-                                  <Link href="/privacy-policy">Data Processing Policy</Link>.
+                                  <Link href="/terms-and-conditions">
+                                    Terms and Conditions
+                                  </Link>{" "}
+                                  and consent to our{" "}
+                                  <Link href="/privacy-policy">
+                                    Data Processing Policy
+                                  </Link>
+                                  .
                                 </span>
                               </label>
                               <ErrorMessage
