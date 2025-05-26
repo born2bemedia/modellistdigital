@@ -1,17 +1,31 @@
 "use client";
 import React from "react";
-import { Formik, Form, Field, ErrorMessage, useField, useFormikContext } from "formik";
+import {
+  Formik,
+  Form,
+  Field,
+  ErrorMessage,
+  useField,
+  useFormikContext,
+} from "formik";
 import * as Yup from "yup";
 import { usePopup } from "@/context/PopupsContext";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const CustomInput = React.forwardRef(({ value, onClick, inputPlaceholder }, ref) => (
-  <span className="custom-input" data-placeholder={inputPlaceholder} onClick={onClick} ref={ref}>
-    <span>{value || inputPlaceholder}</span>
-    <img src="/images/date.svg" />
-  </span>
-));
+const CustomInput = React.forwardRef(
+  ({ value, onClick, inputPlaceholder }, ref) => (
+    <span
+      className="custom-input"
+      data-placeholder={inputPlaceholder}
+      onClick={onClick}
+      ref={ref}
+    >
+      <span>{value || inputPlaceholder}</span>
+      <img src="/images/date.svg" />
+    </span>
+  )
+);
 
 const FormikDatePicker = ({ placeholder, ...props }) => {
   const { setFieldValue } = useFormikContext();
@@ -25,7 +39,9 @@ const FormikDatePicker = ({ placeholder, ...props }) => {
         onChange={(date) => setFieldValue(field.name, date)}
         customInput={<CustomInput inputPlaceholder={placeholder} />}
       />
-      {meta.touched && meta.error ? <div className="error">{meta.error}</div> : null}
+      {meta.touched && meta.error ? (
+        <div className="error">{meta.error}</div>
+      ) : null}
     </div>
   );
 };
@@ -36,7 +52,9 @@ function OrderPopup() {
   const validationSchema = Yup.object({
     firstName: Yup.string().required("This field is required."),
     lastName: Yup.string().required("This field is required."),
-    email: Yup.string().email("Please provide a correct email address.").required("This field is required."),
+    email: Yup.string()
+      .email("Please provide a correct email address.")
+      .required("This field is required."),
     phone: Yup.string().required("This field is required."),
     budget: Yup.string().required("This field is required."),
     ideaDescription: Yup.string().required("This field is required."),
@@ -69,7 +87,10 @@ function OrderPopup() {
     }
   };
 
-  const handleSubmit = async (values, { setSubmitting, resetForm, setStatus }) => {
+  const handleSubmit = async (
+    values,
+    { setSubmitting, resetForm, setStatus }
+  ) => {
     try {
       const response = await fetch("/api/emails/order", {
         method: "POST",
@@ -98,13 +119,34 @@ function OrderPopup() {
 
   return (
     <div className={`order-popup-wrap ${orderPopupDisplay ? "opened" : ""}`}>
-      <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit} enableReinitialize>
+      <Formik
+        initialValues={initialValues}
+        validationSchema={validationSchema}
+        onSubmit={handleSubmit}
+        enableReinitialize
+      >
         {({ isSubmitting, status, touched, errors, resetForm }) => (
           <div>
-            <div className="overlay" onClick={() => closePopup(resetForm)}></div>
+            <div
+              className="overlay"
+              onClick={() => closePopup(resetForm)}
+            ></div>
             <div className="popup-inner">
-              <svg className="popup-close" onClick={() => closePopup(resetForm)} width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 18.5L2 2.5M18 2.5L2 18.5" stroke="#161616" strokeWidth="4" strokeLinecap="round" />
+              <svg
+                className="popup-close"
+                onClick={() => closePopup(resetForm)}
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 18.5L2 2.5M18 2.5L2 18.5"
+                  stroke="#161616"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                />
               </svg>
               <div>
                 <div className="form-wrap">
@@ -112,7 +154,10 @@ function OrderPopup() {
                     {!status && (
                       <div className="form-inner">
                         <h2>
-                          <span dangerouslySetInnerHTML={{ __html: serviceValue }} /> REQUEST
+                          <span
+                            dangerouslySetInnerHTML={{ __html: serviceValue }}
+                          />{" "}
+                          REQUEST
                         </h2>
                         <Field type="hidden" name="service" />
                         <div>
@@ -120,9 +165,17 @@ function OrderPopup() {
                             name="firstName"
                             type="text"
                             placeholder={"First name"}
-                            className={touched.firstName && errors.firstName ? "invalid" : ""}
+                            className={
+                              touched.firstName && errors.firstName
+                                ? "invalid"
+                                : ""
+                            }
                           />
-                          <ErrorMessage name="firstName" component="div" className="error" />
+                          <ErrorMessage
+                            name="firstName"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
                         <div>
@@ -130,9 +183,17 @@ function OrderPopup() {
                             name="lastName"
                             type="text"
                             placeholder={"Last name"}
-                            className={touched.lastName && errors.lastName ? "invalid" : ""}
+                            className={
+                              touched.lastName && errors.lastName
+                                ? "invalid"
+                                : ""
+                            }
                           />
-                          <ErrorMessage name="lastName" component="div" className="error" />
+                          <ErrorMessage
+                            name="lastName"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
                         <div>
@@ -140,19 +201,32 @@ function OrderPopup() {
                             name="email"
                             type="email"
                             placeholder={"Email"}
-                            className={touched.email && errors.email ? "invalid" : ""}
+                            className={
+                              touched.email && errors.email ? "invalid" : ""
+                            }
                           />
-                          <ErrorMessage name="email" component="div" className="error" />
+                          <ErrorMessage
+                            name="email"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
                         <div>
                           <Field
+                            variant="light"
                             name="phone"
                             type="tel"
                             placeholder={"Phone"}
-                            className={touched.phone && errors.phone ? "invalid" : ""}
+                            className={
+                              touched.phone && errors.phone ? "invalid" : ""
+                            }
                           />
-                          <ErrorMessage name="phone" component="div" className="error" />
+                          <ErrorMessage
+                            name="phone"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
                         <div>
@@ -160,9 +234,15 @@ function OrderPopup() {
                             name="budget"
                             type="text"
                             placeholder={"Budget"}
-                            className={touched.budget && errors.budget ? "invalid" : ""}
+                            className={
+                              touched.budget && errors.budget ? "invalid" : ""
+                            }
                           />
-                          <ErrorMessage name="budget" component="div" className="error" />
+                          <ErrorMessage
+                            name="budget"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
                         <div>
@@ -170,14 +250,29 @@ function OrderPopup() {
                             name="ideaDescription"
                             type="text"
                             placeholder={"Idea description"}
-                            className={touched.ideaDescription && errors.ideaDescription ? "invalid" : ""}
+                            className={
+                              touched.ideaDescription && errors.ideaDescription
+                                ? "invalid"
+                                : ""
+                            }
                           />
-                          <ErrorMessage name="ideaDescription" component="div" className="error" />
+                          <ErrorMessage
+                            name="ideaDescription"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
                         <div>
-                          <FormikDatePicker name="deadline" placeholder={"Deadline"} />
-                          <ErrorMessage name="deadline" component="div" className="error" />
+                          <FormikDatePicker
+                            name="deadline"
+                            placeholder={"Deadline"}
+                          />
+                          <ErrorMessage
+                            name="deadline"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
                         <div>
@@ -185,9 +280,17 @@ function OrderPopup() {
                             name="targetAudience"
                             type="text"
                             placeholder={"Target audience"}
-                            className={touched.targetAudience && errors.targetAudience ? "invalid" : ""}
+                            className={
+                              touched.targetAudience && errors.targetAudience
+                                ? "invalid"
+                                : ""
+                            }
                           />
-                          <ErrorMessage name="targetAudience" component="div" className="error" />
+                          <ErrorMessage
+                            name="targetAudience"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
                         <div>
@@ -195,9 +298,17 @@ function OrderPopup() {
                             name="platform"
                             type="text"
                             placeholder={"Platform"}
-                            className={touched.platform && errors.platform ? "invalid" : ""}
+                            className={
+                              touched.platform && errors.platform
+                                ? "invalid"
+                                : ""
+                            }
                           />
-                          <ErrorMessage name="platform" component="div" className="error" />
+                          <ErrorMessage
+                            name="platform"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
                         <div>
@@ -205,12 +316,24 @@ function OrderPopup() {
                             name="marketingGoal"
                             type="text"
                             placeholder={"Marketing goal"}
-                            className={touched.marketingGoal && errors.marketingGoal ? "invalid" : ""}
+                            className={
+                              touched.marketingGoal && errors.marketingGoal
+                                ? "invalid"
+                                : ""
+                            }
                           />
-                          <ErrorMessage name="marketingGoal" component="div" className="error" />
+                          <ErrorMessage
+                            name="marketingGoal"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
-                        <button type="submit" className="black-button" disabled={isSubmitting}>
+                        <button
+                          type="submit"
+                          className="black-button"
+                          disabled={isSubmitting}
+                        >
                           Submit
                         </button>
                       </div>
@@ -221,7 +344,8 @@ function OrderPopup() {
                         <p>
                           Your request has been received successfully!
                           <br />
-                          One of our team members will get in touch with you shortly.
+                          One of our team members will get in touch with you
+                          shortly.
                         </p>
                       </div>
                     )}

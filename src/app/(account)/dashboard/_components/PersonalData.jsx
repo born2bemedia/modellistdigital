@@ -8,6 +8,7 @@ import countryList from "react-select-country-list";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 import ChangePassword from "./ChangePassword";
+import { PhoneField } from "@/components/PhoneField";
 
 const getCountryOptionByCode = (code) => {
   const countries = countryList().getData();
@@ -242,9 +243,9 @@ const PersonalData = () => {
                     </div>
                     <div>
                       <label>
-                        <Field
+                        <PhoneField
+                          variant="light"
                           placeholder="Phone"
-                          type="text"
                           name="phone"
                           className={
                             touched.phone && errors.phone ? "invalid" : ""

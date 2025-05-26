@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { usePopup } from "@/context/PopupsContext";
 import Select from "react-select";
+import { PhoneField } from "./PhoneField";
 
 const RequestQuoteForm = () => {
   const { thanksPopupDisplay, setThanksPopupDisplay } = usePopup();
@@ -142,7 +143,9 @@ const RequestQuoteForm = () => {
                 name="firstName"
                 type="text"
                 placeholder="First Name"
-                className={`form-field ${touched.firstName && errors.firstName ? "invalid" : ""}`}
+                className={`form-field ${
+                  touched.firstName && errors.firstName ? "invalid" : ""
+                }`}
               />
               <ErrorMessage
                 name="firstName"
@@ -156,7 +159,9 @@ const RequestQuoteForm = () => {
                 name="lastName"
                 type="text"
                 placeholder="Last Name"
-                className={`form-field ${touched.lastName && errors.lastName ? "invalid" : ""}`}
+                className={`form-field ${
+                  touched.lastName && errors.lastName ? "invalid" : ""
+                }`}
               />
               <ErrorMessage name="lastName" component="div" className="error" />
             </div>
@@ -166,17 +171,20 @@ const RequestQuoteForm = () => {
                 name="email"
                 type="email"
                 placeholder="Email"
-                className={`form-field ${touched.email && errors.email ? "invalid" : ""}`}
+                className={`form-field ${
+                  touched.email && errors.email ? "invalid" : ""
+                }`}
               />
               <ErrorMessage name="email" component="div" className="error" />
             </div>
 
             <div>
-              <Field
+              <PhoneField
                 name="phone"
-                type="tel"
                 placeholder="Phone"
-                className={`form-field ${touched.phone && errors.phone ? "invalid" : ""}`}
+                className={`form-field ${
+                  touched.phone && errors.phone ? "invalid" : ""
+                }`}
               />
               <ErrorMessage name="phone" component="div" className="error" />
             </div>
@@ -186,7 +194,9 @@ const RequestQuoteForm = () => {
                 name="service"
                 options={serviceOptions}
                 styles={customStyles}
-                className={`form-field ${touched.service && errors.service ? "invalid" : ""}`}
+                className={`form-field ${
+                  touched.service && errors.service ? "invalid" : ""
+                }`}
                 onChange={(option) => setFieldValue("service", option.value)}
                 placeholder="Select Service"
               />
@@ -198,7 +208,9 @@ const RequestQuoteForm = () => {
                 name="budget"
                 type="text"
                 placeholder="Budget"
-                className={`form-field ${touched.budget && errors.budget ? "invalid" : ""}`}
+                className={`form-field ${
+                  touched.budget && errors.budget ? "invalid" : ""
+                }`}
               />
               <ErrorMessage name="budget" component="div" className="error" />
             </div>
@@ -208,7 +220,9 @@ const RequestQuoteForm = () => {
                 name="timeline"
                 type="text"
                 placeholder="Timeline"
-                className={`form-field ${touched.timeline && errors.timeline ? "invalid" : ""}`}
+                className={`form-field ${
+                  touched.timeline && errors.timeline ? "invalid" : ""
+                }`}
               />
               <ErrorMessage name="timeline" component="div" className="error" />
             </div>
@@ -218,9 +232,15 @@ const RequestQuoteForm = () => {
                 name="description"
                 as="textarea"
                 placeholder="Project description"
-                className={`form-field ${touched.description && errors.description ? "invalid" : ""}`}
+                className={`form-field ${
+                  touched.description && errors.description ? "invalid" : ""
+                }`}
               />
-              <ErrorMessage name="description" component="div" className="error" />
+              <ErrorMessage
+                name="description"
+                component="div"
+                className="error"
+              />
             </div>
 
             <div className="full">
@@ -228,7 +248,9 @@ const RequestQuoteForm = () => {
                 name="comment"
                 as="textarea"
                 placeholder="Additional comments"
-                className={`form-field ${touched.comment && errors.comment ? "invalid" : ""}`}
+                className={`form-field ${
+                  touched.comment && errors.comment ? "invalid" : ""
+                }`}
               />
               <ErrorMessage name="comment" component="div" className="error" />
             </div>
