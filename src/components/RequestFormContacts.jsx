@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { usePopup } from "@/context/PopupsContext";
+import { PhoneField } from "./PhoneField";
 
 const RequestFormContacts = () => {
   const { thanksPopupDisplay, setThanksPopupDisplay } = usePopup();
@@ -99,9 +100,8 @@ const RequestFormContacts = () => {
             </div>
 
             <div>
-              <Field
+              <PhoneField
                 name="phone"
-                type="tel"
                 placeholder="Phone"
                 className={touched.phone && errors.phone ? "invalid" : ""}
               />

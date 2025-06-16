@@ -8,6 +8,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Link from "next/link";
 import CheckboxIcon from "@/icons/CheckboxIcon";
+import { PhoneField } from "@/components/PhoneField";
 
 export default function SignUp() {
   const [thanksPopupShow, setThanksPopupShow] = useState(false);
@@ -51,8 +52,9 @@ export default function SignUp() {
       });
 
       if (response.status === 200) {
-        const { token, user_email, user_nicename, user_display_name } = response.data;
-        
+        const { token, user_email, user_nicename, user_display_name } =
+          response.data;
+
         const user = {
           email: user_email,
           nicename: user_nicename,
@@ -128,8 +130,8 @@ export default function SignUp() {
                   />
                 </div>
                 <div>
-                  <Field
-                    type="text"
+                  <PhoneField
+                    variant="light"
                     name="phone"
                     placeholder="Your phone"
                     className={touched.phone && errors.phone ? "invalid" : ""}
@@ -196,8 +198,10 @@ export default function SignUp() {
                     <CheckboxIcon />
                     <span>
                       I agree with the{" "}
-                      <Link href="/terms-and-conditions">Terms and Conditions</Link> and{" "}
-                      <Link href="/privacy-policy">Privacy Policy</Link>.
+                      <Link href="/terms-and-conditions">
+                        Terms and Conditions
+                      </Link>{" "}
+                      and <Link href="/privacy-policy">Privacy Policy</Link>.
                     </span>
                   </label>
                   <ErrorMessage
