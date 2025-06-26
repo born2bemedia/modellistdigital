@@ -1,8 +1,25 @@
 import React from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, useField } from "formik";
 import * as Yup from "yup";
 import { usePopup } from "@/context/PopupsContext";
 import { PhoneField } from "./PhoneField";
+
+// Custom Phone Field component that works with Formik
+const FormikPhoneField = ({ name, ...props }) => {
+  const [field, meta, helpers] = useField(name);
+  
+  return (
+    <PhoneField
+      {...field}
+      {...props}
+      value={field.value}
+      onChange={(phone) => {
+        helpers.setValue(phone);
+      }}
+      className={meta.touched && meta.error ? "invalid" : ""}
+    />
+  );
+};
 
 const RequestFormContacts = () => {
   const { thanksPopupDisplay, setThanksPopupDisplay } = usePopup();
@@ -100,10 +117,9 @@ const RequestFormContacts = () => {
             </div>
 
             <div>
-              <PhoneField
+              <FormikPhoneField
                 name="phone"
                 placeholder="Phone"
-                className={touched.phone && errors.phone ? "invalid" : ""}
               />
               <ErrorMessage name="phone" component="div" className="error" />
             </div>
