@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage, useField } from "formik";
 import * as Yup from "yup";
 import { usePopup } from "@/context/PopupsContext";
 import { PhoneField } from "./PhoneField";
+
+import ReCaptcha from "react-google-recaptcha";
 
 // Custom Phone Field component that works with Formik
 const FormikPhoneField = ({ name, ...props }) => {
@@ -23,6 +25,12 @@ const FormikPhoneField = ({ name, ...props }) => {
 
 const RequestFormContacts = () => {
   const { thanksPopupDisplay, setThanksPopupDisplay } = usePopup();
+
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+
+  const onCaptchaVerify = (token) => {
+    setIsCaptchaVerified(!!token);
+  };
 
   const validationSchema = Yup.object({
     firstName: Yup.string().required("First name is required"),
@@ -134,13 +142,19 @@ const RequestFormContacts = () => {
               <ErrorMessage name="comment" component="div" className="error" />
             </div>
 
-            <button
-              type="submit"
-              className="white-button"
-              disabled={isSubmitting}
-            >
-              Submit
-            </button>
+            <div style={{display: "flex", flexDirection: "column", gap: "10px", justifyContent: "center", alignItems: "center", margin: '0 auto'}}>
+              <ReCaptcha
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                onChange={onCaptchaVerify}
+              />
+              <button
+                type="submit"
+                className="white-button"
+                disabled={isSubmitting || !isCaptchaVerified}
+              >
+                Submit
+              </button>
+            </div>
           </Form>
         )}
       </Formik>
