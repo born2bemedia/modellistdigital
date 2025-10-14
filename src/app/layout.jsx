@@ -7,6 +7,7 @@ import { CartProvider } from "@/context/CartContext";
 import { AuthProvider } from "@/context/AuthContext";
 import Preloader from "@/components/Preloader";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { CookiePopup } from "@/components/CookiePopup";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
               <Header />
               <main>{children}</main>
               <Footer />
+              <CookiePopup />
             </PopupsProvider>
           </CartProvider>
         </AuthProvider>
