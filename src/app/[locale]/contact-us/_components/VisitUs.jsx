@@ -2,8 +2,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
+import { useTranslations } from "next-intl";
 
 const VisitUs = () => {
+  const t = useTranslations('contacts.visitUs');
+
   return (
     <section className="visit-us">
       <div className="_container">
@@ -14,7 +17,7 @@ const VisitUs = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            VISIT US
+            {t('title', {fallback: 'VISIT US'})}
           </motion.h2>
           <div className="row">
             <motion.div
@@ -24,7 +27,7 @@ const VisitUs = () => {
               variants={fadeInUp}
             >
               <p>
-                <b>Office address:</b> 2 Eastbourne Terrace, London W2 6LG,
+                <b>{t('officeAddress', {fallback: 'Office address:'})}</b> 2 Eastbourne Terrace, London W2 6LG,
                 United Kingdom
               </p>
               <iframe
@@ -43,7 +46,7 @@ const VisitUs = () => {
               variants={fadeInUp}
             >
               <p>
-                <b>Registered address:</b> 167 - 169 Great Portland Street, 5th
+                <b>{t('registeredAddress', {fallback: 'Registered address:'})}</b> 167 - 169 Great Portland Street, 5th
                 Floor, London, W1W 5PF, United Kingdom
               </p>
               <iframe

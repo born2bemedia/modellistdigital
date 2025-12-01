@@ -1,10 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { usePopup } from "@/context/PopupsContext";
+import { useTranslations } from "next-intl";
 
 function ThanksPopup() {
   const { thanksPopupDisplay, setThanksPopupDisplay } = usePopup();
   const [resetFormFunction, setResetFormFunction] = useState(() => () => {});
+
+  const t = useTranslations('thanksPopup');
 
   const closePopup = () => {
     setThanksPopupDisplay(false);
@@ -34,11 +37,11 @@ function ThanksPopup() {
         <div>
           <div className="form-wrap">
             <div className="success">
-              <h3>THANK YOU!</h3>
+              <h3>{t('title', {fallback: 'THANK YOU!'})}</h3>
               <p>
-                Your request has been received successfully!
+                {t('text.0', {fallback: 'Your request has been received successfully!'})}
                 <br />
-                One of our team members will get in touch with you shortly.
+                {t('text.1', {fallback: 'One of our team members will get in touch with you shortly.'})}
               </p>
             </div>
           </div>

@@ -3,8 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const ContactsHero = () => {
+  const t = useTranslations('contacts.hero');
+
   return (
     <section className="contacts-hero">
       <div className="_container">
@@ -18,11 +21,11 @@ const ContactsHero = () => {
             height={544}
           ></motion.img>
           <motion.h1 initial="hidden" animate="visible" variants={fadeInUp}>
-            Contact us
+            {t('title', {fallback: 'Contact us'})}
           </motion.h1>
           <motion.h2 initial="hidden" animate="visible" variants={fadeInUp}>
-            We're here to help! Reach out through <br />
-            any of the following methods.
+            {t('description.0', {fallback: 'We\'re here to help! Reach out through'})}<br />
+            {t('description.1', {fallback: 'any of the following methods.'})}
           </motion.h2>
         </div>
         <motion.div
@@ -32,12 +35,12 @@ const ContactsHero = () => {
           className="contacts-hero__bottom"
         >
           <Link href="mailto:info@modellistdigital.com">
-            Email us:
+            {t('email', {fallback: 'Email us:'})}
             <br />
             info@modellistdigital.com
           </Link>
           <Link href="tel:+442070433795">
-            Call us:
+            {t('phone', {fallback: 'Call us:'})}
             <br />
             +442070433795
           </Link>

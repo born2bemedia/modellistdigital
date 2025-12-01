@@ -135,5 +135,52 @@
       },
       "button": "Meet our team"
     }
+  },
+  "contacts": {
+    "hero": {
+      "title": "Contact us",
+      "description": {
+        "0": "We're here to help! Reach out through",
+        "1": "any of the following methods."
+      },
+      "email": "Email us:",
+      "phone": "Call us:"
+    },
+    "visitUs": {
+      "title": "VISIT US",
+      "officeAddress": "Office address:",
+      "registeredAddress": "Registered address:"
+    },
+    "requestBlock": {
+      "title": "SEND A REQUEST",
+      "text": {
+        "0": "Please fill out the form for any inquiries, requests, or",
+        "1": "feedback. We'll get back to you as soon as possible."
+      }
+    },
+    "form": {
+      "errors": {
+        "firstName": "First name is required",
+        "lastName": "Last name is required",
+        "email": "Email is required",
+        "invalidEmail": "Invalid email address",
+        "phone": "Phone is required"
+      },
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "comment": "Comment"
+      },
+      "button": "Submit"
+    }
+  },
+  "thanksPopup": {
+    "title": "THANK YOU!",
+    "text": {
+      "0": "Your request has been received successfully!",
+      "1": "One of our team members will get in touch with you shortly."
+    }
   }
 }
