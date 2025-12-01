@@ -1,13 +1,21 @@
-import Script from "next/script";
-import { useState } from "react";
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { useLocale } from 'next-intl';
+import { useCallback, useState } from "react";
 
 const LangSwitcher = () => {
-  const [currentLang, setCurrentLang] = useState("EN");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleLanguageChange = (language) => {
-    
-  };
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleLanguageChange = useCallback(
+    (newLocale) => {
+      router.replace(pathname, { locale: newLocale });
+    },
+    [router, pathname],
+  );
+
+  const currentLang = useLocale();
 
   return (
     <div style={{ position: "relative", display: "inline-block" }}>
@@ -22,7 +30,7 @@ const LangSwitcher = () => {
           cursor: "pointer",
         }}
       >
-        <img src={`/images/${currentLang}.svg`} />
+        <img src={`/images/${currentLang.toUpperCase()}.svg`} />
       </button>
       {isDropdownOpen && (
         <ul
@@ -41,7 +49,7 @@ const LangSwitcher = () => {
           }}
         >
           <li
-            onClick={() => handleLanguageChange("en", "EN")}
+            onClick={() => handleLanguageChange("en")}
             style={{
               padding: "7px 0",
               cursor: "pointer",
@@ -55,7 +63,7 @@ const LangSwitcher = () => {
             English
           </li>
           <li
-            onClick={() => handleLanguageChange("de", "DE")}
+            onClick={() => handleLanguageChange("de")}
             style={{
               padding: "7px 0",
               cursor: "pointer",
@@ -69,7 +77,7 @@ const LangSwitcher = () => {
             German
           </li>
           <li
-            onClick={() => handleLanguageChange("it", "IT")}
+            onClick={() => handleLanguageChange("it")}
             style={{
               padding: "7px 0",
               cursor: "pointer",
