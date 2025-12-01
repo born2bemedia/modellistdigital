@@ -5,30 +5,8 @@ const LangSwitcher = () => {
   const [currentLang, setCurrentLang] = useState("EN");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleLanguageChange = (language, languageCode) => {
-    const retryDispatchEvent = (attempts = 10) => {
-      const select = document.querySelector(".goog-te-combo");
-      if (select) {
-        select.value = language;
-        const changeEvent = new Event("change", {
-          bubbles: true,
-          cancelable: true,
-        });
-        select.dispatchEvent(changeEvent);
-
-        if (document.documentElement.lang === language || attempts <= 1) {
-          setCurrentLang(languageCode); 
-          setIsDropdownOpen(false); 
-          return;
-        }
-      }
-
-      if (attempts > 1) {
-        setTimeout(() => retryDispatchEvent(attempts - 1), 100);
-      }
-    };
-
-    retryDispatchEvent();
+  const handleLanguageChange = (language) => {
+    
   };
 
   return (
@@ -46,7 +24,6 @@ const LangSwitcher = () => {
       >
         <img src={`/images/${currentLang}.svg`} />
       </button>
-
       {isDropdownOpen && (
         <ul
           translate="no"
@@ -107,20 +84,6 @@ const LangSwitcher = () => {
           </li>
         </ul>
       )}
-
-      <Script
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        onLoad={() => {
-          const googleTranslateElementInit = () => {
-            new window.google.translate.TranslateElement(
-              { pageLanguage: "en" },
-              "google_translate_element"
-            );
-          };
-          window.googleTranslateElementInit = googleTranslateElementInit;
-        }}
-      />
-      <div id="google_translate_element" style={{ display: "none" }}></div>
     </div>
   );
 };

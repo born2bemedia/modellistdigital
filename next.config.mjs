@@ -1,9 +1,12 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['cms.modellistdigital.com'], // Add your image domain here
+      domains: ['cms.modellistdigital.com'],
     },
   };
   
-  export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);
   

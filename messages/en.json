@@ -1,0 +1,139 @@
+{
+  "cookiePopup": {
+    "title": "Cookie settings",
+    "text": {
+      "0": "Cookies help us improve our website. By clicking 'Accept,' you agree to our use of cookies for functionality, analytics, and personalized content. Learn more in our",
+      "1": "Cookie Policy"
+    },
+    "decline": "Decline",
+    "accept": "Accept"
+  },
+  "projectSlider": {
+    "explore": "Explore more"
+  },
+  "home": {
+    "hero": {
+      "marquee": {
+        "0": "Expert video production",
+        "1": "Animations",
+        "2": "3D modelling",
+        "3": "UI/UX design",
+        "4": "Expert video production",
+        "5": "Animations",
+        "6": "3D modelling",
+        "7": "UI/UX design"
+      },
+      "subtitle": "Professional production company",
+      "title": {
+        "0": "Make your idea",
+        "1": "stand out"
+      },
+      "text": {
+        "0": "Meet our team",
+        "1": "Get a quote"
+      }
+    },
+    "latestProjects": {
+      "title": "CHECK OUT OUR LATEST PROJECTS",
+      "buttons": {
+        "0": "Video production",
+        "1": "3D modelling",
+        "2": "UI/UX design",
+        "3": "Animations"
+      }
+    },
+    "productionCycle": {
+      "title": "OUR PRODUCTION CYCLE",
+      "cards": {
+        "0": {
+          "title": {
+            "0": "Expert",
+            "1": "consulting"
+          },
+          "text": "We start by talking to you about your goals and vision. This ensures we're on the same page and can deliver what you're looking for.",
+          "subtitle": "You get a clear understanding and aligned expectations from the start."
+        },
+        "1": {
+          "title": {
+            "0": "Creative",
+            "1": "strategy"
+          },
+          "text": "We create a plan that outlines the concept, steps, and timeline. This keeps you informed about what we're doing and when.",
+          "subtitle": "You enjoy the clarity of the process and confidence in the plan."
+        },
+        "2": {
+          "title": {
+            "0": "Project",
+            "1": "production"
+          },
+          "text": "We take the idea and turn it into a video, animation, or model, bringing your vision to life.",
+          "subtitle": "You get a draft of your idea that you can try and review."
+        },
+        "3": {
+          "title": {
+            "0": "Review",
+            "1": "and optimisation"
+          },
+          "text": "You give us feedback on the draft, and we make the necessary changes to get it just right.",
+          "subtitle": "You enjoy a final product that meets your needs and looks great."
+        },
+        "4": {
+          "title": {
+            "0": "Launch and",
+            "1": "distribution"
+          },
+          "text": "We help you share your content in the best places to reach your audience.",
+          "subtitle": "Your video gets seen by the right people, maximising its impact."
+        },
+        "5": {
+          "title": {
+            "0": "Product",
+            "1": "Consistency"
+          },
+          "text": "We keep all your data, style elements, and identity on file to ensure consistency across all your products. No matter when you order your next one, it will be perfectly aligned with your brand."
+        }
+      },
+      "ready": {
+        "title": {
+          "0": "READY",
+          "1": "TO START?"
+        },
+        "text": "Get a quote"
+      }
+    },
+    "whyChooseUs": {
+      "title": {
+        "0": "WHY",
+        "1": "CHOOSE",
+        "2": "US"
+      },
+      "cards": {
+        "0": {
+          "title": "Extensive expertise",
+          "text": "Our team has a wealth of knowledge and experience in various digital fields, ensuring we deliver innovative and effective video production services."
+        },
+        "1": {
+          "title": "Top talents",
+          "text": "We have assembled a team of highly skilled professionals who are passionate about creating outstanding video content that stands out."
+        },
+        "2": {
+          "title": "Comprehensive approach",
+          "text": "From consulting and strategy to production and distribution, we handle every aspect of the process to ensure a seamless and successful project."
+        },
+        "3": {
+          "title": "Guaranteed quality",
+          "text": "We promise that our products will match top industry standards, providing you with high-quality content that you can be proud of."
+        },
+        "4": {
+          "title": "Market research",
+          "text": "We thoroughly research the market and understand your audience's needs to craft a product that not only looks great but also effectively boosts your brand."
+        },
+        "5": {
+          "title": "Product Consistency",
+          "text": "We keep all your data, style elements, and identity on file to ensure consistency across all your products. No matter when you order your next one, it will be perfectly aligned with your brand."
+        }
+      },
+      "button": "Meet our team"
+    }
+  }
+}
