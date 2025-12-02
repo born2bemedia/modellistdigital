@@ -3,8 +3,11 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const PostCard = ({ slug, title, image, excerpt }) => {
+  const t = useTranslations('blog.card');
+
   return (
     <motion.div
       initial="hidden"
@@ -22,7 +25,7 @@ const PostCard = ({ slug, title, image, excerpt }) => {
           <p>{excerpt}</p>
         </div>
         <Link href={`/blog/${slug}`} className="black-button">
-          Read more
+          {t('readMore', {fallback: 'Read more'})}
         </Link>
       </div>
     </motion.div>

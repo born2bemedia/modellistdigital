@@ -1,5 +1,6 @@
 import { getPost } from "@/app/[locale]/api/blog";
 import "@/styles/blog.scss"
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 export async function generateMetadata({ params: { slug } }) {
@@ -17,6 +18,9 @@ export async function generateMetadata({ params: { slug } }) {
 
 export default async function PostPage({ params: { slug } }) {
   const post = await getPost(slug);
+
+  const t = await getTranslations('blog.post');
+
   return (
     <>
       <section className="post-inner">
@@ -30,7 +34,7 @@ export default async function PostPage({ params: { slug } }) {
                 dangerouslySetInnerHTML={{ __html: post.body }}
                 className="w-full font-gentium prose prose-slate max-w-none"
                 />
-            <Link href="/blog" className="black-button">More articles</Link>
+            <Link href="/blog" className="black-button">{t('title', {fallback: 'More articles'})}</Link>
           </div>
         </div>
       </section>

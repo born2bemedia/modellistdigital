@@ -607,5 +607,25 @@
       "alreadyInCart": "Already in cart",
       "addToCart": "Add to cart"
     }
+  },
+  "blog": {
+    "hero": {
+      "title": "The Modellist Digital blog",
+      "description": "Insights, tips, and trends in digital production."
+    },
+    "card": {
+      "readMore": "Read more"
+    },
+    "contactUs": {
+      "title": "DID NOT FIND WHAT YOU WERE LOOKING FOR?",
+      "description": {
+        "0": "Suggest your topic, and our team will craft a perfect collection of tips",
+        "1": "based on our hands-on experience."
+      },
+      "button": "Contact us"
+    },
+    "post": {
+      "title": "More articles"
+    }
   }
 }

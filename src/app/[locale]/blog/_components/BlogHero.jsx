@@ -3,8 +3,11 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const BlogHero = () => {
+  const t = useTranslations('blog.hero');
+
   return (
     <section className="blog-hero">
       <div className="_container">
@@ -15,7 +18,7 @@ const BlogHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            The Modellist Digital blog
+            {t('title', {fallback: 'The Modellist Digital blog'})}
           </motion.h1>
           <motion.h2
             initial="hidden"
@@ -23,7 +26,7 @@ const BlogHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Insights, tips, and trends in digital production.
+            {t('description', {fallback: 'Insights, tips, and trends in digital production.'})}
           </motion.h2>
         </div>
       </div>
