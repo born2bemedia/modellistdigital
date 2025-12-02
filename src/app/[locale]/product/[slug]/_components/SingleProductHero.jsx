@@ -9,6 +9,7 @@ import { fetchProductBySlug } from "@/app/[locale]/api/products";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import ReactPlayer from "react-player";
+import { useTranslations } from "next-intl";
 
 function SingleProductHero({ product }) {
   const [video, setVideo] = useState("");
@@ -19,6 +20,8 @@ function SingleProductHero({ product }) {
     console.log("Product loaded:", product);
     setVideo(product.preview_video);
   }, [product]);
+
+  const t = useTranslations('product.singleProduct');
 
   const handleVideoError = (error) => {
     console.error("Video error:", error);
@@ -82,7 +85,7 @@ function SingleProductHero({ product }) {
                 className="add-to-cart"
               >
                 <AddToCartButtonSingle product={product} />
-                <span>PRICE: €{product.price}</span>
+                <span>{t('price', {fallback: 'PRICE'})}: €{product.price}</span>
               </motion.div>
             </div>
           </div>

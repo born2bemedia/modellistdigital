@@ -23,11 +23,13 @@ const ProductSingle = async ({ params: { slug } }) => {
   const product = await fetchProductBySlug(slug);
   const categorySlug = product.categories?.[0]?.slug;
 
+  const t = await getTranslations('product.singleProduct');
+
   return (
     <>
       <SingleProductHero product={product} />
       {categorySlug ? (
-        <Products title="YOU MAY ALSO LIKE" category={categorySlug} />
+        <Products title={t('title', {fallback: 'YOU MAY ALSO LIKE'})} category={categorySlug} />
       ) : (
         ""
       )}

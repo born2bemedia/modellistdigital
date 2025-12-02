@@ -4,9 +4,12 @@ import AddToCartButtonProduct from "@/components/AddToCartButtonProduct";
 import AddToCartArrow from "@/icons/AddToCartArrow";
 import ReactPlayer from "react-player";
 import VideoBlock from "./VideoBlock";
+import { getTranslations } from "next-intl/server";
 
 const Products = async ({ category, title, quantity = 3 }) => {
   const products = await fetchProductsByCategory(category, quantity);
+
+  const t = await getTranslations('product.products');
 
   return (
     <>
@@ -77,7 +80,7 @@ const Products = async ({ category, title, quantity = 3 }) => {
                       className="black-button"
                       href={`/services/3d-modeling/${category}`}
                     >
-                      All {title}
+                      {t('all', {fallback: 'All'})} {title}
                     </Link>
                   </div>
                 )}

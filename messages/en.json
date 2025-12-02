@@ -596,5 +596,16 @@
         "learnMore": "Learn more"
       }
     }
+  },
+  "product": {
+    "singleProduct": {
+      "price": "PRICE",
+      "title": "YOU MAY ALSO LIKE"
+    },
+    "products": {
+      "all": "All",
+      "alreadyInCart": "Already in cart",
+      "addToCart": "Add to cart"
+    }
   }
 }
