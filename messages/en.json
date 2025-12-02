@@ -419,5 +419,51 @@
         "1": "One of our team members will get in touch with you shortly."
       }
     }
+  },
+  "team": {
+    "hero": {
+      "title": "Creative minds behind Modellist Digital",
+      "description": "At The Modellist, our small but dedicated team works tirelessly to transform your ideas into stunning visuals. Each member is crucial in ensuring creativity, quality, and precision in every aspect of our services. Discover the key roles that make our magic happen:"
+    },
+    "team": {
+      "tabs": {
+        "0": "The Visionaries",
+        "1": "The Connectors",
+        "2": "The Perfectionists",
+        "3": "The Makers"
+      },
+      "tab1": {
+        "title1": "Creative Director",
+        "description1": "The driving force behind the innovative concepts and designs we produce. They ensure that every project, whether it's a 3D model, video production, animation, or UX/UI design, is both functional and aesthetically captivating, pushing the boundaries of creativity.",
+        "title2": "Lead Designer",
+        "description2": "Translates ideas into visual masterpieces. They oversee the design process, ensuring that each creation meets our high standards and aligns with your vision."
+      },
+      "tab2": {
+        "title1": "Marketing Strategist",
+        "description1": "Crafts compelling stories around our creations, showcasing their unique value and potential. They connect our products with the right audience, ensuring our models, videos, animations, and designs make a lasting impact.",
+        "title2": "Customer Experience Manager",
+        "description2": "Dedicated to providing top-notch service. They guide you through the process, ensuring your needs are met and your expectations exceeded."
+      },
+      "tab3": {
+        "title1": "Quality Assurance Specialist",
+        "description1": "Meticulously reviews every project to ensure it meets our rigorous quality standards. They are the guardians of precision and detail, making sure that each creation is flawless and ready for presentation.",
+        "title2": "Technical Lead",
+        "description2": "Ensures that all our models and animations are technically sound and optimised for their respective platforms. They tackle the complexities of construction and production, ensuring durability and functionality."
+      },
+      "tab4": {
+        "title1": "3D Modeler",
+        "description1": "Brings ideas to life with their expert skills in creating detailed and accurate 3D models.",
+        "title2": "Animator",
+        "description2": "Brings motion to our creative projects, crafting fluid and engaging animations that capture the essence of your vision.",
+        "title3": "Video Producer",
+        "description3": "Oversees the creation of video content from start to finish.",
+        "title4": "UX/UI Designer",
+        "description4": "Ensures that all our digital products are user-friendly and visually appealing."
+      }
+    }
+  },
+  "needAssistance": {
+    "title": "NEED ASSISTANCE?",
+    "button": "Contact us"
   }
 }
