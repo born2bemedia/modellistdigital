@@ -483,5 +483,118 @@
     },
     "button": "Set new password",
     "success": "Password changed successfully!"
+  },
+  "services": {
+    "home": {
+      "title": {
+        "0": "Digital",
+        "1": "production",
+        "2": "services"
+      },
+      "description": {
+        "0": "Powerful digital products",
+        "1": "for a standout presence.",
+        "2": "Crafted with precision."
+      }
+    },
+    "videoProduction": {
+      "title": {
+        "0": "VIDEO",
+        "1": "PRODUCTION"
+      },
+      "description": "Capture your audience's attention and boost engagement with expertly crafted videos. Our services are designed to help you build a solid personal brand or showcase your unique expertise effectively, addressing the need for impactful visual content that connects with your audience.",
+      "sections": {
+        "0": {
+          "title": "We craft",
+          "text": {
+            "0": "Event videography:",
+            "1": "Professional coverage of weddings, parties, and corporate events.",
+            "2": "Family and portrait videos:",
+            "3": "Customised portraits and family moments captured professionally.",
+            "4": "Travel and adventure videos:",
+            "5": "Documenting global travels and outdoor experiences."
+          }
+        },
+        "1": {
+          "text": {
+            "0": "Lifestyle videos:",
+            "1": "Showcasing daily routines, hobbies, and interests.",
+            "2": "Personal branding videos:",
+            "3": "Crafting impactful videos to enhance personal or professional brand presence.",
+            "4": "And many more…"
+          }
+        },
+        "learnMore": "Learn more"
+      }
+    },
+    "threeDModeling": {
+      "title": {
+        "0": "3D",
+        "1": "MODELLING"
+      },
+      "description": "Enhance your projects with high-quality 3D modelling services designed to solve your specific needs. Our services help you visualise and bring your ideas to life, providing a powerful tool for personal projects and presentations.",
+      "sections": {
+        "title": "We craft",
+        "text": {
+          "0": "Architectural modelling:",
+          "1": "Creating detailed 3D models for personal architectural design and visualisation.",
+          "2": "Character modelling:",
+          "3": "Designing intricate 3D characters for animation and game development.",
+          "4": "Product modelling:",
+          "5": "Crafting realistic 3D product models for marketing and presentations.",
+          "6": "Organic modelling:",
+          "7": "Generating lifelike 3D models of plants and animals for educational and creative use.",
+          "8": "Vehicle modelling:",
+          "9": "Producing precise 3D models of vehicles for simulation and design projects.",
+          "10": "And many more…"
+        },
+        "learnMore": "Learn more"
+      }
+    },
+    "uiux": {
+      "title": {
+        "0": "UX/UI",
+        "1": "DESIGN"
+      },
+      "description": "Struggling with high bounce rates or low user engagement? Our UX/UI design services solve these problems by transforming your website or app into an intuitive, visually appealing platform that keeps users engaged.",
+      "sections": {
+        "title": "We craft",
+        "text": {
+          "0": "Wireframing and prototyping:",
+          "1": "Detailed digital layouts and interactive prototypes that clarify user experience strategies.",
+          "2": "User Interface design:",
+          "3": "A user-friendly interface with cohesive branding, ensuring intuitive navigation and visual appeal.",
+          "4": "Branding and identity design:",
+          "5": "A unified visual identity package, including logos and design elements that strengthen brand recognition.",
+          "6": "User flow optimization:",
+          "7": "Optimised navigation structures that enhance usability and streamline the user journey.",
+          "8": "Persona Development:",
+          "9": "Detailed user profiles based on research, guiding design decisions to align with user expectations and behaviours.",
+          "10": "And many more…"
+        },
+        "learnMore": "Learn more"
+      }
+    },
+    "animations": {
+      "title": "ANIMATIONS",
+      "description": "Transform your ideas into captivating visual stories with our animation services. Perfect for bloggers, influencers, and personal brands, our animations help you effectively express your creativity, engage your audience, and elevate your online presence.",
+      "sections": {
+        "title": "We craft",
+        "text": {
+          "0": "Character Animation:",
+          "1": "Fictional characters in motion to engage audiences and convey stories effectively.",
+          "2": "Motion Graphics:",
+          "3": "Graphical elements in motion to enhance visual communication and captivate viewers.",
+          "4": "Interactive 3D Animations:",
+          "5": "Simulations that present virtual environments in motion to provide immersive and engaging interactive experiences.",
+          "6": "Product Animation:",
+          "7": "Products in motion to showcase features, functionality, and benefits effectively.",
+          "8": "Explainer Animation:",
+          "9": "Complex ideas or processes in motion to simplify understanding and engage viewers effectively.",
+          "10": "And many more…"
+        },
+        "learnMore": "Learn more"
+      }
+    }
   }
 }
