@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 const ChangePasswordReset = ({ email, token }) => {
   const [changePasswordError, setChangePasswordError] = useState("");
@@ -18,21 +19,23 @@ const ChangePasswordReset = ({ email, token }) => {
     }
   }, []);
 
+  const t = useTranslations('changePassword');
+
   const initialValues = {
     newPassword: "",
     confirmPassword: "",
   };
 
   const validationSchema = Yup.object().shape({
-    newPassword: Yup.string().required("New password is required"),
+    newPassword: Yup.string().required(t('errors.newPassword', {fallback: 'New password is required'})),
     confirmPassword: Yup.string()
-      .oneOf([Yup.ref("newPassword"), null], "Passwords must match")
-      .required("Confirm password is required"),
+      .oneOf([Yup.ref("newPassword"), null], t('errors.match', {fallback: 'Passwords must match'}))
+      .required(t('errors.confirmPassword', {fallback: 'Confirm password is required'})),
   });
 
   const handleSubmit = async (values, { setSubmitting }) => {
     if (!email || !token) {
-      setChangePasswordError("Invalid or expired token.");
+      setChangePasswordError(t('errors.token', {fallback: 'Invalid or expired token.'}));
       setSubmitting(false);
       return;
     }
@@ -63,7 +66,7 @@ const ChangePasswordReset = ({ email, token }) => {
       }
     } catch (error) {
       console.error("Failed to change password", error);
-      setChangePasswordError("An error occurred. Please try again.");
+      setChangePasswordError(t('errors.error', {fallback: 'An error occurred. Please try again.'}));
     } finally {
       setSubmitting(false);
     }
@@ -72,8 +75,8 @@ const ChangePasswordReset = ({ email, token }) => {
   return (
     <section className="change-password">
       <div className="_container">
-        <h2>Change Password</h2>
-        <p>Update your password to keep your account secure.</p>
+        <h2>{t('title', {fallback: 'Change Password'})}</h2>
+        <p>{t('description', {fallback: 'Update your password to keep your account secure.'})}</p>
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
@@ -85,7 +88,7 @@ const ChangePasswordReset = ({ email, token }) => {
                 <div>
                   <label>
                     <Field
-                      placeholder="New password"
+                      placeholder={t('fields.newPassword', {fallback: 'New password'})}
                       type="password"
                       name="newPassword"
                       className={
@@ -104,7 +107,7 @@ const ChangePasswordReset = ({ email, token }) => {
                 <div>
                   <label>
                     <Field
-                      placeholder="Confirm password"
+                      placeholder={t('fields.confirmPassword', {fallback: 'Confirm password'})}
                       type="password"
                       name="confirmPassword"
                       className={
@@ -126,10 +129,10 @@ const ChangePasswordReset = ({ email, token }) => {
                 className="black-button"
                 disabled={isSubmitting}
               >
-                Set new password
+                {t('button', {fallback: 'Set new password'})}
               </button>
               {passwordChanged && (
-                <div className="success">Password changed successfully!</div>
+                <div className="success">{t('success', {fallback: 'Password changed successfully!'})}</div>
               )}
               {changePasswordError && (
                 <div className="error">{changePasswordError}</div>

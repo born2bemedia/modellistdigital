@@ -465,5 +465,23 @@
   "needAssistance": {
     "title": "NEED ASSISTANCE?",
     "button": "Contact us"
+  },
+  "changePassword": {
+    "errors": {
+      "currentPassword": "Current password is required",
+      "newPassword": "New password is required",
+      "confirmPassword": "Confirm password is required",
+      "match": "Passwords must match",
+      "token": "Invalid or expired token.",
+      "error": "An error occurred. Please try again."
+    },
+    "title": "Change Password",
+    "description": "Update your password to keep your account secure.",
+    "fields": {
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password"
+    },
+    "button": "Set new password",
+    "success": "Password changed successfully!"
   }
 }
