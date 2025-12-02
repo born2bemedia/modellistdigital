@@ -3,8 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import RequestForm from "./RequestForm";
+import { useTranslations } from "next-intl";
 
 const RequestBlock = () => {
+  const t = useTranslations('work.requestBlock');
+
   return (
     <section className="request-block">
       <div className="_container">
@@ -16,9 +19,9 @@ const RequestBlock = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              UNSURE <br />
-              WHICH SOLUTION <br />
-              TO CHOOSE?
+              {t('title.0', {fallback: 'UNSURE'})} <br />
+              {t('title.1', {fallback: 'WHICH SOLUTION'})} <br />
+              {t('title.2', {fallback: 'TO CHOOSE?'})}
             </motion.h2>
             <motion.p
               initial="hidden"
@@ -26,7 +29,7 @@ const RequestBlock = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Contact us to find the perfect fit for your idea.
+              {t('text', {fallback: 'Contact us to find the perfect fit for your idea.'})}
             </motion.p>
           </div>
           <div className="col-02">

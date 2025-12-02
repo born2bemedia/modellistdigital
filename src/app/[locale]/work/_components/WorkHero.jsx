@@ -4,9 +4,10 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
+import { useTranslations } from "next-intl";
 
 const WorkHero = () => {
-  
+  const t = useTranslations('work.hero');
 
   return (
     <section className="work-hero">
@@ -21,10 +22,10 @@ const WorkHero = () => {
             height={560}
           ></motion.img>
           <motion.h1 initial="hidden" animate="visible" variants={fadeInUp}>
-          Experience the magic of ideas in motion
+          {t('title', {fallback: 'Experience the magic of ideas in motion'})}
           </motion.h1>
           <motion.h2 initial="hidden" animate="visible" variants={fadeInUp}>
-          In user interfaces, videos, 3D models and animations.
+          {t('subtitle', {fallback: 'In user interfaces, videos, 3D models and animations.'})}
           </motion.h2>
           
         </div>
@@ -35,13 +36,13 @@ const WorkHero = () => {
           className="work-hero__bottom"
         >
           <Link href="/services">
-            <span>Find a service</span>
+            <span>{t('findService', {fallback: 'Find a service'})}</span>
             <span>
               <img src="/images/home/whiteArrow.svg" />
             </span>
           </Link>
           <Link href="/get-a-quote">
-            <span>Submit your idea</span>
+            <span>{t('submitIdea', {fallback: 'Submit your idea'})}</span>
             <span>
               <img src="/images/home/whiteArrow.svg" />
             </span>

@@ -288,5 +288,136 @@
   "thankYou": {
     "title": "Thank you for your order",
     "home": "Home"
+  },
+  "work": {
+    "hero": {
+      "title": "Experience the magic of ideas in motion",
+      "subtitle": "In user interfaces, videos, 3D models and animations.",
+      "findService": "Find a service",
+      "submitIdea": "Submit your idea"
+    },
+    "examples": {
+      "title": {
+        "0": "VIDEO",
+        "1": "PRODUCTION"
+      },
+      "description": "Discover how our expertly crafted videos skyrocket your ideas, transforming concepts into captivating visuals that engage and inspire. Explore our portfolio to see the impact of high-quality production on your personal brand.",
+      "button": "Order a similar video",
+      "videoProduction": "Video Production"
+    },
+    "threeDModeling": {
+      "title": {
+        "0": "3D",
+        "1": "MODELLING"
+      },
+      "description": "Explore how our 3D modelling services bring your ideas to life with stunning precision and detail. Dive into our portfolio to see how we transform concepts into dynamic, realistic models that elevate your projects and captivate your audience.",
+      "button": "Order a similar solution",
+      "threeDModeling": "3D Modeling",
+      "videoDescription": {
+        "0": "Golden Flower Elegance",
+        "1": "Elegant Ring with a Stunning Gemstone",
+        "2": "Elegant 4-Candle Holder for Ambient Lighting",
+        "3": "Perfectly Hold Your Eggs with Style"
+      }
+    },
+    "uiUxExamples": {
+      "title": {
+        "0": "UX/UI",
+        "1": "DESIGN"
+      },
+      "description": "Discover the impact of our UX/UI design services, where user experience meets stunning visual design. Browse our portfolio to see how we create intuitive, engaging interfaces that bring your ideas to life and enhance user satisfaction.",
+      "button": "Order a similar solution",
+      "uiUxDesign": "UX/UI Design"
+    },
+    "animationsExamples": {
+      "title": "ANIMATIONS",
+      "description": "Experience the magic of our animation services, where imagination meets motion. Explore our portfolio to see how we bring ideas to life with dynamic and captivating animations that engage and inspire your audience.",
+      "blocks": {
+        "0": {
+          "description": "Animated circle preloader",
+          "text": "Experience a dynamic Neon preloader featuring two rotating circles, each moving in opposite directions. Watch as the inner circle morphs shapes while the vibrant colours shift with every rotation.",
+          "category": "Animations",
+          "buttonText": "Order a similar animation"
+        },
+        "1": {
+          "description": "Animated text",
+          "text": "Enjoy the elegant animation of text gracefully appearing letter by letter on the screen, ensuring readability at a comfortable pace for adults to absorb each word with clarity.",
+          "category": "Animations",
+          "buttonText": "Order a similar animation"
+        },
+        "2": {
+          "description": "Animated button",
+          "text": "Discover an animated hover button adorned with a gradient from violet to pink. Upon hovering, witness its transformation to a serene lagoon blue, adding interactive charm and elegance to your interface.",
+          "category": "Animations",
+          "buttonText": "Order a similar animation"
+        },
+        "3": {
+          "description": "Animated ball preloader",
+          "text": "Behold a captivating preloader featuring a lively red ball bouncing energetically against a subdued grey backdrop. Its rhythmic motion signals ongoing activity.",
+          "category": "Animations",
+          "buttonText": "Order a similar animation"
+        },
+        "4": {
+          "description": "Animated neon heart",
+          "text": "Watch a neon pink heart sketch elegantly form on the screen. It begins to pulsate with a gentle rhythm and sends vibrant waves of neon colours, filling the screen with affection and energy.",
+          "category": "Animations",
+          "buttonText": "Order a similar animation"
+        }
+      }
+    },
+    "requestBlock": {
+      "title": {
+        "0": "UNSURE",
+        "1": "WHICH SOLUTION",
+        "2": "TO CHOOSE?"
+      },
+      "text": "Contact us to find the perfect fit for your idea."
+    }
+  },
+  "requestForm": {
+    "errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Email is required",
+      "invalidEmail": "Invalid email address",
+      "phone": "Phone is required",
+      "budget": "Budget is required"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "budget": "Budget",
+      "comment": "Comment"
+    },
+    "button": "Submit"
+  },
+  "orderPopup": {
+    "errors": {
+      "required": "This field is required.",
+      "invalidEmail": "Please provide a correct email address."
+    },
+    "title": "REQUEST",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "budget": "Budget",
+      "ideaDescription": "Idea description",
+      "deadline": "Deadline",
+      "targetAudience": "Target audience",
+      "platform": "Platform",
+      "marketingGoal": "Marketing goal"
+    },
+    "button": "Submit",
+    "thanks": {
+      "title": "THANK YOU!",
+      "description": {
+        "0": "Your request has been received successfully!",
+        "1": "One of our team members will get in touch with you shortly."
+      }
+    }
   }
 }

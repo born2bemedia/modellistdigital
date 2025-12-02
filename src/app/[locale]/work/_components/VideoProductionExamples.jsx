@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import VideoBlock from "./VideoBlock";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const VideoProductionExamples = () => {
+  const t = useTranslations('work.examples');
+
   return (
     <section className="video-examples">
       <div className="_container">
@@ -20,9 +23,9 @@ const VideoProductionExamples = () => {
             <img src="/images/work/videoProductionIcon.svg" />
             <Link href="/services/video-production">
               <span>
-                VIDEO
+                {t('title.0', {fallback: 'VIDEO'})}
                 <br />
-                PRODUCTION
+                {t('title.1', {fallback: 'PRODUCTION'})}
               </span>
               <img src="/images/work/arrow.svg" />
             </Link>
@@ -34,23 +37,20 @@ const VideoProductionExamples = () => {
             variants={fadeInUp}
             className="description"
           >
-            Discover how our expertly crafted videos skyrocket your ideas,
-            transforming concepts into captivating visuals that engage and
-            inspire. Explore our portfolio to see the impact of high-quality
-            production on your personal brand.
+            {t('description', {fallback: 'Discover how our expertly crafted videos skyrocket your ideas, transforming concepts into captivating visuals that engage and inspire. Explore our portfolio to see the impact of high-quality production on your personal brand.'})}
           </motion.div>
 
           <VideoBlock
             videoUrl={"/videos/corrective-nutrition.webm"}
             videoCover={"/images/work/video1_cover.png"}
-            category={"Video Production"}
-            buttonText={"Order a similar video"}
+            category={t('videoProduction', {fallback: 'Video Production'})}
+            buttonText={t('button', {fallback: 'Order a similar video'})}
           />
           <VideoBlock
             videoUrl={"/videos/successful_career.webm"}
             videoCover={"/images/work/video2_cover.png"}
-            category={"Video Production"}
-            buttonText={"Order a similar video"}
+            category={t('videoProduction', {fallback: 'Video Production'})}
+            buttonText={t('button', {fallback: 'Order a similar video'})}
           />
         </div>
       </div>
