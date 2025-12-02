@@ -182,5 +182,56 @@
       "0": "Your request has been received successfully!",
       "1": "One of our team members will get in touch with you shortly."
     }
+  },
+  "cart": {
+    "errors": {
+      "required": "This field is required.",
+      "invalidEmail": "Please provide a valid email address.",
+      "invalidPhone": "Please provide a valid phone number.",
+      "terms": "You must accept the terms and conditions."
+    },
+    "title": "Welcome to your cart!",
+    "description": {
+      "0": "Review your selected services and products below.",
+      "1": "When you're ready, fill out your personal and billing information to complete your purchase."
+    },
+    "table": {
+      "0": "Product",
+      "1": "Quantity",
+      "2": "Price",
+      "3": "Action"
+    },
+    "remove": "Remove",
+    "total": "Cart total",
+    "billing": {
+      "title": "BILLING data",
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "street": "Street",
+        "address": "Address",
+        "city": "City",
+        "state": "State/Province",
+        "zip": "ZIP"
+      }
+    },
+    "payment": {
+      "title": "PAYMENT METHOD",
+      "subtitle": "Direct wire transfer",
+      "description": "Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be processed until the funds have cleared in our account."
+    },
+    "placeOrder": {
+      "0": "By placing your order, you agree to our",
+      "1": "Terms and Conditions",
+      "2": "and consent to our",
+      "3": "Data Processing Policy"
+    },
+    "order": "Order",
+    "empty": {
+      "title": "Your cart is empty",
+      "button": "Home"
+    }
   }
 }

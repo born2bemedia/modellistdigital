@@ -12,6 +12,7 @@ import countryList from "react-select-country-list";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 import { PhoneField } from "@/components/PhoneField";
+import { useTranslations } from "next-intl";
 
 const getCountryOptionByCode = (code) => {
   const countries = countryList().getData();
@@ -90,6 +91,8 @@ const CartPage = () => {
     setIsMounted(true);
   }, []);
 
+  const t = useTranslations('cart');
+
   const initialValues = {
     firstName: currentUser?.billing?.first_name || "",
     lastName: currentUser?.billing?.last_name || "",
@@ -105,23 +108,19 @@ const CartPage = () => {
   };
 
   const validationSchema = Yup.object().shape({
-    firstName: Yup.string().required("This field is required."),
-    lastName: Yup.string().required("This field is required."),
-    email: Yup.string()
-      .email("Please provide a valid email address.")
-      .required("This field is required."),
-    phone: Yup.string()
-      .matches(/^\d+$/, "Please provide a valid phone number.")
-      .required("This field is required."),
-    street: Yup.string().required("This field is required."),
-    address: Yup.string().required("This field is required."),
-    city: Yup.string().required("This field is required."),
+    firstName: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    lastName: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    email: Yup.string().email(t('errors.invalidEmail', {fallback: 'Please provide a valid email address.'})).required(t('errors.required', {fallback: 'This field is required.'})),
+    phone: Yup.string().matches(/^\d+$/, t('errors.invalidPhone', {fallback: 'Please provide a valid phone number.'})).required(t('errors.required', {fallback: 'This field is required.'})),
+    street: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    address: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    city: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
     //state: Yup.string().required("This field is required."),
-    zip: Yup.string().required("This field is required."),
-    country: Yup.string().required("This field is required."),
+    zip: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    country: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
     terms: Yup.bool().oneOf(
       [true],
-      "You must accept the terms and conditions."
+      t('errors.terms', {fallback: 'You must accept the terms and conditions.'})
     ),
   });
 
@@ -214,19 +213,18 @@ const CartPage = () => {
             <div>
               <section className="cart-wrap">
                 <div className="_container">
-                  <h1>Welcome to your cart!</h1>
+                  <h1>{t('title', {fallback: 'Welcome to your cart!'})}</h1>
                   <p>
-                    Review your selected services and products below. <br />
-                    When you're ready, fill out your personal and billing
-                    information to complete your purchase.
+                    {t('description.0', {fallback: 'Review your selected services and products below.'})} <br />
+                    {t('description.1', {fallback: "When you're ready, fill out your personal and billing information to complete your purchase."})}
                   </p>
 
                   <div className="cart">
                     <div className="cart-head">
-                      <div>Product</div>
-                      <div>Quantity</div>
-                      <div>Price, €</div>
-                      <div>Action</div>
+                      <div>{t('table.0', {fallback: 'Product'})}</div>
+                      <div>{t('table.1', {fallback: 'Quantity'})}</div>
+                      <div>{t('table.2', {fallback: 'Price'})}, €</div>
+                      <div>{t('table.3', {fallback: 'Action'})}</div>
                     </div>
                     <div className="cart-content">
                       {cart.map((item) => (
@@ -237,14 +235,14 @@ const CartPage = () => {
                           <div>
                             <button onClick={() => deleteFromCart(item.id)}>
                               <DeleteIcon />
-                              Remove
+                              {t('remove', {fallback: 'Remove'})}
                             </button>
                           </div>
                         </div>
                       ))}
                     </div>
                   </div>
-                  <div className="total">Cart total: €{totalAmount}</div>
+                  <div className="total">{t('total', {fallback: 'Cart total'})}: €{totalAmount}</div>
                 </div>
               </section>
 
@@ -265,12 +263,12 @@ const CartPage = () => {
                         values,
                       }) => (
                         <Form>
-                          <h2>BILLING data</h2>
+                          <h2>{t('billing.title', {fallback: 'BILLING data'})}</h2>
                           <div className="billing-data">
                             <div>
                               <label>
                                 <Field
-                                  placeholder="First name"
+                                  placeholder={t('billing.fields.firstName', {fallback: 'First name'})}
                                   type="text"
                                   name="firstName"
                                   className={
@@ -289,7 +287,7 @@ const CartPage = () => {
                             <div>
                               <label>
                                 <Field
-                                  placeholder="Last name"
+                                  placeholder={t('billing.fields.lastName', {fallback: 'Last name'})}
                                   type="text"
                                   name="lastName"
                                   className={
@@ -308,7 +306,7 @@ const CartPage = () => {
                             <div>
                               <label>
                                 <Field
-                                  placeholder="Email"
+                                  placeholder={t('billing.fields.email', {fallback: 'Email'})}
                                   type="email"
                                   name="email"
                                   className={
@@ -328,7 +326,7 @@ const CartPage = () => {
                               <label>
                                 <PhoneField
                                   variant="light"
-                                  placeholder="Phone"
+                                  placeholder={t('billing.fields.phone', {fallback: 'Phone'})}
                                   name="phone"
                                   className={
                                     touched.phone && errors.phone
@@ -346,7 +344,7 @@ const CartPage = () => {
                             <div>
                               <label>
                                 <Field
-                                  placeholder="Street"
+                                  placeholder={t('billing.fields.street', {fallback: 'Street'})}
                                   type="text"
                                   name="street"
                                   className={
@@ -365,7 +363,7 @@ const CartPage = () => {
                             <div>
                               <label>
                                 <Field
-                                  placeholder="Address"
+                                  placeholder={t('billing.fields.address', {fallback: 'Address'})}
                                   type="text"
                                   name="address"
                                   className={
@@ -384,7 +382,7 @@ const CartPage = () => {
                             <div>
                               <label>
                                 <Field
-                                  placeholder="City"
+                                  placeholder={t('billing.fields.city', {fallback: 'City'})}
                                   type="text"
                                   name="city"
                                   className={
@@ -401,7 +399,7 @@ const CartPage = () => {
                             <div>
                               <label>
                                 <Field
-                                  placeholder="State/Province"
+                                  placeholder={t('billing.fields.state', {fallback: 'State/Province'})}
                                   type="text"
                                   name="state"
                                   className={
@@ -420,7 +418,7 @@ const CartPage = () => {
                             <div>
                               <label>
                                 <Field
-                                  placeholder="ZIP"
+                                  placeholder={t('billing.fields.zip', {fallback: 'ZIP'})}
                                   type="text"
                                   name="zip"
                                   className={
@@ -467,14 +465,11 @@ const CartPage = () => {
                             </div>
                           </div>
 
-                          <h2>PAYMENT METHOD</h2>
+                          <h2>{t('payment.title', {fallback: 'PAYMENT METHOD'})}</h2>
                           <div className="payment">
-                            <div>Direct wire transfer</div>
+                            <div>{t('payment.subtitle', {fallback: 'Direct wire transfer'})}</div>
                             <p>
-                              Make your payment directly into our bank account.
-                              Please use your Order ID as the payment reference.
-                              Your order will not be processed until the funds
-                              have cleared in our account.
+                              {t('payment.description', {fallback: 'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be processed until the funds have cleared in our account.'})}
                             </p>
                           </div>
 
@@ -491,13 +486,13 @@ const CartPage = () => {
                               <label for="terms">
                                 <CheckboxIcon />
                                 <span>
-                                  By placing your order, you agree to our{" "}
+                                  {t('placeOrder.0', {fallback: 'By placing your order, you agree to our'})} {" "}
                                   <Link href="/terms-and-conditions">
-                                    Terms and Conditions
+                                    {t('placeOrder.1', {fallback: 'Terms and Conditions'})}
                                   </Link>{" "}
-                                  and consent to our{" "}
+                                  {t('placeOrder.2', {fallback: 'and consent to our'})} {" "}
                                   <Link href="/privacy-policy">
-                                    Data Processing Policy
+                                    {t('placeOrder.3', {fallback: 'Data Processing Policy'})}
                                   </Link>
                                   .
                                 </span>
@@ -514,7 +509,7 @@ const CartPage = () => {
                               type="submit"
                               disabled={isSubmitting}
                             >
-                              Order
+                              {t('order', {fallback: 'Order'})}
                             </button>
                           </div>
                         </Form>
@@ -528,9 +523,9 @@ const CartPage = () => {
             <div>
               <section className="cart-wrap empty">
                 <div className="_container">
-                  <h1>Your cart is empty</h1>
+                  <h1>{t('empty.title', {fallback: 'Your cart is empty'})}</h1>
                   <Link href="/" className="black-button">
-                    Home
+                    {t('empty.button', {fallback: 'Home'})}
                   </Link>
                 </div>
               </section>
