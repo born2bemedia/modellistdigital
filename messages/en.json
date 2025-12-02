@@ -1112,5 +1112,19 @@
         "1": "Welcome aboard!"
       }
     }
+  },
+  "resetPassword": {
+    "errors": {
+      "email": "Email is required",
+      "invalidEmail": "Invalid email address"
+    },
+    "title": "Reset your password",
+    "fields": {
+      "email": "Email"
+    },
+    "button": "Reset",
+    "success": {
+      "title": "Reset link was sent to your email!"
+    }
   }
 }
