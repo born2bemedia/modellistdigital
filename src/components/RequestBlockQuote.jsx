@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import RequestForm from "./RequestForm";
 import RequestQuoteForm from "./RequestQuoteForm";
+import { useTranslations } from "next-intl";
 
 const RequestBlockQuote = () => {
+  const t = useTranslations('getAQuote.requestBlock');
+
   return (
     <section className="request-block">
       <div className="_container">
@@ -17,7 +20,7 @@ const RequestBlockQuote = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              REQUEST A QUOTE
+              {t('title', {fallback: 'REQUEST A QUOTE'})}
             </motion.h2>
             <motion.p
               initial="hidden"
@@ -25,8 +28,8 @@ const RequestBlockQuote = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Please fill out the form to help us <br />
-              understand your requirements better.
+              {t('description.0', {fallback: 'Please fill out the form to help us'})} <br />
+              {t('description.1', {fallback: 'understand your requirements better.'})}
             </motion.p>
           </div>
           <div className="col-02">

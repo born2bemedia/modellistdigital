@@ -233,5 +233,56 @@
       "title": "Your cart is empty",
       "button": "Home"
     }
+  },
+  "getAQuote": {
+    "hero": {
+      "title": "Get a quote",
+      "description": {
+        "0": "We're here to help you find the perfect solution.",
+        "1": "Fill out the form below, and we'll provide a tailored",
+        "2": "estimate for our services."
+      },
+      "text": "Before filling out the form, download and take a look at our pricing guide to understand the range of services we offer and their associated costs.",
+      "button": {
+        "0": "Download",
+        "1": "pricing guide"
+      }
+    },
+    "requestBlock": {
+      "title": "REQUEST A QUOTE",
+      "description": {
+        "0": "Please fill out the form to help us",
+        "1": "understand your requirements better."
+      }
+    }
+  },
+  "requestQuoteForm": {
+    "errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Email is required",
+      "invalidEmail": "Invalid email address",
+      "phone": "Phone is required",
+      "service": "Service is required",
+      "budget": "Budget is required"
+    },
+    "services": {
+      "0": "Video production",
+      "1": "3D modelling",
+      "2": "Animations",
+      "3": "UI/UX design"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "service": "Select Service",
+      "budget": "Budget",
+      "timeline": "Timeline",
+      "description": "Project description",
+      "comments": "Additional comments",
+      "submit": "Submit your request"
+    }
   }
 }
