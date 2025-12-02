@@ -9,11 +9,14 @@ import * as Yup from "yup";
 import Link from "next/link";
 import CheckboxIcon from "@/icons/CheckboxIcon";
 import { PhoneField } from "@/components/PhoneField";
+import { useTranslations } from "next-intl";
 
 export default function SignUp() {
   const [thanksPopupShow, setThanksPopupShow] = useState(false);
   const router = useRouter();
   const { setCurrentUser } = useAuth();
+
+  const t = useTranslations('signUp');
 
   const initialValues = {
     firstName: "",
@@ -26,19 +29,19 @@ export default function SignUp() {
   };
 
   const validationSchema = Yup.object().shape({
-    firstName: Yup.string().required("First name is required"),
-    lastName: Yup.string().required("Last name is required"),
+    firstName: Yup.string().required(t('errors.firstName', {fallback: 'First name is required'})),
+    lastName: Yup.string().required(t('errors.lastName', {fallback: 'Last name is required'})),
     phone: Yup.string()
-      .matches(/^\d+$/, "Please provide a valid phone number")
-      .required("Phone number is required"),
+      .matches(/^\d+$/, t('errors.invalidPhone', {fallback: 'Please provide a valid phone number'}))
+      .required(t('errors.phone', {fallback: 'Phone number is required'})),
     email: Yup.string()
-      .email("Invalid email address")
-      .required("Email is required"),
-    password: Yup.string().required("Password is required"),
+      .email(t('errors.invalidEmail', {fallback: 'Invalid email address'}))
+      .required(t('errors.email', {fallback: 'Email is required'})),
+    password: Yup.string().required(t('errors.password', {fallback: 'Password is required'})),
     confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password"), null], "Passwords must match")
-      .required("Confirm password is required"),
-    terms: Yup.bool().oneOf([true], "You must accept the terms and conditions"),
+      .oneOf([Yup.ref("password"), null], t('errors.passwordsMustMatch', {fallback: 'Passwords must match'}))
+      .required(t('errors.confirmPassword', {fallback: 'Confirm password is required'})),
+    terms: Yup.bool().oneOf([true], t('errors.terms', {fallback: 'You must accept the terms and conditions'})),
   });
 
   const handleSubmit = async (values, { setSubmitting, setFieldError }) => {
@@ -77,7 +80,7 @@ export default function SignUp() {
       }
     } catch (error) {
       console.error("Registration failed", error.response.data);
-      setFieldError("email", "An account with this email already exists");
+      setFieldError("email", t('errors.accountExist', {fallback: 'An account with this email already exists'}));
     } finally {
       setSubmitting(false);
     }
@@ -87,10 +90,9 @@ export default function SignUp() {
     <>
       <section className="sign-up">
         <div className="_container">
-          <h1>Create your account</h1>
+          <h1>{t('title', {fallback: 'Create your account'})}</h1>
           <p>
-            Join us to access our services and exclusive offers. Fill out the
-            form below to get started.
+            {t('description', {fallback: 'Join us to access our services and exclusive offers. Fill out the form below to get started.'})}
           </p>
           <Formik
             initialValues={initialValues}
@@ -103,7 +105,7 @@ export default function SignUp() {
                   <Field
                     type="text"
                     name="firstName"
-                    placeholder="First name"
+                    placeholder={t('fields.firstName', {fallback: 'First name'})}
                     className={
                       touched.firstName && errors.firstName ? "invalid" : ""
                     }
@@ -118,7 +120,7 @@ export default function SignUp() {
                   <Field
                     type="text"
                     name="lastName"
-                    placeholder="Last name"
+                    placeholder={t('fields.lastName', {fallback: 'Last name'})}
                     className={
                       touched.lastName && errors.lastName ? "invalid" : ""
                     }
@@ -133,7 +135,7 @@ export default function SignUp() {
                   <PhoneField
                     variant="light"
                     name="phone"
-                    placeholder="Your phone"
+                    placeholder={t('fields.phone', {fallback: 'Your phone'})}
                     className={touched.phone && errors.phone ? "invalid" : ""}
                   />
                   <ErrorMessage
@@ -146,7 +148,7 @@ export default function SignUp() {
                   <Field
                     type="email"
                     name="email"
-                    placeholder="Your email"
+                    placeholder={t('fields.email', {fallback: 'Your email'})}
                     className={touched.email && errors.email ? "invalid" : ""}
                   />
                   <ErrorMessage
@@ -159,7 +161,7 @@ export default function SignUp() {
                   <Field
                     type="password"
                     name="password"
-                    placeholder="Your password"
+                    placeholder={t('fields.password', {fallback: 'Your password'})}
                     className={
                       touched.password && errors.password ? "invalid" : ""
                     }
@@ -174,7 +176,7 @@ export default function SignUp() {
                   <Field
                     type="password"
                     name="confirmPassword"
-                    placeholder="Confirm password"
+                    placeholder={t('fields.confirmPassword', {fallback: 'Confirm password'})}
                     className={
                       touched.confirmPassword && errors.confirmPassword
                         ? "invalid"
@@ -197,11 +199,13 @@ export default function SignUp() {
                   <label htmlFor="terms">
                     <CheckboxIcon />
                     <span>
-                      I agree with the{" "}
+                      {t('fields.terms.0', {fallback: 'I agree with the'})} {" "}
                       <Link href="/terms-and-conditions">
-                        Terms and Conditions
+                        {t('fields.terms.1', {fallback: 'Terms and Conditions'})}
                       </Link>{" "}
-                      and <Link href="/privacy-policy">Privacy Policy</Link>.
+                      {t('fields.terms.2', {fallback: 'and'})}{' '}<Link href="/privacy-policy">
+                        {t('fields.terms.3', {fallback: 'Privacy Policy'})}
+                      </Link>.
                     </span>
                   </label>
                   <ErrorMessage
@@ -216,7 +220,7 @@ export default function SignUp() {
                     type="submit"
                     disabled={isSubmitting}
                   >
-                    Sign Up
+                    {t('button', {fallback: 'Sign Up'})}
                   </button>
                 </div>
               </Form>
@@ -231,12 +235,11 @@ export default function SignUp() {
             <div>
               <div className="form-wrap">
                 <div className="success">
-                  <h3>Congratulations!</h3>
+                  <h3>{t('success.title', {fallback: 'Congratulations!'})}</h3>
                   <p>
-                    Your account has been successfully created. A confirmation
-                    email has been sent to your inbox.
+                    {t('success.description.0', {fallback: 'Your account has been successfully created. A confirmation email has been sent to your inbox.'})}
                     <br />
-                    Welcome aboard!
+                    {t('success.description.1', {fallback: 'Welcome aboard!'})}
                   </p>
                 </div>
               </div>

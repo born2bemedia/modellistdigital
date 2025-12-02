@@ -1074,5 +1074,43 @@
       "181": "Website:",
       "182": "We are here to assist you and strive to respond to all inquiries promptly."
     }
+  },
+  "signIn": {
+    "errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Email is required",
+      "invalidEmail": "Invalid email address",
+      "phone": "Phone is required",
+      "password": "Password is required",
+      "confirmPassword": "Confirm password is required",
+      "terms": "You must accept the terms and conditions",
+      "passwordsMustMatch": "Passwords must match",
+      "accountExist": "An account with this email already exists"
+    },
+    "title": "Create your account",
+    "description": "Join us to access our services and exclusive offers. Fill out the form below to get started.",
+    "fields": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "phone": "Your phone",
+      "email": "Your email",
+      "password": "Your password",
+      "confirmPassword": "Confirm password",
+      "terms": {
+        "0": "I agree with the",
+        "1": "Terms and Conditions",
+        "2": "and",
+        "3": "Privacy Policy"
+      }
+    },
+    "button": "Sign Up",
+    "success": {
+      "title": "Congratulations!",
+      "description": {
+        "0": "Your account has been successfully created. A confirmation email has been sent to your inbox.",
+        "1": "Welcome aboard!"
+      }
+    }
   }
 }
