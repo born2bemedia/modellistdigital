@@ -627,5 +627,42 @@
     "post": {
       "title": "More articles"
     }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "content": {
+      "0": "Welcome to The Modellist Limited's Cookie Policy. This policy explains how we use cookies and similar technologies on our website. Using our website, you agree to cookies as described in this policy.",
+      "1": "Company Details:",
+      "2": "Company Name:",
+      "3": "The Modellist Limited",
+      "4": "Registered Address:",
+      "5": "Registered Number:",
+      "6": "Email:",
+      "7": "What Are Cookies?",
+      "8": "Cookies are small text files stored on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners.",
+      "9": "How We Use Cookies",
+      "10": "We use cookies for the following purposes:",
+      "11": "Essential Cookies:",
+      "12": "These cookies are necessary for the website to function correctly. They enable core functionalities such as security, network management, and accessibility.",
+      "13": "Analytical/Performance Cookies:",
+      "14": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. This helps us improve the performance of our website.",
+      "15": "Functionality Cookies:",
+      "16": "These cookies allow the website to remember your choices (such as your language preferences) and provide enhanced features.",
+      "17": "Types of Cookies We Use",
+      "18": "Session Cookies:",
+      "19": "These temporary cookies are erased when you close your browser.",
+      "20": "Persistent Cookies:",
+      "21": "These cookies remain on your device for a specified period or until you delete them.",
+      "22": "Your Cookie Choices",
+      "23": "You can control and manage cookies in various ways. Please note that disabling cookies may affect the functionality of certain parts of our website.",
+      "24": "Browser Settings:",
+      "25": "You can set your browser to refuse all or some browser cookies or to alert you when websites set or access cookies. Check your browser's help section to learn how to change your cookie preferences.",
+      "26": "Third-Party Tools:",
+      "27": "Some third-party tools allow you to decline cookies from specific providers.",
+      "28": "Contact Us",
+      "29": "If you have any questions or concerns about our Cookie Policy, please contact us using the following information:",
+      "30": "Phone:",
+      "31": "Website:"
+    }
   }
 }
