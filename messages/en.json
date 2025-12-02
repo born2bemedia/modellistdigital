@@ -284,5 +284,9 @@
       "comments": "Additional comments",
       "submit": "Submit your request"
     }
+  },
+  "thankYou": {
+    "title": "Thank you for your order",
+    "home": "Home"
   }
 }

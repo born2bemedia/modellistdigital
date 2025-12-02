@@ -1,13 +1,16 @@
 import React from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const ThankyouPage = () => {
+  const t = useTranslations('thankYou');
+
   return (
     <section className="thankyou-page">
       <div className="_container">
-        <h1>Thank you for your order</h1>
+        <h1>{t('title', {fallback: 'Thank you for your order'})}</h1>
         <Link href="/" className="black-button">
-          Home
+          {t('home', {fallback: 'Home'})}
         </Link>
       </div>
     </section>
