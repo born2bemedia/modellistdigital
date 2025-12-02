@@ -4,12 +4,15 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 const ChangePassword = () => {
   const { currentUser } = useAuth();
   const [changePasswordError, setChangePasswordError] = useState("");
   const [passwordChanged, setPasswordChanged] = useState(false);
   const router = useRouter();
+
+  const t = useTranslations('dashboard.changePassword');
 
   const initialValues = {
     currentPassword: "",
@@ -18,11 +21,11 @@ const ChangePassword = () => {
   };
 
   const validationSchema = Yup.object().shape({
-    currentPassword: Yup.string().required("Current password is required"),
-    newPassword: Yup.string().required("New password is required"),
+    currentPassword: Yup.string().required(t('errors.currentPassword', {fallback: 'Current password is required'})),
+    newPassword: Yup.string().required(t('errors.newPassword', {fallback: 'New password is required'})),
     confirmPassword: Yup.string()
-      .oneOf([Yup.ref("newPassword"), null], "Passwords must match")
-      .required("Confirm password is required"),
+      .oneOf([Yup.ref("newPassword"), null], t('errors.match', {fallback: 'Passwords must match'}))
+      .required(t('errors.confirmPassword', {fallback: 'Confirm password is required'})),
   });
 
   const handleSubmit = async (values, { setSubmitting }) => {
@@ -63,7 +66,7 @@ const ChangePassword = () => {
   return (
     <section className="change-password">
       <div className="_container">
-        <h2>Change Password</h2>
+        <h2>{t('title', {fallback: 'Change Password'})}</h2>
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
@@ -75,7 +78,7 @@ const ChangePassword = () => {
                 <div>
                   <label>
                     <Field
-                      placeholder="Current password"
+                      placeholder={t('fields.currentPassword', {fallback: 'Current password'})}
                       type="password"
                       name="currentPassword"
                       className={
@@ -94,7 +97,7 @@ const ChangePassword = () => {
                 <div>
                   <label>
                     <Field
-                      placeholder="New password"
+                      placeholder={t('fields.newPassword', {fallback: 'New password'})}
                       type="password"
                       name="newPassword"
                       className={
@@ -111,7 +114,7 @@ const ChangePassword = () => {
                 <div>
                   <label>
                     <Field
-                      placeholder="Confirm password"
+                      placeholder={t('fields.confirmPassword', {fallback: 'Confirm password'})}
                       type="password"
                       name="confirmPassword"
                       className={
@@ -133,10 +136,10 @@ const ChangePassword = () => {
                 className="black-button"
                 disabled={isSubmitting}
               >
-                Set new password
+                {t('button', {fallback: 'Set new password'})}
               </button>
               {passwordChanged && (
-                <div className="success">Password changed successfully!</div>
+                <div className="success">{t('success', {fallback: 'Password changed successfully!'})}</div>
               )}
               {changePasswordError && <div className="error">{changePasswordError}</div>}
             </Form>

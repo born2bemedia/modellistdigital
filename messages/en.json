@@ -1140,5 +1140,109 @@
     },
     "logIn": "Log in",
     "forgotPassword": "Forgot password?"
+  },
+  "dashboard": {
+    "title": "Account",
+    "nav": {
+      "main": "Main",
+      "personalData": "Personal data",
+      "orderHistory": "Order history",
+      "getAssistance": "Get assistance"
+    },
+    "logout": "Logout",
+    "main": {
+      "title": "Welcome to your account dashboard",
+      "description": {
+        "0": "Manage your personal and billing information, view your order history, and access other features",
+        "1": "to enhance your experience with us. If you need assistance, our support team is here to help."
+      },
+      "services": {
+        "title": "EXPLORE OUR SERVICES",
+        "videoProduction": "Video production",
+        "3DModeling": "3D modelling",
+        "animations": "Animations",
+        "uiUxDesign": "UI/UX design"
+      },
+      "pricing": {
+        "title": {
+          "0": "GET OUR",
+          "1": "PRICING GUIDE"
+        },
+        "button": {
+          "0": "Download",
+          "1": "pricing guide"
+        }
+      }
+    },
+    "personalData": {
+      "errors": {
+        "required": "This field is required.",
+        "invalidEmail": "Please provide a valid email address.",
+        "invalidPhone": "Please provide a valid phone number."
+      },
+      "success": "Your information has been updated successfully.",
+      "title": "Update your personal information",
+      "description": "Keep your account details up-to-date to ensure smooth communication and service delivery.",
+      "fields": {
+        "firstName": "First name",
+        "lastName": "Last name",
+        "email": "Email",
+        "phone": "Phone",
+        "street": "Street",
+        "address": "Address",
+        "city": "City",
+        "state": "State/Province",
+        "zip": "ZIP"
+      },
+      "saveChanges": "Save changes"
+    },
+    "changePassword": {
+      "errors": {
+        "currentPassword": "Current password is required",
+        "newPassword": "New password is required",
+        "confirmPassword": "Confirm password is required",
+        "match": "Passwords must match"
+      },
+      "title": "Change Password",
+      "fields": {
+        "currentPassword": "Current password",
+        "newPassword": "New password",
+        "confirmPassword": "Confirm password"
+      },
+      "button": "Set new password",
+      "success": "Password changed successfully!"
+    },
+    "orderHistory": {
+      "title": "Track your order history",
+      "description": {
+        "0": "Below is a detailed record of all your past orders, both successful and failed.",
+        "1": "You can track the status, view details, and download invoices for each order."
+      },
+      "table": {
+        "0": "ID",
+        "1": "Status",
+        "2": "Date",
+        "3": "Price",
+        "4": "Products"
+      }
+    },
+    "getAssistance": {
+      "title": "Get assistance",
+      "description": {
+        "0": "We are here to help you with any questions or issues you may have.",
+        "1": "Please choose the type of assistance you need from the options below:"
+      },
+      "contacts": {
+        "email": "Email us:",
+        "phone": "Call us:"
+      },
+      "sendRequest": {
+        "title": "SEND A REQUEST",
+        "description": {
+          "0": "Please fill out the form below for any inquiries, requests, or feedback.",
+          "1": "We'll get back to you as soon as possible."
+        }
+      }
+    }
   }
 }

@@ -48,13 +48,11 @@ const OrderHistory = () => {
 
   return (
     <div className="personal-data">
-      <h2>Track your order history</h2>
+      <h2>{t('title', {fallback: 'Track your order history'})}</h2>
       <p>
-        Below is a detailed record of all your past orders, both successful and
-        failed.
+        {t('description.0', {fallback: 'Below is a detailed record of all your past orders, both successful and failed.'})}
         <br />
-        You can track the status, view details, and download invoices for each
-        order.
+        {t('description.1', {fallback: 'You can track the status, view details, and download invoices for each order.'})}
       </p>
 
       {loading && <p className="loading">Loading orders...</p>}
@@ -64,12 +62,11 @@ const OrderHistory = () => {
           <table className="orders">
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Status</th>
-                <th>Date</th>
-
-                <th>Price</th>
-                <th>Products</th>
+                <th>{t('table.0', {fallback: 'ID'})}</th>
+                <th>{t('table.1', {fallback: 'Status'})}</th>
+                <th>{t('table.2', {fallback: 'Date'})}</th>
+                <th>{t('table.3', {fallback: 'Price'})}</th>
+                <th>{t('table.4', {fallback: 'Products'})}</th>
               </tr>
             </thead>
             <tbody>

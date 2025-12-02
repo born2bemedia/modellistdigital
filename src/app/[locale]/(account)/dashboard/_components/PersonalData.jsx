@@ -9,6 +9,7 @@ import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 import ChangePassword from "./ChangePassword";
 import { PhoneField } from "@/components/PhoneField";
+import { useTranslations } from "next-intl";
 
 const getCountryOptionByCode = (code) => {
   const countries = countryList().getData();
@@ -85,6 +86,8 @@ const PersonalData = () => {
   const [billingError, setBillingError] = useState("");
   const [billingSuccess, setBillingSuccess] = useState("");
 
+  const t = useTranslations('dashboard.personalData');
+
   useEffect(() => {
     console.log("currentUser: ", currentUser);
     setIsMounted(true);
@@ -104,20 +107,20 @@ const PersonalData = () => {
   };
 
   const validationSchema = Yup.object().shape({
-    firstName: Yup.string().required("This field is required."),
-    lastName: Yup.string().required("This field is required."),
+    firstName: Yup.string().required(t('errors.required', { fallback: 'This field is required.' })),
+    lastName: Yup.string().required(t('errors.required', { fallback: 'This field is required.' })),
     email: Yup.string()
-      .email("Please provide a valid email address.")
-      .required("This field is required."),
+      .email(t('errors.invalidEmail', { fallback: 'Please provide a valid email address.' }))
+      .required(t('errors.required', { fallback: 'This field is required.' })),
     phone: Yup.string()
-      .matches(/^\d+$/, "Please provide a valid phone number.")
-      .required("This field is required."),
-    street: Yup.string().required("This field is required."),
+      .matches(/^\d+$/, t('errors.invalidPhone', { fallback: 'Please provide a valid phone number.' }))
+      .required(t('errors.required', { fallback: 'This field is required.' })),
+    street: Yup.string().required(t('errors.required', { fallback: 'This field is required.' })),
     address: Yup.string(),
-    city: Yup.string().required("This field is required."),
-    state: Yup.string().required("This field is required."),
-    zip: Yup.string().required("This field is required."),
-    country: Yup.object().required("This field is required."),
+    city: Yup.string().required(t('errors.required', { fallback: 'This field is required.' })),
+    state: Yup.string().required(t('errors.required', { fallback: 'This field is required.' })),
+    zip: Yup.string().required(t('errors.required', { fallback: 'This field is required.' })),
+    country: Yup.object().required(t('errors.required', { fallback: 'This field is required.' })),
   });
 
   const handleSubmit = async (values, { setSubmitting, setFieldError }) => {
@@ -151,7 +154,7 @@ const PersonalData = () => {
         const updatedUser = await response.json();
         setCurrentUser(updatedUser);
         localStorage.setItem("user", JSON.stringify(updatedUser));
-        setBillingSuccess("Your information has been updated successfully.");
+        setBillingSuccess(t('success', {fallback: 'Your information has been updated successfully.'}));
       } else {
         const errorData = await response.json();
         setBillingError(errorData.message);
@@ -167,10 +170,9 @@ const PersonalData = () => {
     <>
       <section className="personal-data">
         <div className="_container">
-          <h2>Update your personal information</h2>
+          <h2>{t('title', {fallback: 'Update your personal information'})}</h2>
           <p>
-            Keep your account details up-to-date to ensure smooth communication
-            and service delivery.
+            {t('description', {fallback: 'Keep your account details up-to-date to ensure smooth communication and service delivery.'})}
           </p>
           {isMounted && (
             <Formik
@@ -191,7 +193,7 @@ const PersonalData = () => {
                     <div>
                       <label>
                         <Field
-                          placeholder="First name"
+                          placeholder={t('fields.firstName', {fallback: 'First name'})}
                           type="text"
                           name="firstName"
                           className={
@@ -210,7 +212,7 @@ const PersonalData = () => {
                     <div>
                       <label>
                         <Field
-                          placeholder="Last name"
+                          placeholder={t('fields.lastName', {fallback: 'Last name'})}
                           type="text"
                           name="lastName"
                           className={
@@ -227,7 +229,7 @@ const PersonalData = () => {
                     <div>
                       <label>
                         <Field
-                          placeholder="Email"
+                          placeholder={t('fields.email', {fallback: 'Email'})}
                           type="email"
                           name="email"
                           className={
@@ -245,7 +247,7 @@ const PersonalData = () => {
                       <label>
                         <PhoneField
                           variant="light"
-                          placeholder="Phone"
+                          placeholder={t('fields.phone', {fallback: 'Phone'})}
                           name="phone"
                           className={
                             touched.phone && errors.phone ? "invalid" : ""
@@ -261,7 +263,7 @@ const PersonalData = () => {
                     <div>
                       <label>
                         <Field
-                          placeholder="Street"
+                          placeholder={t('fields.street', {fallback: 'Street'})}
                           type="text"
                           name="street"
                           className={
@@ -278,7 +280,7 @@ const PersonalData = () => {
                     <div>
                       <label>
                         <Field
-                          placeholder="Address"
+                          placeholder={t('fields.address', {fallback: 'Address'})}
                           type="text"
                           name="address"
                           className={
@@ -295,7 +297,7 @@ const PersonalData = () => {
                     <div>
                       <label>
                         <Field
-                          placeholder="City"
+                          placeholder={t('fields.city', {fallback: 'City'})}
                           type="text"
                           name="city"
                           className={
@@ -312,7 +314,7 @@ const PersonalData = () => {
                     <div>
                       <label>
                         <Field
-                          placeholder="State/Province"
+                          placeholder={t('fields.state', {fallback: 'State/Province'})}
                           type="text"
                           name="state"
                           className={
@@ -329,7 +331,7 @@ const PersonalData = () => {
                     <div>
                       <label>
                         <Field
-                          placeholder="ZIP"
+                          placeholder={t('fields.zip', {fallback: 'ZIP'})}
                           type="text"
                           name="zip"
                           className={touched.zip && errors.zip ? "invalid" : ""}
@@ -375,7 +377,7 @@ const PersonalData = () => {
                     className="black-button"
                     disabled={isSubmitting}
                   >
-                    Save changes
+                    {t('saveChanges', {fallback: 'Save changes'})}
                   </button>
                 </Form>
               )}

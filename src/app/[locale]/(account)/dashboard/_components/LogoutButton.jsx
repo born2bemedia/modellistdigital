@@ -2,10 +2,13 @@
 import { useRouter } from 'next/navigation';
 import { useAuth } from "@/context/AuthContext";
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 function LogoutButton() {
   const { setCurrentUser } = useAuth();
   const router = useRouter();
+
+  const t = useTranslations('dashboard');
 
   // Logout function
   const handleLogout = () => {
@@ -20,7 +23,7 @@ function LogoutButton() {
     <li
       onClick={handleLogout}
     >
-      Logout
+      {t('logout', {fallback: 'Logout'})}
     </li>
   );
 }

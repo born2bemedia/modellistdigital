@@ -8,9 +8,12 @@ import PersonalData from "./_components/PersonalData";
 import OrderHistory from "./_components/OrderHistory";
 import GetAssistance from "./_components/GetAssistance";
 import ThanksPopup from "@/components/ThanksPopup";
+import { useTranslations } from "next-intl";
 
 export default function Account() {
   const { currentUser, fetchCurrentUser } = useAuth();
+
+  const t = useTranslations('dashboard');
 
   const [openIndex, setOpenIndex] = useState(1);
 
@@ -32,7 +35,7 @@ export default function Account() {
       <section className="account-wrap">
       <div className="_container">
         <div className="account-wrap__body">
-          <h1 className="">Account</h1>
+          <h1 className="">{t('title', {fallback: 'Account'})}</h1>
 
           <ul className="account-nav">
             <li
@@ -41,7 +44,7 @@ export default function Account() {
               onClick={() => toggleItem(1)}
               className={`${openIndex === 1 && "active"}`}
             >
-              Main
+              {t('nav.main', {fallback: 'Main'})}
             </li>
             <li
               data-id={openIndex}
@@ -49,7 +52,7 @@ export default function Account() {
               onClick={() => toggleItem(2)}
               className={`${openIndex === 2 && "active"}`}
             >
-              Personal data
+              {t('nav.personalData', {fallback: 'Personal data'})}
             </li>
             <li
               data-id={openIndex}
@@ -57,7 +60,7 @@ export default function Account() {
               onClick={() => toggleItem(3)}
               className={`${openIndex === 3 && "active"}`}
             >
-              Order history
+              {t('nav.orderHistory', {fallback: 'Order history'})}
             </li>
             <li
               data-id={openIndex}
@@ -65,7 +68,7 @@ export default function Account() {
               onClick={() => toggleItem(4)}
               className={`${openIndex === 4 && "active"}`}
             >
-              Get assistance
+              {t('nav.getAssistance', {fallback: 'Get assistance'})}
             </li>
             <LogoutButton />
           </ul>
