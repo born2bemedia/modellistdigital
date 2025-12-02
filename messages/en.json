@@ -1126,5 +1126,19 @@
     "success": {
       "title": "Reset link was sent to your email!"
     }
+  },
+  "logIn": {
+    "errors": {
+      "email": "Email is required",
+      "invalidEmail": "Invalid email address",
+      "password": "Password is required",
+      "invalidCredentials": "Invalid email or password"
+    },
+    "fields": {
+      "email": "Email",
+      "password": "Password"
+    },
+    "logIn": "Log in",
+    "forgotPassword": "Forgot password?"
   }
 }

@@ -7,10 +7,13 @@ import { useAuth } from "@/context/AuthContext";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function SignIn() {
   const router = useRouter();
   const { setCurrentUser, currentUser } = useAuth();
+
+  const t = useTranslations('logIn');
 
   useEffect(() => {
     if (currentUser) {
@@ -24,8 +27,8 @@ export default function SignIn() {
   };
 
   const validationSchema = Yup.object().shape({
-    email: Yup.string().email("Invalid email address").required("Email is required"),
-    password: Yup.string().required("Password is required"),
+    email: Yup.string().email(t('errors.invalidEmail', {fallback: 'Invalid email address'})).required(t('errors.email', {fallback: 'Email is required'})),
+    password: Yup.string().required(t('errors.password', {fallback: 'Password is required'})),
   });
 
   const handleSubmit = async (values, { setSubmitting, setFieldError }) => {
@@ -50,7 +53,7 @@ export default function SignIn() {
       }
     } catch (error) {
       console.error("Login failed", error.response.data);
-      setFieldError("email", "Invalid email or password");
+      setFieldError("email", t('errors.invalidCredentials', {fallback: 'Invalid email or password'}));
     } finally {
       setSubmitting(false);
     }
@@ -67,7 +70,7 @@ export default function SignIn() {
                 <Field
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder={t('fields.email', {fallback: 'Email'})}
                   className={touched.email && errors.email ? "invalid" : ""}
                 />
                 <ErrorMessage name="email" component="div" className="error" />
@@ -76,15 +79,17 @@ export default function SignIn() {
                 <Field
                   type="password"
                   name="password"
-                  placeholder="Password"
+                  placeholder={t('fields.password', {fallback: 'Password'})}
                   className={touched.password && errors.password ? "invalid" : ""}
                 />
                 <ErrorMessage name="password" component="div" className="error" />
               </div>
               <button className="black-button" type="submit" disabled={isSubmitting}>
-                Log in
+                {t('logIn', {fallback: 'Log in'})}
               </button>
-              <Link className="reset" href="/reset-password">Forgot password?</Link>
+              <Link className="reset" href="/reset-password">
+                {t('forgotPassword', {fallback: 'Forgot password?'})}
+              </Link>
             </Form>
           )}
         </Formik>
