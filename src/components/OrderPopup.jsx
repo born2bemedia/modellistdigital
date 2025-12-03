@@ -12,6 +12,7 @@ import * as Yup from "yup";
 import { usePopup } from "@/context/PopupsContext";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useTranslations } from "next-intl";
 
 const CustomInput = React.forwardRef(
   ({ value, onClick, inputPlaceholder }, ref) => (
@@ -49,19 +50,21 @@ const FormikDatePicker = ({ placeholder, ...props }) => {
 function OrderPopup() {
   const { orderPopupDisplay, setOrderPopupDisplay, serviceValue } = usePopup();
 
+  const t = useTranslations('orderPopup');
+
   const validationSchema = Yup.object({
-    firstName: Yup.string().required("This field is required."),
-    lastName: Yup.string().required("This field is required."),
+    firstName: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    lastName: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
     email: Yup.string()
-      .email("Please provide a correct email address.")
-      .required("This field is required."),
-    phone: Yup.string().required("This field is required."),
-    budget: Yup.string().required("This field is required."),
-    ideaDescription: Yup.string().required("This field is required."),
-    deadline: Yup.date().required("This field is required."),
-    targetAudience: Yup.string().required("This field is required."),
-    platform: Yup.string().required("This field is required."),
-    marketingGoal: Yup.string().required("This field is required."),
+      .email(t('errors.invalidEmail', {fallback: 'Please provide a correct email address.'}))
+      .required(t('errors.required', {fallback: 'This field is required.'})),
+    phone: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    budget: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    ideaDescription: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    deadline: Yup.date().required(t('errors.required', {fallback: 'This field is required.'})),
+    targetAudience: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    platform: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
+    marketingGoal: Yup.string().required(t('errors.required', {fallback: 'This field is required.'})),
   });
 
   const initialValues = {
@@ -157,14 +160,14 @@ function OrderPopup() {
                           <span
                             dangerouslySetInnerHTML={{ __html: serviceValue }}
                           />{" "}
-                          REQUEST
+                          {t('title', {fallback: 'REQUEST'})}
                         </h2>
                         <Field type="hidden" name="service" />
                         <div>
                           <Field
                             name="firstName"
                             type="text"
-                            placeholder={"First name"}
+                            placeholder={t('fields.firstName', {fallback: 'First name'})}
                             className={
                               touched.firstName && errors.firstName
                                 ? "invalid"
@@ -182,7 +185,7 @@ function OrderPopup() {
                           <Field
                             name="lastName"
                             type="text"
-                            placeholder={"Last name"}
+                            placeholder={t('fields.lastName', {fallback: 'Last name'})}
                             className={
                               touched.lastName && errors.lastName
                                 ? "invalid"
@@ -200,7 +203,7 @@ function OrderPopup() {
                           <Field
                             name="email"
                             type="email"
-                            placeholder={"Email"}
+                            placeholder={t('fields.email', {fallback: 'Email'})}
                             className={
                               touched.email && errors.email ? "invalid" : ""
                             }
@@ -217,7 +220,7 @@ function OrderPopup() {
                             variant="light"
                             name="phone"
                             type="tel"
-                            placeholder={"Phone"}
+                            placeholder={t('fields.phone', {fallback: 'Phone'})}
                             className={
                               touched.phone && errors.phone ? "invalid" : ""
                             }
@@ -233,7 +236,7 @@ function OrderPopup() {
                           <Field
                             name="budget"
                             type="text"
-                            placeholder={"Budget"}
+                            placeholder={t('fields.budget', {fallback: 'Budget'})}
                             className={
                               touched.budget && errors.budget ? "invalid" : ""
                             }
@@ -249,7 +252,7 @@ function OrderPopup() {
                           <Field
                             name="ideaDescription"
                             type="text"
-                            placeholder={"Idea description"}
+                            placeholder={t('fields.ideaDescription', {fallback: 'Idea description'})}
                             className={
                               touched.ideaDescription && errors.ideaDescription
                                 ? "invalid"
@@ -266,7 +269,7 @@ function OrderPopup() {
                         <div>
                           <FormikDatePicker
                             name="deadline"
-                            placeholder={"Deadline"}
+                            placeholder={t('fields.deadline', {fallback: 'Deadline'})}
                           />
                           <ErrorMessage
                             name="deadline"
@@ -279,7 +282,7 @@ function OrderPopup() {
                           <Field
                             name="targetAudience"
                             type="text"
-                            placeholder={"Target audience"}
+                            placeholder={t('fields.targetAudience', {fallback: 'Target audience'})}
                             className={
                               touched.targetAudience && errors.targetAudience
                                 ? "invalid"
@@ -297,7 +300,7 @@ function OrderPopup() {
                           <Field
                             name="platform"
                             type="text"
-                            placeholder={"Platform"}
+                            placeholder={t('fields.platform', {fallback: 'Platform'})}
                             className={
                               touched.platform && errors.platform
                                 ? "invalid"
@@ -315,7 +318,7 @@ function OrderPopup() {
                           <Field
                             name="marketingGoal"
                             type="text"
-                            placeholder={"Marketing goal"}
+                            placeholder={t('fields.marketingGoal', {fallback: 'Marketing goal'})}
                             className={
                               touched.marketingGoal && errors.marketingGoal
                                 ? "invalid"
@@ -334,18 +337,17 @@ function OrderPopup() {
                           className="black-button"
                           disabled={isSubmitting}
                         >
-                          Submit
+                          {t('button', {fallback: 'Submit'})}
                         </button>
                       </div>
                     )}
                     {status && status.success && (
                       <div className="success">
-                        <h3>THANK YOU!</h3>
+                        <h3>{t('thanks.title', {fallback: 'THANK YOU!'})}</h3>
                         <p>
-                          Your request has been received successfully!
+                          {t('thanks.description.0', {fallback: 'Your request has been received successfully!'})}
                           <br />
-                          One of our team members will get in touch with you
-                          shortly.
+                          {t('thanks.description.1', {fallback: 'One of our team members will get in touch with you shortly.'})}
                         </p>
                       </div>
                     )}

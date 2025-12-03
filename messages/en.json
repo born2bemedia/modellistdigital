@@ -1,0 +1,1248 @@
+{
+  "cookiePopup": {
+    "title": "Cookie settings",
+    "text": {
+      "0": "Cookies help us improve our website. By clicking 'Accept,' you agree to our use of cookies for functionality, analytics, and personalized content. Learn more in our",
+      "1": "Cookie Policy"
+    },
+    "decline": "Decline",
+    "accept": "Accept"
+  },
+  "projectSlider": {
+    "explore": "Explore more"
+  },
+  "home": {
+    "hero": {
+      "marquee": {
+        "0": "Expert video production",
+        "1": "Animations",
+        "2": "3D modelling",
+        "3": "UI/UX design",
+        "4": "Expert video production",
+        "5": "Animations",
+        "6": "3D modelling",
+        "7": "UI/UX design"
+      },
+      "subtitle": "Professional production company",
+      "title": {
+        "0": "Make your idea",
+        "1": "stand out"
+      },
+      "text": {
+        "0": "Meet our team",
+        "1": "Get a quote"
+      }
+    },
+    "latestProjects": {
+      "title": "CHECK OUT OUR LATEST PROJECTS",
+      "buttons": {
+        "0": "Video production",
+        "1": "3D modelling",
+        "2": "UI/UX design",
+        "3": "Animations"
+      }
+    },
+    "productionCycle": {
+      "title": "OUR PRODUCTION CYCLE",
+      "cards": {
+        "0": {
+          "title": {
+            "0": "Expert",
+            "1": "consulting"
+          },
+          "text": "We start by talking to you about your goals and vision. This ensures we're on the same page and can deliver what you're looking for.",
+          "subtitle": "You get a clear understanding and aligned expectations from the start."
+        },
+        "1": {
+          "title": {
+            "0": "Creative",
+            "1": "strategy"
+          },
+          "text": "We create a plan that outlines the concept, steps, and timeline. This keeps you informed about what we're doing and when.",
+          "subtitle": "You enjoy the clarity of the process and confidence in the plan."
+        },
+        "2": {
+          "title": {
+            "0": "Project",
+            "1": "production"
+          },
+          "text": "We take the idea and turn it into a video, animation, or model, bringing your vision to life.",
+          "subtitle": "You get a draft of your idea that you can try and review."
+        },
+        "3": {
+          "title": {
+            "0": "Review",
+            "1": "and optimisation"
+          },
+          "text": "You give us feedback on the draft, and we make the necessary changes to get it just right.",
+          "subtitle": "You enjoy a final product that meets your needs and looks great."
+        },
+        "4": {
+          "title": {
+            "0": "Launch and",
+            "1": "distribution"
+          },
+          "text": "We help you share your content in the best places to reach your audience.",
+          "subtitle": "Your video gets seen by the right people, maximising its impact."
+        },
+        "5": {
+          "title": {
+            "0": "Product",
+            "1": "Consistency"
+          },
+          "text": "We keep all your data, style elements, and identity on file to ensure consistency across all your products. No matter when you order your next one, it will be perfectly aligned with your brand."
+        }
+      },
+      "ready": {
+        "title": {
+          "0": "READY",
+          "1": "TO START?"
+        },
+        "text": "Get a quote"
+      }
+    },
+    "whyChooseUs": {
+      "title": {
+        "0": "WHY",
+        "1": "CHOOSE",
+        "2": "US"
+      },
+      "cards": {
+        "0": {
+          "title": "Extensive expertise",
+          "text": "Our team has a wealth of knowledge and experience in various digital fields, ensuring we deliver innovative and effective video production services."
+        },
+        "1": {
+          "title": "Top talents",
+          "text": "We have assembled a team of highly skilled professionals who are passionate about creating outstanding video content that stands out."
+        },
+        "2": {
+          "title": "Comprehensive approach",
+          "text": "From consulting and strategy to production and distribution, we handle every aspect of the process to ensure a seamless and successful project."
+        },
+        "3": {
+          "title": "Guaranteed quality",
+          "text": "We promise that our products will match top industry standards, providing you with high-quality content that you can be proud of."
+        },
+        "4": {
+          "title": "Market research",
+          "text": "We thoroughly research the market and understand your audience's needs to craft a product that not only looks great but also effectively boosts your brand."
+        },
+        "5": {
+          "title": "Product Consistency",
+          "text": "We keep all your data, style elements, and identity on file to ensure consistency across all your products. No matter when you order your next one, it will be perfectly aligned with your brand."
+        }
+      },
+      "button": "Meet our team"
+    }
+  },
+  "contacts": {
+    "hero": {
+      "title": "Contact us",
+      "description": {
+        "0": "We're here to help! Reach out through",
+        "1": "any of the following methods."
+      },
+      "email": "Email us:",
+      "phone": "Call us:"
+    },
+    "visitUs": {
+      "title": "VISIT US",
+      "officeAddress": "Office address:",
+      "registeredAddress": "Registered address:"
+    },
+    "requestBlock": {
+      "title": "SEND A REQUEST",
+      "text": {
+        "0": "Please fill out the form for any inquiries, requests, or",
+        "1": "feedback. We'll get back to you as soon as possible."
+      }
+    },
+    "form": {
+      "errors": {
+        "firstName": "First name is required",
+        "lastName": "Last name is required",
+        "email": "Email is required",
+        "invalidEmail": "Invalid email address",
+        "phone": "Phone is required"
+      },
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "comment": "Comment"
+      },
+      "button": "Submit"
+    }
+  },
+  "thanksPopup": {
+    "title": "THANK YOU!",
+    "text": {
+      "0": "Your request has been received successfully!",
+      "1": "One of our team members will get in touch with you shortly."
+    }
+  },
+  "cart": {
+    "errors": {
+      "required": "This field is required.",
+      "invalidEmail": "Please provide a valid email address.",
+      "invalidPhone": "Please provide a valid phone number.",
+      "terms": "You must accept the terms and conditions."
+    },
+    "title": "Welcome to your cart!",
+    "description": {
+      "0": "Review your selected services and products below.",
+      "1": "When you're ready, fill out your personal and billing information to complete your purchase."
+    },
+    "table": {
+      "0": "Product",
+      "1": "Quantity",
+      "2": "Price",
+      "3": "Action"
+    },
+    "remove": "Remove",
+    "total": "Cart total",
+    "billing": {
+      "title": "BILLING data",
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "street": "Street",
+        "address": "Address",
+        "city": "City",
+        "state": "State/Province",
+        "zip": "ZIP"
+      }
+    },
+    "payment": {
+      "title": "PAYMENT METHOD",
+      "subtitle": "Direct wire transfer",
+      "description": "Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be processed until the funds have cleared in our account."
+    },
+    "placeOrder": {
+      "0": "By placing your order, you agree to our",
+      "1": "Terms and Conditions",
+      "2": "and consent to our",
+      "3": "Data Processing Policy"
+    },
+    "order": "Order",
+    "empty": {
+      "title": "Your cart is empty",
+      "button": "Home"
+    }
+  },
+  "getAQuote": {
+    "hero": {
+      "title": "Get a quote",
+      "description": {
+        "0": "We're here to help you find the perfect solution.",
+        "1": "Fill out the form below, and we'll provide a tailored",
+        "2": "estimate for our services."
+      },
+      "text": "Before filling out the form, download and take a look at our pricing guide to understand the range of services we offer and their associated costs.",
+      "button": {
+        "0": "Download",
+        "1": "pricing guide"
+      }
+    },
+    "requestBlock": {
+      "title": "REQUEST A QUOTE",
+      "description": {
+        "0": "Please fill out the form to help us",
+        "1": "understand your requirements better."
+      }
+    }
+  },
+  "requestQuoteForm": {
+    "errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Email is required",
+      "invalidEmail": "Invalid email address",
+      "phone": "Phone is required",
+      "service": "Service is required",
+      "budget": "Budget is required"
+    },
+    "services": {
+      "0": "Video production",
+      "1": "3D modelling",
+      "2": "Animations",
+      "3": "UI/UX design"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "service": "Select Service",
+      "budget": "Budget",
+      "timeline": "Timeline",
+      "description": "Project description",
+      "comments": "Additional comments",
+      "submit": "Submit your request"
+    }
+  },
+  "thankYou": {
+    "title": "Thank you for your order",
+    "home": "Home"
+  },
+  "work": {
+    "hero": {
+      "title": "Experience the magic of ideas in motion",
+      "subtitle": "In user interfaces, videos, 3D models and animations.",
+      "findService": "Find a service",
+      "submitIdea": "Submit your idea"
+    },
+    "examples": {
+      "title": {
+        "0": "VIDEO",
+        "1": "PRODUCTION"
+      },
+      "description": "Discover how our expertly crafted videos skyrocket your ideas, transforming concepts into captivating visuals that engage and inspire. Explore our portfolio to see the impact of high-quality production on your personal brand.",
+      "button": "Order a similar video",
+      "videoProduction": "Video Production"
+    },
+    "threeDModeling": {
+      "title": {
+        "0": "3D",
+        "1": "MODELLING"
+      },
+      "description": "Explore how our 3D modelling services bring your ideas to life with stunning precision and detail. Dive into our portfolio to see how we transform concepts into dynamic, realistic models that elevate your projects and captivate your audience.",
+      "button": "Order a similar solution",
+      "threeDModeling": "3D Modeling",
+      "videoDescription": {
+        "0": "Golden Flower Elegance",
+        "1": "Elegant Ring with a Stunning Gemstone",
+        "2": "Elegant 4-Candle Holder for Ambient Lighting",
+        "3": "Perfectly Hold Your Eggs with Style"
+      }
+    },
+    "uiUxExamples": {
+      "title": {
+        "0": "UX/UI",
+        "1": "DESIGN"
+      },
+      "description": "Discover the impact of our UX/UI design services, where user experience meets stunning visual design. Browse our portfolio to see how we create intuitive, engaging interfaces that bring your ideas to life and enhance user satisfaction.",
+      "button": "Order a similar solution",
+      "uiUxDesign": "UX/UI Design"
+    },
+    "animationsExamples": {
+      "title": "ANIMATIONS",
+      "description": "Experience the magic of our animation services, where imagination meets motion. Explore our portfolio to see how we bring ideas to life with dynamic and captivating animations that engage and inspire your audience.",
+      "blocks": {
+        "0": {
+          "description": "Animated circle preloader",
+          "text": "Experience a dynamic Neon preloader featuring two rotating circles, each moving in opposite directions. Watch as the inner circle morphs shapes while the vibrant colours shift with every rotation.",
+          "category": "Animations",
+          "buttonText": "Order a similar animation"
+        },
+        "1": {
+          "description": "Animated text",
+          "text": "Enjoy the elegant animation of text gracefully appearing letter by letter on the screen, ensuring readability at a comfortable pace for adults to absorb each word with clarity.",
+          "category": "Animations",
+          "buttonText": "Order a similar animation"
+        },
+        "2": {
+          "description": "Animated button",
+          "text": "Discover an animated hover button adorned with a gradient from violet to pink. Upon hovering, witness its transformation to a serene lagoon blue, adding interactive charm and elegance to your interface.",
+          "category": "Animations",
+          "buttonText": "Order a similar animation"
+        },
+        "3": {
+          "description": "Animated ball preloader",
+          "text": "Behold a captivating preloader featuring a lively red ball bouncing energetically against a subdued grey backdrop. Its rhythmic motion signals ongoing activity.",
+          "category": "Animations",
+          "buttonText": "Order a similar animation"
+        },
+        "4": {
+          "description": "Animated neon heart",
+          "text": "Watch a neon pink heart sketch elegantly form on the screen. It begins to pulsate with a gentle rhythm and sends vibrant waves of neon colours, filling the screen with affection and energy.",
+          "category": "Animations",
+          "buttonText": "Order a similar animation"
+        }
+      }
+    },
+    "requestBlock": {
+      "title": {
+        "0": "UNSURE",
+        "1": "WHICH SOLUTION",
+        "2": "TO CHOOSE?"
+      },
+      "text": "Contact us to find the perfect fit for your idea."
+    }
+  },
+  "requestForm": {
+    "errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Email is required",
+      "invalidEmail": "Invalid email address",
+      "phone": "Phone is required",
+      "budget": "Budget is required"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "budget": "Budget",
+      "comment": "Comment"
+    },
+    "button": "Submit"
+  },
+  "orderPopup": {
+    "errors": {
+      "required": "This field is required.",
+      "invalidEmail": "Please provide a correct email address."
+    },
+    "title": "REQUEST",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "budget": "Budget",
+      "ideaDescription": "Idea description",
+      "deadline": "Deadline",
+      "targetAudience": "Target audience",
+      "platform": "Platform",
+      "marketingGoal": "Marketing goal"
+    },
+    "button": "Submit",
+    "thanks": {
+      "title": "THANK YOU!",
+      "description": {
+        "0": "Your request has been received successfully!",
+        "1": "One of our team members will get in touch with you shortly."
+      }
+    }
+  },
+  "team": {
+    "hero": {
+      "title": "Creative minds behind Modellist Digital",
+      "description": "At The Modellist, our small but dedicated team works tirelessly to transform your ideas into stunning visuals. Each member is crucial in ensuring creativity, quality, and precision in every aspect of our services. Discover the key roles that make our magic happen:"
+    },
+    "team": {
+      "tabs": {
+        "0": "The Visionaries",
+        "1": "The Connectors",
+        "2": "The Perfectionists",
+        "3": "The Makers"
+      },
+      "tab1": {
+        "title1": "Creative Director",
+        "description1": "The driving force behind the innovative concepts and designs we produce. They ensure that every project, whether it's a 3D model, video production, animation, or UX/UI design, is both functional and aesthetically captivating, pushing the boundaries of creativity.",
+        "title2": "Lead Designer",
+        "description2": "Translates ideas into visual masterpieces. They oversee the design process, ensuring that each creation meets our high standards and aligns with your vision."
+      },
+      "tab2": {
+        "title1": "Marketing Strategist",
+        "description1": "Crafts compelling stories around our creations, showcasing their unique value and potential. They connect our products with the right audience, ensuring our models, videos, animations, and designs make a lasting impact.",
+        "title2": "Customer Experience Manager",
+        "description2": "Dedicated to providing top-notch service. They guide you through the process, ensuring your needs are met and your expectations exceeded."
+      },
+      "tab3": {
+        "title1": "Quality Assurance Specialist",
+        "description1": "Meticulously reviews every project to ensure it meets our rigorous quality standards. They are the guardians of precision and detail, making sure that each creation is flawless and ready for presentation.",
+        "title2": "Technical Lead",
+        "description2": "Ensures that all our models and animations are technically sound and optimised for their respective platforms. They tackle the complexities of construction and production, ensuring durability and functionality."
+      },
+      "tab4": {
+        "title1": "3D Modeler",
+        "description1": "Brings ideas to life with their expert skills in creating detailed and accurate 3D models.",
+        "title2": "Animator",
+        "description2": "Brings motion to our creative projects, crafting fluid and engaging animations that capture the essence of your vision.",
+        "title3": "Video Producer",
+        "description3": "Oversees the creation of video content from start to finish.",
+        "title4": "UX/UI Designer",
+        "description4": "Ensures that all our digital products are user-friendly and visually appealing."
+      }
+    }
+  },
+  "needAssistance": {
+    "title": "NEED ASSISTANCE?",
+    "button": "Contact us"
+  },
+  "changePassword": {
+    "errors": {
+      "currentPassword": "Current password is required",
+      "newPassword": "New password is required",
+      "confirmPassword": "Confirm password is required",
+      "match": "Passwords must match",
+      "token": "Invalid or expired token.",
+      "error": "An error occurred. Please try again."
+    },
+    "title": "Change Password",
+    "description": "Update your password to keep your account secure.",
+    "fields": {
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password"
+    },
+    "button": "Set new password",
+    "success": "Password changed successfully!"
+  },
+  "services": {
+    "home": {
+      "title": {
+        "0": "Digital",
+        "1": "production",
+        "2": "services"
+      },
+      "description": {
+        "0": "Powerful digital products",
+        "1": "for a standout presence.",
+        "2": "Crafted with precision."
+      }
+    },
+    "videoProduction": {
+      "title": {
+        "0": "VIDEO",
+        "1": "PRODUCTION"
+      },
+      "description": "Capture your audience's attention and boost engagement with expertly crafted videos. Our services are designed to help you build a solid personal brand or showcase your unique expertise effectively, addressing the need for impactful visual content that connects with your audience.",
+      "sections": {
+        "0": {
+          "title": "We craft",
+          "text": {
+            "0": "Event videography:",
+            "1": "Professional coverage of weddings, parties, and corporate events.",
+            "2": "Family and portrait videos:",
+            "3": "Customised portraits and family moments captured professionally.",
+            "4": "Travel and adventure videos:",
+            "5": "Documenting global travels and outdoor experiences."
+          }
+        },
+        "1": {
+          "text": {
+            "0": "Lifestyle videos:",
+            "1": "Showcasing daily routines, hobbies, and interests.",
+            "2": "Personal branding videos:",
+            "3": "Crafting impactful videos to enhance personal or professional brand presence.",
+            "4": "And many more…"
+          }
+        },
+        "learnMore": "Learn more"
+      }
+    },
+    "threeDModeling": {
+      "title": {
+        "0": "3D",
+        "1": "MODELLING"
+      },
+      "description": "Enhance your projects with high-quality 3D modelling services designed to solve your specific needs. Our services help you visualise and bring your ideas to life, providing a powerful tool for personal projects and presentations.",
+      "sections": {
+        "title": "We craft",
+        "text": {
+          "0": "Architectural modelling:",
+          "1": "Creating detailed 3D models for personal architectural design and visualisation.",
+          "2": "Character modelling:",
+          "3": "Designing intricate 3D characters for animation and game development.",
+          "4": "Product modelling:",
+          "5": "Crafting realistic 3D product models for marketing and presentations.",
+          "6": "Organic modelling:",
+          "7": "Generating lifelike 3D models of plants and animals for educational and creative use.",
+          "8": "Vehicle modelling:",
+          "9": "Producing precise 3D models of vehicles for simulation and design projects.",
+          "10": "And many more…"
+        },
+        "learnMore": "Learn more"
+      }
+    },
+    "uiux": {
+      "title": {
+        "0": "UX/UI",
+        "1": "DESIGN"
+      },
+      "description": "Struggling with high bounce rates or low user engagement? Our UX/UI design services solve these problems by transforming your website or app into an intuitive, visually appealing platform that keeps users engaged.",
+      "sections": {
+        "title": "We craft",
+        "text": {
+          "0": "Wireframing and prototyping:",
+          "1": "Detailed digital layouts and interactive prototypes that clarify user experience strategies.",
+          "2": "User Interface design:",
+          "3": "A user-friendly interface with cohesive branding, ensuring intuitive navigation and visual appeal.",
+          "4": "Branding and identity design:",
+          "5": "A unified visual identity package, including logos and design elements that strengthen brand recognition.",
+          "6": "User flow optimization:",
+          "7": "Optimised navigation structures that enhance usability and streamline the user journey.",
+          "8": "Persona Development:",
+          "9": "Detailed user profiles based on research, guiding design decisions to align with user expectations and behaviours.",
+          "10": "And many more…"
+        },
+        "learnMore": "Learn more"
+      }
+    },
+    "animations": {
+      "title": "ANIMATIONS",
+      "description": "Transform your ideas into captivating visual stories with our animation services. Perfect for bloggers, influencers, and personal brands, our animations help you effectively express your creativity, engage your audience, and elevate your online presence.",
+      "sections": {
+        "title": "We craft",
+        "text": {
+          "0": "Character Animation:",
+          "1": "Fictional characters in motion to engage audiences and convey stories effectively.",
+          "2": "Motion Graphics:",
+          "3": "Graphical elements in motion to enhance visual communication and captivate viewers.",
+          "4": "Interactive 3D Animations:",
+          "5": "Simulations that present virtual environments in motion to provide immersive and engaging interactive experiences.",
+          "6": "Product Animation:",
+          "7": "Products in motion to showcase features, functionality, and benefits effectively.",
+          "8": "Explainer Animation:",
+          "9": "Complex ideas or processes in motion to simplify understanding and engage viewers effectively.",
+          "10": "And many more…"
+        },
+        "learnMore": "Learn more"
+      }
+    }
+  },
+  "product": {
+    "singleProduct": {
+      "price": "PRICE",
+      "title": "YOU MAY ALSO LIKE"
+    },
+    "products": {
+      "all": "All",
+      "alreadyInCart": "Already in cart",
+      "addToCart": "Add to cart"
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "The Modellist Digital blog",
+      "description": "Insights, tips, and trends in digital production."
+    },
+    "card": {
+      "readMore": "Read more"
+    },
+    "contactUs": {
+      "title": "DID NOT FIND WHAT YOU WERE LOOKING FOR?",
+      "description": {
+        "0": "Suggest your topic, and our team will craft a perfect collection of tips",
+        "1": "based on our hands-on experience."
+      },
+      "button": "Contact us"
+    },
+    "post": {
+      "title": "More articles"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "content": {
+      "0": "Welcome to The Modellist Limited's Cookie Policy. This policy explains how we use cookies and similar technologies on our website. Using our website, you agree to cookies as described in this policy.",
+      "1": "Company Details:",
+      "2": "Company Name:",
+      "3": "The Modellist Limited",
+      "4": "Registered Address:",
+      "5": "Registered Number:",
+      "6": "Email:",
+      "7": "What Are Cookies?",
+      "8": "Cookies are small text files stored on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners.",
+      "9": "How We Use Cookies",
+      "10": "We use cookies for the following purposes:",
+      "11": "Essential Cookies:",
+      "12": "These cookies are necessary for the website to function correctly. They enable core functionalities such as security, network management, and accessibility.",
+      "13": "Analytical/Performance Cookies:",
+      "14": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. This helps us improve the performance of our website.",
+      "15": "Functionality Cookies:",
+      "16": "These cookies allow the website to remember your choices (such as your language preferences) and provide enhanced features.",
+      "17": "Types of Cookies We Use",
+      "18": "Session Cookies:",
+      "19": "These temporary cookies are erased when you close your browser.",
+      "20": "Persistent Cookies:",
+      "21": "These cookies remain on your device for a specified period or until you delete them.",
+      "22": "Your Cookie Choices",
+      "23": "You can control and manage cookies in various ways. Please note that disabling cookies may affect the functionality of certain parts of our website.",
+      "24": "Browser Settings:",
+      "25": "You can set your browser to refuse all or some browser cookies or to alert you when websites set or access cookies. Check your browser's help section to learn how to change your cookie preferences.",
+      "26": "Third-Party Tools:",
+      "27": "Some third-party tools allow you to decline cookies from specific providers.",
+      "28": "Contact Us",
+      "29": "If you have any questions or concerns about our Cookie Policy, please contact us using the following information:",
+      "30": "Phone:",
+      "31": "Website:"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "content": {
+      "0": "Welcome to The Modellist Limited's Privacy Policy. This Policy governs the collection, use, and protection of your personal information when you visit our website, use our services, or interact with us in other ways. We are committed to protecting your privacy and handling personal information responsibly and transparently.",
+      "1": "Company Details:",
+      "2": "Company Name:",
+      "3": "The Modellist Limited",
+      "4": "Registered Address:",
+      "5": "Registered Number:",
+      "6": "Email:",
+      "7": "Please contact us if you have any questions or concerns regarding our Privacy Policy or how we handle your personal information.",
+      "8": "Overview of the Privacy Policy",
+      "9": "This Privacy Policy outlines:",
+      "10": "The types of information we collect from users, including personal and non-personal data.",
+      "11": "How do we use the information we collect, and what is the legal basis for processing it?",
+      "12": "Circumstances under which we may share your information with third parties.",
+      "13": "Your rights regarding your personal data and how you can exercise them.",
+      "14": "How we protect the security and confidentiality of your information.",
+      "15": "We use cookies and similar technologies on our website.",
+      "16": "Scope and Application",
+      "17": "This Privacy Policy applies to all of The Modellist Limited's website and service users. By accessing our website or using our services, you consent to collecting, using, and processing your information as described in this Privacy Policy. This Policy does not apply to third-party websites or services that may be accessed through links on our website, which are governed by their own privacy policies.",
+      "18": "Information We Collect",
+      "19": "Types of Information Collected",
+      "20": "We collect two main types of information:",
+      "21": "Personal Information:",
+      "22": "This includes information that can identify you as an individual or reasonably linked to you. Examples may include:",
+      "23": "Name",
+      "24": "Email address",
+      "25": "Mailing address",
+      "26": "Phone number",
+      "27": "Any other information you voluntarily provide to us",
+      "28": "Non-Personal Information:",
+      "29": "This type of information does not directly identify you. It may include:",
+      "30": "Aggregated data about website usage patterns",
+      "31": "Internet Protocol (IP) addresses",
+      "32": "Browser type and version",
+      "33": "Device identifiers",
+      "34": "Cookies and similar technologies (see \"Cookies and Similar Technologies\" section for details)",
+      "35": "Methods of Collection",
+      "36": "We collect information in the following ways:",
+      "37": "Directly from Users:",
+      "38": "We may collect information when you voluntarily provide it, such as when you create an account, place an order, or communicate with us through our website or customer service channels.",
+      "39": "Automatically through Cookies:",
+      "40": "We use cookies and similar technologies to automatically collect certain information when you visit our website. This may include information about your browsing behaviour and preferences. For more details on how we use cookies, please refer to our \"Cookies and Similar Technologies\" section in this Privacy Policy.",
+      "41": "Use of Information",
+      "42": "Purpose of Collecting Information",
+      "43": "We collect and use your information for the following purposes:",
+      "44": "To Provide Services",
+      "45": "We use your personal information to fulfil orders, deliver services you request, and process transactions. This includes communicating about your orders, invoices, and customer service issues.",
+      "46": "To Improve User Experience",
+      "47": "We may use information to personalise your experience on our website, understand your preferences, and enhance the usability of our services.",
+      "48": "To Communicate",
+      "49": "We may use your contact information to send you updates about our services, promotions, and other relevant communications based on your preferences and consent.",
+      "50": "Legal Basis for Processing Personal Data",
+      "51": "The legal basis for processing your data may include:",
+      "52": "Contractual Necessity",
+      "53": "Processing is necessary for the performance of a contract with you or to take steps at your request before entering into a contract (e.g., to process your orders).",
+      "54": "Legitimate Interests",
+      "55": "Processing is necessary for our legitimate interests, such as improving our services, marketing our products, and ensuring the security of our website and services. We will ensure our legitimate interests do not override your rights and freedoms.",
+      "56": "Consent",
+      "57": "We may rely on your consent to process certain types of personal data, such as sending marketing communications or using cookies. You have the right to withdraw your consent at any time.",
+      "58": "Sharing of Information",
+      "59": "Circumstances Under Which Information May Be Shared",
+      "60": "We may share your information in the following circumstances:",
+      "61": "With Service Providers",
+      "62": "We may share your personal information with third-party service providers who perform services on our behalf, such as payment processing, order fulfilment, data analysis, marketing services, and customer support. These service providers are authorised to use your personal information only as necessary to provide these services to us.",
+      "63": "For Legal Purposes",
+      "64": "We may disclose your information to comply with applicable laws, regulations, legal processes, or governmental requests. This may include responding to court orders, subpoenas, or other legal obligations.",
+      "65": "Business Transfers",
+      "66": "If we are involved in a merger, acquisition, financing due diligence, reorganisation, bankruptcy, or sale of all or a portion of our assets, your information may be transferred as part of that transaction. In such cases, we will notify you via email and/or a prominent notice on our website of any change in ownership or uses of your personal information and any choices you may have regarding your personal information.",
+      "67": "Third Parties with Whom Information May Be Shared",
+      "68": "We may share your information with the following third parties:",
+      "69": "Payment processors: to facilitate transactions.",
+      "70": "Shipping and logistics providers: to deliver documentation.",
+      "71": "IT and security service providers: to ensure the security and functionality of our website and services.",
+      "72": "Legal and regulatory authorities: as required by law or to protect our rights, property, or safety and those of others.",
+      "73": "We do not sell or rent your personal information to third parties for their own marketing purposes without your explicit consent.",
+      "74": "Data Security",
+      "75": "Measures Taken to Protect Personal Data",
+      "76": "We implement reasonable and appropriate security measures to protect your personal data from unauthorised access, disclosure, alteration, or destruction. These measures include:",
+      "77": "Encryption",
+      "78": "We use encryption techniques (such as SSL) to secure data transmitted over the internet.",
+      "79": "Access Controls",
+      "80": "Access to your personal information is restricted to authorised personnel who need access to perform their job responsibilities.",
+      "81": "Firewalls and Security Software",
+      "82": "We utilise firewalls, anti-virus software, and other security measures to protect against unauthorised system access.",
+      "83": "Regular Security Audits",
+      "84": "We conduct security assessments and audits to identify and mitigate vulnerabilities.",
+      "85": "Handling of Data Breaches and Security Incidents",
+      "86": "In case of a data breach or security incident involving your personal data, we will promptly notify you and any relevant authorities by legal requirements. Our response will include:",
+      "87": "Investigation",
+      "88": "An immediate investigation is needed to determine the cause and scope of the incident.",
+      "89": "Notification",
+      "90": "Notification to affected individuals and authorities as required by law.",
+      "91": "Mitigation",
+      "92": "Implement measures to mitigate any harm caused by the breach and prevent future incidents.",
+      "93": "Assistance",
+      "94": "We will provide assistance, such as guidance on steps you can take to protect yourself if your personal information is compromised.",
+      "95": "Data Retention",
+      "96": "How Long Personal Data Is Retained",
+      "97": "We retain your personal data only for as long as necessary to fulfil the purposes outlined in this Privacy Policy unless a more extended retention period is required or permitted by law. The specific retention period for your personal data may vary depending on the purposes for which it was collected.",
+      "98": "Criteria Used to Determine Retention Periods",
+      "99": "Purpose of Processing",
+      "100": "We will retain your personal data for as long as necessary to provide you with the products and services you requested.",
+      "101": "Legal Obligations",
+      "102": "We may retain specific personal data to comply with legal obligations, such as tax and accounting requirements or regulatory obligations.",
+      "103": "Business Needs",
+      "104": "We may retain personal data for as long as necessary for our legitimate business interests, such as maintaining business records, resolving disputes, and enforcing our agreements.",
+      "105": "User Requests",
+      "106": "If you request deletion of your personal data by your rights (see \"User Rights\" section), we will securely delete or anonymize your information unless retention is required by law or legitimate business purposes.",
+      "107": "Data Minimization",
+      "108": "We strive to limit the collection of personal data to what is necessary and relevant for the purposes for which it is processed. We also periodically review and assess the need to retain personal data, considering the purposes for which it was collected.",
+      "109": "User Rights",
+      "110": "Rights Available to Users Regarding Their Personal Data",
+      "111": "As a user, you have the following rights regarding your personal data:",
+      "112": "Right to Access",
+      "113": "You can request access to the personal data we hold about you. This includes information about the categories of data we process, the purposes of processing, and the recipients or categories of recipients to whom the data have been or will be disclosed.",
+      "114": "Right to Rectification",
+      "115": "You have the right to request that we correct any inaccuracies or incomplete information",
+      "116": "RIght to Erasure",
+      "117": "You can request that we delete your personal data under certain conditions. This right is not absolute and may be subject to legal obligations or legitimate interests.",
+      "118": "Right to Restriction of Processing",
+      "119": "You have the right to request that we restrict the processing of your personal data under certain conditions.",
+      "120": "Right to Data Portability",
+      "121": "You have the right to receive the personal data concerning you, which you have provided to us, in a structured, commonly used, and machine-readable format. You also have the right to transmit this data to another controller without hindrance from us.",
+      "122": "Right to Object",
+      "123": "You have the right to object to processing your personal data under certain conditions, including processing for direct marketing purposes.",
+      "124": "How Users Can Exercise Their Rights",
+      "125": "To exercise any of the rights described above, please contact us using the contact information provided in the \"Contact Us\" section of this Privacy Policy. We will respond to your request within a reasonable timeframe and by applicable laws.",
+      "126": "Please note that we may ask you to verify your identity before responding to such requests to ensure the security of your personal data.",
+      "127": "Cookies and Similar Technologies",
+      "128": "Use of Cookies and Similar Technologies",
+      "129": "Cookies and similar technologies are used on our website to collect certain information and enhance your user experience. By using our website, you consent to using cookies by this policy.",
+      "130": "Types of Cookies Used, Purposes, and User Controls",
+      "131": "Essential Cookies",
+      "132": "Purpose:",
+      "133": "These cookies are necessary for the website to function correctly and cannot be switched off in our systems. They are usually only set in response to your actions, which amount to a service request, such as setting your privacy preferences, logging in, or filling in forms.",
+      "134": "User Control",
+      "135": "You can set your browser to block or alert you about these cookies, but some parts of the site may not function properly.",
+      "136": "Analytical/Performance Cookies",
+      "137": "Purpose",
+      "138": "These cookies allow us to count visits and traffic sources to measure and improve our site's performance. They help us understand the most and least popular pages and see how visitors move around the site.",
+      "139": "User Control",
+      "140": "You can disable these cookies by adjusting your browser settings, which may affect the website's functionality.",
+      "141": "Functionality Cookies",
+      "142": "Purpose",
+      "143": "These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third-party providers whose services we have added to our pages.",
+      "144": "User Control",
+      "145": "You can block or delete these cookies by changing your browser settings, but some website features may not work as intended.",
+      "146": "Advertising/Targeting Cookies",
+      "147": "Purpose",
+      "148": "Our advertising partners may set these cookies through our site. Those companies may use them to build a profile of your interests and show you relevant ads on other sites.",
+      "149": "User Control",
+      "150": "You can opt out of targeted advertising by visiting the websites of the third-party providers or through tools like the AdChoices Consumer Opt-Out.",
+      "151": "Other Similar Technologies",
+      "152": "In addition to cookies, we may use similar technologies, such as web beacons (also known as pixel tags or clear GIFs), to track user's actions on our website and gather demographic information about our user base.",
+      "153": "Children's Privacy",
+      "154": "Our website and services are not directed at children under 13 (or equivalent minimum age in relevant jurisdictions). We do not knowingly collect personal information from children under 13 without verifiable parental consent.",
+      "155": "COPPA Compliance",
+      "156": "In compliance with the Children's Online Privacy Protection Act (COPPA), we do not knowingly collect or maintain personal information from children under 13. If we discover that we have inadvertently collected personal information from a child under 13 without proper parental consent, we will delete that information as soon as possible.",
+      "157": "Parental Rights",
+      "158": "Parents or legal guardians who believe that we may have collected personal information from a child under 13 without appropriate consent may contact us using the contact information provided in this Privacy Policy's \"Contact Us\" section. Upon verification, we will promptly delete such information from our records.",
+      "159": "Changes to This Privacy Policy",
+      "160": "How and When Changes to the Privacy Policy Will Be Communicated",
+      "161": "We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, and services. We will notify you of any material changes to this Privacy Policy by posting the updated policy on our website and updating the \"Effective Date\" at the top of the policy.",
+      "162": "User Acceptance of Changes",
+      "163": "By continuing to use our website or services after the updated Privacy Policy has been posted, you agree to the revised terms. If you do not agree with the changes, you should discontinue your use of our website and services.",
+      "164": "Notification of Changes",
+      "165": "We may also notify you of significant changes to this Privacy Policy through email or other means prior to the changes taking effect, where feasible and appropriate.",
+      "166": "Contact Us",
+      "167": "If you have any questions or concerns regarding our Privacy Policy, please contact us using the following information:",
+      "168": "Email:",
+      "169": "Phone:",
+      "170": "Website:",
+      "171": "We encourage you to contact us if you have any inquiries about how we collect, use, or protect your personal information. We will strive to respond to all inquiries promptly and address any concerns you may have."
+    }
+  },
+  "refundPolicy": {
+    "title": "Refund Policy",
+    "content": {
+      "0": "Welcome to The Modellist Limited's Refund Policy. This policy outlines our guidelines regarding refunds for services provided by our company.",
+      "1": "Company Details:",
+      "2": "Company Name:",
+      "3": "The Modellist Limited",
+      "4": "Registered Address:",
+      "5": "Registered Number:",
+      "6": "Email:",
+      "7": "No Refunds Under Normal Circumstances",
+      "8": "We do not offer refunds if you have made a conscious decision to purchase our services, agreed to the price, and made a payment. This includes situations where you have received and accepted the deliverables outlined in your order.",
+      "9": "Cases Eligible for Refund",
+      "10": "Refunds may be considered in the following cases:",
+      "11": "Incorrect Payment:",
+      "12": "If you have made an incorrect payment amount due to a typographical error or similar issue.",
+      "13": "Technical Issues:",
+      "14": "In the event of a technical bug or system error resulting in overpayment or double payment.",
+      "15": "Dissatisfaction with Services",
+      "16": "At The Modellist Limited, we strive to ensure your service satisfaction. If you are dissatisfied with the final product or service delivered, we encourage you to provide specific feedback and requirements for amendments. We are committed to making reasonable edits and adjustments to ensure the deliverables meet your expectations.",
+      "17": "Amendment Process",
+      "18": "Feedback Submission:",
+      "19": "Please email your feedback and specific amendment requirements via info@modellistdigital.com. Include details about what aspects of the product or service do not meet your expectations.",
+      "20": "Review and Agreement:",
+      "21": "Upon receiving your feedback, we will review the provided information and discuss the proposed amendments or changes needed.",
+      "22": "Amendment Implementation:",
+      "23": "We will make edits and adjustments as agreed upon to align the product or service with your expectations.",
+      "24": "Refund Policy Clarification",
+      "25": "While we strive to address dissatisfaction through amendments, refunds are not offered in cases where your provided requirements have made amendments.",
+      "26": "Requesting a Refund",
+      "27": "If you believe you are eligible for a refund based on the criteria above, please email info@modellistdigital.com describing the reason for the refund request and providing as many details of the order as possible, including the order number, payment details, and any relevant documentation.",
+      "28": "Refund Process",
+      "29": "Review:",
+      "30": "We will review your refund request promptly upon receipt.",
+      "31": "Notification:",
+      "32": "We will notify you by email if your refund request is approved or denied.",
+      "33": "Refund Timeline:",
+      "34": "Refunds will be processed within 30 days of approval using the original payment method unless otherwise agreed.",
+      "35": "Contact Us",
+      "36": "If you have any questions or need further clarification regarding our Refund Policy, please contact us using the following information:",
+      "37": "Email:",
+      "38": "Phone:",
+      "39": "Website:"
+    }
+  },
+  "termsAndConditions": {
+    "title": "Terms and Conditions",
+    "content": {
+      "0": "Welcome to Modellist Digital, operated by The Modellist Limited (\"we,\" \"us,\" \"our\"). These Terms and Conditions (\"T&C\") govern your access to and use of our website and services, including video production, animation, UI and UX design on demand, and ready-made 3D models for 3D printing (collectively, the \"Services\"). You agree to comply with and be bound by these T&C by accessing or using our website.",
+      "1": "The Modellist Limited is a company registered in England with the following details:",
+      "2": "Registered Address:",
+      "3": "Registered Number:",
+      "4": "Email:",
+      "5": "Acceptance of the T&C",
+      "6": "By accessing, browsing, or using the website, you acknowledge that you have read, understood, and agree to be bound by these T&C and our Privacy Policy, which is incorporated herein by reference. If you disagree with these T&C, you must not use our website or any of our Services.",
+      "7": "Amendments to the T&C",
+      "8": "We reserve the right to modify these T&C at any time. Any changes will be posted on this page, and the date at the top will indicate the latest revision. Your continued use of the website after any changes constitutes your acceptance of the new T&C. It is your responsibility to review these T&C periodically for updates. If you disagree with the amended T&C, stop using the website and Services.",
+      "9": "Definitions",
+      "10": "Company",
+      "11": "Throughout these Terms and Conditions, references to \"Company,\" \"we,\" \"us,\" or \"our\" mean The Modellist Limited, a company registered in England, located at 167 - 169 Great Portland Street, 5th Floor, London, England, W1W 5PF, with a registration number of 15795497. The Modellist Limited is responsible for managing your information by these T&C.",
+      "12": "Country",
+      "13": "This refers to the United Kingdom, where The Modellist Limited and its founders are based.",
+      "14": "Device",
+      "15": "Any electronic device that can connect to the Internet and access our website and services, including, but not limited to, smartphones, tablets, desktop computers, and laptops.",
+      "16": "Service",
+      "17": "This term encompasses the various offerings provided by The Modellist Limited, such as video production, animation, UI and UX design on demand, and ready-made 3D models for 3D printing, as detailed on our platform.",
+      "18": "Third-party Service",
+      "19": "Entities, including advertisers, sponsors of competitions, partners in promotional and marketing activities, and other external providers who contribute content to our platform or whose products and services might interest you.",
+      "20": "Website",
+      "21": "The Modellist Limited's official online presence is at",
+      "22": "You",
+      "23": "Anyone registered with The Modellist Limited to use our Services.",
+      "24": "User Account",
+      "25": "Account Creation and Responsibilities",
+      "26": "An account on our website provides:",
+      "27": "Access to essential features such as tracking your orders.",
+      "28": "Accessing invoices.",
+      "29": "Managing payment details.",
+      "30": "Updating personal information.",
+      "31": "To create and maintain an account, you agree to:",
+      "32": "Provide Accurate Information",
+      "33": "Ensure that all information you provide during registration is accurate, current, and complete. This includes your name, email address, billing information, and payment details. Accurate information is crucial for correct billing and product delivery.",
+      "34": "Confidentiality",
+      "35": "You are responsible for maintaining the confidentiality of your account login information and all activities under your account. Notify us immediately if you suspect any unauthorised use of your account or any other security breach.",
+      "36": "Compliance",
+      "37": "Use your account and our services in compliance with all applicable laws and regulations.",
+      "38": "By creating an account, you consent to receive communications from us electronically regarding your account, orders, and other transactional information.",
+      "39": "Account Termination",
+      "40": "We reserve the right to suspend or terminate your account at our sole discretion if we believe that:",
+      "41": "Violation of T&C:",
+      "42": "You have violated these T&C or any other policies or guidelines applicable to our services.",
+      "43": "False Information:",
+      "44": "You have provided untrue, misleading, or incomplete information during the registration process or in your account profile.",
+      "45": "Unauthorised Use:",
+      "46": "There is unauthorised use of your account or any other security breach.",
+      "47": "Inactivity:",
+      "48": "Your account has been inactive for an extended period.",
+      "49": "Your right to use the website and our services will immediately cease upon termination of your account. We will not be liable to you or any third party for any termination of your account or access to the website and services.",
+      "50": "If your account is terminated, we may retain certain information as required by law or for legitimate business purposes. You can request to terminate your account anytime by contacting us at info@modellistdigital.com. Upon your request, we will deactivate or delete your account and associated information from our active databases as soon as reasonably possible, by our Privacy Policy and applicable laws.",
+      "51": "Services Provided",
+      "52": "We offer the following services:",
+      "53": "Video Production",
+      "54": "Our services cater to various needs, including promotional videos, instructional content, and more. We ensure high-quality production tailored to your needs.",
+      "55": "Animation",
+      "56": "We create animated content for various purposes, including promotional videos, instructional content, and more. We ensure high-quality animation tailored to your needs.",
+      "57": "UI and UX Design on Demand",
+      "58": "We create UI and UX designs on demand for various purposes, including promotional videos, instructional content, and more. We ensure high-quality UI and UX design tailored to your needs.",
+      "59": "Ready-made 3D Models for 3D Printing",
+      "60": "We offer a selection of pre-designed 3D models suitable for 3D printing enthusiasts. These models are for personal use only; commercial use is prohibited without prior authorization.",
+      "61": "Service Availability and Modifications",
+      "62": "Our services are available subject to the following conditions:",
+      "63": "Availability",
+      "64": "While we strive to maintain availability at all times, interruptions may occur due to maintenance, updates, or unforeseen circumstances. We will make reasonable efforts to minimise disruptions and notify users in advance when possible.",
+      "65": "Modifications",
+      "66": "We reserve the right to modify, suspend, or discontinue any aspect of our services at any time. This includes changes to service offerings, features, pricing, and availability. Such modifications may be necessary due to technological advancements, market conditions, or regulatory requirements. We will notify users of significant changes in advance.",
+      "67": "Orders and Payments",
+      "68": "Ordering Process",
+      "69": "Order Placement",
+      "70": "To place an order for our services, users must select the desired service and provide any necessary details or specifications. They can do this through our website or by contacting our customer support.",
+      "71": "Price Confirmation",
+      "72": "After receiving the order, we may contact the user to confirm specific details and requirements that could affect pricing. Based on this information, we will prepare a detailed offer outlining the scope of work, features, and the corresponding price.",
+      "73": "Invoice Issuance",
+      "74": "Upon user acceptance of the offered price, we will issue an invoice for the agreed-upon amount. The invoice will include payment instructions and any relevant terms and conditions.",
+      "75": "Pricing and Payment Terms",
+      "76": "Payment in Advance",
+      "77": "All products and services must be paid for in full and in advance before any work commences or products are delivered. We accept payments via methods specified on our website or as agreed upon with the user.",
+      "78": "Currency",
+      "79": "Prices are quoted in the currency specified on our website or as agreed upon during the ordering process.",
+      "80": "Additional Costs",
+      "81": "Any additional costs incurred due to changes or additional requirements requested after the initial order may result in an adjustment to the final price. We will communicate any such changes and obtain user consent before proceeding.",
+      "82": "Refund and Cancellation Policy",
+      "83": "No Refunds",
+      "84": "All payments are non-refundable except for technical overpayment or double payment due to a system error.",
+      "85": "Cancellation",
+      "86": "Once an order is placed and payment is made, cancellation requests may be considered case-by-case. We reserve the right to deny cancellation requests or apply cancellation fees.",
+      "87": "Technical Issues",
+      "88": "Users must notify us promptly if a technical issue results in an overpayment or double payment. Refunds will be processed within a reasonable timeframe, subject to verification.",
+      "89": "User Conduct",
+      "90": "Acceptable Use Policy",
+      "91": "Compliance",
+      "92": "Users must comply with all applicable laws and regulations when using our website and services.",
+      "93": "Respect for Others",
+      "94": "Users must respect others' rights and privacy. This includes refraining from engaging in any activity that may harass, defame, intimidate, or harm another person or entity.",
+      "95": "Lawful Purposes",
+      "96": "Our services may only be used for lawful purposes. Users must not use our website or services for illegal or unauthorised purposes.",
+      "97": "Accuracy of Information",
+      "98": "Users are responsible for ensuring that all information provided to us is accurate, current, and complete.",
+      "99": "Prohibited Activities",
+      "100": "Intellectual Property",
+      "101": "Users must respect intellectual property rights and not infringe upon copyrights, trademarks, patents, or other proprietary rights.",
+      "102": "Unauthorised Access",
+      "103": "Users must not attempt to gain unauthorised access to our systems or networks or interfere with the security features of our website.",
+      "104": "Malicious Activities",
+      "105": "Users must not engage in any activity that could harm, disable, overburden, or impair our website or services, including but not limited to the introduction of viruses, malware, or any other harmful code.",
+      "106": "Spam",
+      "107": "Users must not spam, including sending unsolicited promotional or commercial content.",
+      "108": "Misuse of Services",
+      "109": "Users must not misuse our services, including but not limited to using automated systems to access or use our website or engaging in any activity that disrupts the regular operation of our services.",
+      "110": "Illegal Activities",
+      "111": "Users must not use our website or services to engage in or promote illegal activities.",
+      "112": "Enforcement",
+      "113": "We reserve the right to investigate and take appropriate action against any user who violates these guidelines, including suspension or termination of their account and legal action if necessary. We may cooperate with law enforcement authorities or other third parties to investigate suspected criminal or civil wrongdoing.",
+      "114": "Intellectual Property",
+      "115": "Ownership of Content",
+      "116": "Website Content",
+      "117": "All content and materials on our website, including but not limited to text, graphics, logos, images, audio clips, digital downloads, data compilations, and software, are the property of The Modellist Limited or its content suppliers and are protected by international copyright laws.",
+      "118": "Service Content",
+      "119": "The services provided by The Modellist Limited, including video production, animation, UI and UX design, and ready-made 3D models for 3D printing, are also protected by copyright and other intellectual property rights.",
+      "120": "Licence to Use the Website",
+      "121": "Permitted Use",
+      "122": "Subject to compliance with these Terms and Conditions, The Modellist Limited grants users a limited, non-exclusive, non-transferable licence to access and use the website and its content for personal and non-commercial purposes.",
+      "123": "Restrictions",
+      "124": "Users may not modify, copy, distribute, transmit, display, perform, reproduce, publish, licence, create derivative works from, transfer, or sell any information, software, products, or services obtained from the website without the express written permission of The Modellist Limited.",
+      "125": "Enforcement of Rights",
+      "126": "The Modellist Limited reserves the right to enforce its intellectual property rights to the fullest extent of the law. Unauthorised use of any content or materials on the website may violate copyright, trademark, and other laws. If you believe any website content infringes your intellectual property rights, please contact us at info@modellistdigital.com.",
+      "127": "Privacy and Data Protection",
+      "128": "Handling of Personal Data",
+      "129": "Collection of Information",
+      "130": "The Modellist Limited may collect personal information from users who use our website and services. This information may include but is not limited to name, email address, mailing address, phone number, payment information, and any other information voluntarily provided by users.",
+      "131": "Use of Information",
+      "132": "We use the collected information for purposes such as processing orders, providing customer service, improving our services, and communicating with users about their accounts and offerings. We may also use this information to send promotional emails about new products, special offers, or other information that users may find interesting.",
+      "133": "Sharing of Information",
+      "134": "We do not sell, trade, or otherwise transfer users' personal information to third parties without their consent, except as necessary to provide the requested services or as required by law.",
+      "135": "Data Security",
+      "136": "We implement reasonable security measures to protect the confidentiality and security of users' personal information. However, no method of transmission over the Internet or electronic storage is entirely secure, so we cannot guarantee absolute security.",
+      "137": "Cookie Policy",
+      "138": "Use of Cookies",
+      "139": "Our website may use cookies and similar technologies to enhance user experience and analyse website usage. Cookies are small text files that a website sends to a user's device while browsing. They help us remember user preferences, track trends, and improve website performance.",
+      "140": "Types of Cookies",
+      "141": "We may use session cookies (which expire when the user closes their browser) and persistent cookies (which remain on the user's device for a specified period) to provide a personalised experience. Users can control cookies through their browser settings and can delete or block cookies if they choose to do so.",
+      "142": "Third-Party Cookies",
+      "143": "Third-party services integrated into our website, such as analytics providers or social media platforms, may also use cookies to collect information about users' interactions with our website.",
+      "144": "Acceptance of Cookies",
+      "145": "By continuing to use our website, users consent to use cookies as described in our Cookie Policy. Users who do not wish to accept cookies can adjust their browser settings accordingly, although this may affect the functionality of certain parts of our website.",
+      "146": "Compliance",
+      "147": "The Modellist Limited complies with applicable data protection laws and regulations, including the General Data Protection Regulation (GDPR) for users in the European Union. For more information about how we handle personal data and cookies, please refer to our full Privacy Policy on our website.",
+      "148": "Limitation of Liability",
+      "149": "Extent of Liability",
+      "150": "To the fullest extent permitted by law, The Modellist Limited and its affiliates, officers, directors, employees, agents, suppliers, and licensors shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, arising out of or in connection with the use or inability to use our website or services.",
+      "151": "Direct Damages",
+      "152": "In no event shall the total liability of The Modellist Limited and its affiliates, officers, directors, employees, agents, suppliers, and licensors exceed the amount paid by you, if any, for accessing or using our website or services during the twelve (12) months preceding the claim giving rise to liability.",
+      "153": "Disclaimer of Warranties",
+      "154": "As Is Basis",
+      "155": "Our website and services are provided on an \"as is\" and \"as available\" basis without any warranties, express or implied.",
+      "156": "No Warranty",
+      "157": "To the fullest extent permitted by law, The Modellist Limited disclaims all warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement of proprietary rights.",
+      "158": "Operation and Availability",
+      "159": "The Modellist Limited does not warrant that the website or services will be uninterrupted, secure, or error-free or that any defects will be corrected. We make no representations or warranties regarding the accuracy, reliability, completeness, or timeliness of any content or information on the website.",
+      "160": "Indemnification",
+      "161": "You agree to indemnify, defend, and hold harmless The Modellist Limited and its affiliates, officers, directors, employees, agents, suppliers, and licensors from and against any claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising from your use or misuse of our website or services, violation of these Terms and Conditions, or infringement of any intellectual property or other rights of any person or entity.",
+      "162": "Governing Law and Dispute Resolution",
+      "163": "Applicable Law",
+      "164": "These Terms and Conditions shall be governed by and construed in accordance with the laws of England and Wales, without regard to its conflict of law principles.",
+      "165": "If you access our website or services from outside England and Wales, you are responsible for compliance with local laws applicable to your use of the website or services.",
+      "166": "Dispute Resolution Process",
+      "167": "In the event of any dispute, claim, or controversy arising out of or relating to these Terms and Conditions, you agree to first attempt to resolve the matter informally through negotiation with The Modellist Limited.",
+      "168": "Waiver of Class Actions",
+      "169": "You agree that any arbitration or court proceeding shall be conducted on an individual basis and not as a class, consolidated, or representative action. You hereby waive any right to participate in any class action lawsuits, class-wide arbitration, or any other representative action against The Modellist Limited.",
+      "170": "Miscellaneous",
+      "171": "Severability",
+      "172": "If any provision of these Terms and Conditions is found invalid or unenforceable under any applicable law, such provision shall be deemed modified to the extent necessary to make it valid and enforceable. If such modification is not possible, the provision shall be severed from these Terms and Conditions, and the remaining provisions shall continue in full force and effect.",
+      "173": "Entire Agreement",
+      "174": "These Terms and Conditions constitute the entire agreement between you and The Modellist Limited regarding using our website and services, superseding any prior agreements or communications, whether oral or written, relating to the subject matter herein.",
+      "175": "Waivers",
+      "176": "The failure of The Modellist Limited to enforce any right or provision of these Terms and Conditions shall not constitute a waiver of such right or provision. Any waiver of any provision of these Terms and Conditions will be effective only if in writing and signed by an authorised representative of The Modellist Limited.",
+      "177": "Contact Us",
+      "178": "If you have any questions about our website usage or these Terms and Conditions, please contact us at:",
+      "179": "Email:",
+      "180": "Phone:",
+      "181": "Website:",
+      "182": "We are here to assist you and strive to respond to all inquiries promptly."
+    }
+  },
+  "signIn": {
+    "errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Email is required",
+      "invalidEmail": "Invalid email address",
+      "phone": "Phone is required",
+      "password": "Password is required",
+      "confirmPassword": "Confirm password is required",
+      "terms": "You must accept the terms and conditions",
+      "passwordsMustMatch": "Passwords must match",
+      "accountExist": "An account with this email already exists"
+    },
+    "title": "Create your account",
+    "description": "Join us to access our services and exclusive offers. Fill out the form below to get started.",
+    "fields": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "phone": "Your phone",
+      "email": "Your email",
+      "password": "Your password",
+      "confirmPassword": "Confirm password",
+      "terms": {
+        "0": "I agree with the",
+        "1": "Terms and Conditions",
+        "2": "and",
+        "3": "Privacy Policy"
+      }
+    },
+    "button": "Sign Up",
+    "success": {
+      "title": "Congratulations!",
+      "description": {
+        "0": "Your account has been successfully created. A confirmation email has been sent to your inbox.",
+        "1": "Welcome aboard!"
+      }
+    }
+  },
+  "resetPassword": {
+    "errors": {
+      "email": "Email is required",
+      "invalidEmail": "Invalid email address"
+    },
+    "title": "Reset your password",
+    "fields": {
+      "email": "Email"
+    },
+    "button": "Reset",
+    "success": {
+      "title": "Reset link was sent to your email!"
+    }
+  },
+  "logIn": {
+    "errors": {
+      "email": "Email is required",
+      "invalidEmail": "Invalid email address",
+      "password": "Password is required",
+      "invalidCredentials": "Invalid email or password"
+    },
+    "fields": {
+      "email": "Email",
+      "password": "Password"
+    },
+    "logIn": "Log in",
+    "forgotPassword": "Forgot password?"
+  },
+  "dashboard": {
+    "title": "Account",
+    "nav": {
+      "main": "Main",
+      "personalData": "Personal data",
+      "orderHistory": "Order history",
+      "getAssistance": "Get assistance"
+    },
+    "logout": "Logout",
+    "main": {
+      "title": "Welcome to your account dashboard",
+      "description": {
+        "0": "Manage your personal and billing information, view your order history, and access other features",
+        "1": "to enhance your experience with us. If you need assistance, our support team is here to help."
+      },
+      "services": {
+        "title": "EXPLORE OUR SERVICES",
+        "videoProduction": "Video production",
+        "3DModeling": "3D modelling",
+        "animations": "Animations",
+        "uiUxDesign": "UI/UX design"
+      },
+      "pricing": {
+        "title": {
+          "0": "GET OUR",
+          "1": "PRICING GUIDE"
+        },
+        "button": {
+          "0": "Download",
+          "1": "pricing guide"
+        }
+      }
+    },
+    "personalData": {
+      "errors": {
+        "required": "This field is required.",
+        "invalidEmail": "Please provide a valid email address.",
+        "invalidPhone": "Please provide a valid phone number."
+      },
+      "success": "Your information has been updated successfully.",
+      "title": "Update your personal information",
+      "description": "Keep your account details up-to-date to ensure smooth communication and service delivery.",
+      "fields": {
+        "firstName": "First name",
+        "lastName": "Last name",
+        "email": "Email",
+        "phone": "Phone",
+        "street": "Street",
+        "address": "Address",
+        "city": "City",
+        "state": "State/Province",
+        "zip": "ZIP"
+      },
+      "saveChanges": "Save changes"
+    },
+    "changePassword": {
+      "errors": {
+        "currentPassword": "Current password is required",
+        "newPassword": "New password is required",
+        "confirmPassword": "Confirm password is required",
+        "match": "Passwords must match"
+      },
+      "title": "Change Password",
+      "fields": {
+        "currentPassword": "Current password",
+        "newPassword": "New password",
+        "confirmPassword": "Confirm password"
+      },
+      "button": "Set new password",
+      "success": "Password changed successfully!"
+    },
+    "orderHistory": {
+      "title": "Track your order history",
+      "description": {
+        "0": "Below is a detailed record of all your past orders, both successful and failed.",
+        "1": "You can track the status, view details, and download invoices for each order."
+      },
+      "table": {
+        "0": "ID",
+        "1": "Status",
+        "2": "Date",
+        "3": "Price",
+        "4": "Products"
+      }
+    },
+    "getAssistance": {
+      "title": "Get assistance",
+      "description": {
+        "0": "We are here to help you with any questions or issues you may have.",
+        "1": "Please choose the type of assistance you need from the options below:"
+      },
+      "contacts": {
+        "email": "Email us:",
+        "phone": "Call us:"
+      },
+      "sendRequest": {
+        "title": "SEND A REQUEST",
+        "description": {
+          "0": "Please fill out the form below for any inquiries, requests, or feedback.",
+          "1": "We'll get back to you as soon as possible."
+        }
+      }
+    }
+  }
+}

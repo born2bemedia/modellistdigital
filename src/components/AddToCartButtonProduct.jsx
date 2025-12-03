@@ -3,6 +3,7 @@ import React from "react";
 import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/navigation";
 import AddToCartArrow from "@/icons/AddToCartArrow";
+import { useTranslations } from "next-intl";
 
 function AddToCartButtonProduct({ product }) {
   const router = useRouter();
@@ -15,11 +16,14 @@ function AddToCartButtonProduct({ product }) {
     });
     router.push("/cart");
   };
+
+  const t = useTranslations('product.products');
+
   return (
     <>
       {existingIndex > -1 ? (
         <button disabled className="arrow-button">
-          Already in cart
+          {t('alreadyInCart', {fallback: 'Already in cart'})}
           <AddToCartArrow />
         </button>
       ) : (
@@ -27,7 +31,7 @@ function AddToCartButtonProduct({ product }) {
           className="arrow-button"
           onClick={() => handleAddToCart(product)}
         >
-          Add to cart
+          {t('addToCart', {fallback: 'Add to cart'})}
           <AddToCartArrow />
         </button>
       )}

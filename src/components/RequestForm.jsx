@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage, useField } from "formik";
 import * as Yup from "yup";
 import { usePopup } from "@/context/PopupsContext";
 import { PhoneField } from "./PhoneField";
+import { useTranslations } from "next-intl";
 
 // Custom Phone Field component that works with Formik
 const FormikPhoneField = ({ name, ...props }) => {
@@ -24,14 +25,16 @@ const FormikPhoneField = ({ name, ...props }) => {
 const RequestForm = () => {
   const { thanksPopupDisplay, setThanksPopupDisplay } = usePopup();
 
+  const t = useTranslations('requestForm');
+
   const validationSchema = Yup.object({
-    firstName: Yup.string().required("First name is required"),
-    lastName: Yup.string().required("Last name is required"),
+    firstName: Yup.string().required(t('errors.firstName', {fallback: 'First name is required'})),
+    lastName: Yup.string().required(t('errors.lastName', {fallback: 'Last name is required'})),
     email: Yup.string()
-      .email("Invalid email address")
-      .required("Email is required"),
-    phone: Yup.string().required("Phone is required"),
-    budget: Yup.string().required("Budget is required"),
+      .email(t('errors.invalidEmail', {fallback: 'Invalid email address'}))
+      .required(t('errors.email', {fallback: 'Email is required'})),
+    phone: Yup.string().required(t('errors.phone', {fallback: 'Phone is required'})),
+    budget: Yup.string().required(t('errors.budget', {fallback: 'Budget is required'})),
     comment: Yup.string(),
   });
 
@@ -86,7 +89,7 @@ const RequestForm = () => {
               <Field
                 name="firstName"
                 type="text"
-                placeholder="First Name"
+                placeholder={t('fields.firstName', {fallback: 'First Name'})}
                 className={
                   touched.firstName && errors.firstName ? "invalid" : ""
                 }
@@ -102,7 +105,7 @@ const RequestForm = () => {
               <Field
                 name="lastName"
                 type="text"
-                placeholder="Last Name"
+                placeholder={t('fields.lastName', {fallback: 'Last Name'})}
                 className={touched.lastName && errors.lastName ? "invalid" : ""}
               />
               <ErrorMessage name="lastName" component="div" className="error" />
@@ -112,7 +115,7 @@ const RequestForm = () => {
               <Field
                 name="email"
                 type="email"
-                placeholder="Email"
+                placeholder={t('fields.email', {fallback: 'Email'})}
                 className={touched.email && errors.email ? "invalid" : ""}
               />
               <ErrorMessage name="email" component="div" className="error" />
@@ -122,7 +125,7 @@ const RequestForm = () => {
               <FormikPhoneField
                 variant="light"
                 name="phone"
-                placeholder="Phone"
+                placeholder={t('fields.phone', {fallback: 'Phone'})}
               />
               <ErrorMessage name="phone" component="div" className="error" />
             </div>
@@ -131,7 +134,7 @@ const RequestForm = () => {
               <Field
                 name="budget"
                 type="text"
-                placeholder="Budget"
+                placeholder={t('fields.budget', {fallback: 'Budget'})}
                 className={touched.budget && errors.budget ? "invalid" : ""}
               />
               <ErrorMessage name="budget" component="div" className="error" />
@@ -141,7 +144,7 @@ const RequestForm = () => {
               <Field
                 name="comment"
                 as="textarea"
-                placeholder="Comment"
+                placeholder={t('fields.comment', {fallback: 'Comment'})}
                 className={touched.comment && errors.comment ? "invalid" : ""}
               />
               <ErrorMessage name="comment" component="div" className="error" />
@@ -152,7 +155,7 @@ const RequestForm = () => {
               className="white-button"
               disabled={isSubmitting}
             >
-              Submit
+              {t('button', {fallback: 'Submit'})}
             </button>
           </Form>
         )}
