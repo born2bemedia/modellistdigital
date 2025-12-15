@@ -50,9 +50,6 @@ const Header = () => {
                 >
                   <img src="/images/contacts/inst.svg" />
                 </Link>
-                <Link href="https://x.com/modellistdigit" target="_blank">
-                  <img src="/images/contacts/x.svg" />
-                </Link>
               </div>
 
               <LangSwitcher />
