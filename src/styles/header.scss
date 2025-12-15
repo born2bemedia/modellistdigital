@@ -41,7 +41,7 @@ header {
         align-items: center;
         gap: 15px;
         @media (max-width: rem(992)) {
-          gap: 10px;
+          gap: 8px;
         }
         .divider {
           width: rem(1);
@@ -56,7 +56,7 @@ header {
           color: #161616;
           display: flex;
           @media (max-width: rem(992)) {
-            font-size: rem(14);
+            font-size: rem(12);
           }
         }
 

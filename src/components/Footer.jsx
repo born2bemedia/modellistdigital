@@ -103,9 +103,6 @@ const Footer = () => {
             >
               <img src="/images/footer/inst.svg" />
             </Link>
-            <Link href="https://x.com/modellistdigit" target="_blank">
-              <img src="/images/footer/x.svg" />
-            </Link>
           </div>
         </div>
 
